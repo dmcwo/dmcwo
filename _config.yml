@@ -1,0 +1,73 @@
+# Site
+title:              "dmcwo's notebook"
+bio:                'dmcwo'
+description:        "a place to jot things down"
+locale:             en_US
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
+
+# Collections
+collections:
+    presentations:
+        output: true
+        permalink: /presentations/:path/
+    publications:
+        output: true
+        permalink: /publications/:path/
+
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
+
+# Comments
+# disqus_shortname:   default
+
+# Social
+analytics-id:       
+twitter:            dmcwo
+facebook:           
+instagram:          
+github:             dmcwo
+linkedin:           doug-worsham
+
+# personal
+location:           CA
+# phone:              
+# email:              
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://twitter.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head> {% include head.html %} </head>
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header id="header"> <a href="{{ " / " | absolute_url }}" class="logo">{{site.title}}</a> </header>
+        <!-- Nav -->
+        {% include nav.html %}
+        <!-- Main -->
+        <div id="main">
+            <!-- this creates a big feature at the top of the page. -->
+            
+            <article class="post featured">
+                <header class="major">
+                    <h2>¯\_(ツ)_/¯</h2>
+                    <p>{% assign counter = 1 %}{% for item in site.presentations %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} presentations.</p>
+                </header>
+            </article>
+            
+            <!-- Presentation List -->
+            <!--<section class="posts">-->{% for presentation in site.presentations reversed %}
+            <!--<article>-->
+            <header>
+                <h2><a href="{{ site.url }}{{ presentation.url }}">{{ presentation.title }}</a></h2>
+                <p> <span class="date">
+                        {% if presentation.hidedayindate %}
+                                {{ presentation.date | date: '%B, %Y' | append: ". " }}
+                        {% else %}
+                                {{ presentation.date | date: '%B %d, %Y' | append: ". "}}
+                        {% endif %}
+                    </span> {% if presentation.meetingname %} {{ presentation.meetingname | append: ". " }} {% endif %} {% if presentation.place %} {{ presentation.place | append: ". " }} {% endif %} {% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>
+                <p> {% if presentation.slideurl %} <a href="{{ presentation.slideurl }}" class="button"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a> {% endif %} {% if presentation.handouturl %} <a href="{{ presentation.handouturl }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a> {% endif %} {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ site.url }}{{ presentation.url }}" class="button">More information ></a></p>
+            </header>
+            <!--</article>-->{% endfor %}
+            <!--</section>-->
+            <!-- end presentation list -->
+            
+        </div>
+        <!-- Footer -->{% include foot.html %} </div>
+    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+
+</html>

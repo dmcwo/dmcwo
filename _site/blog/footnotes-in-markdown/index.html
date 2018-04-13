@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--><html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title>Footnotes and markdown</title>
+<meta name="description" content="">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="/assets/icon/manifest.json">
+<link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+        <header id="header">
+          <a href="/" class="logo">dmcwo's notebook</a>
+        </header>
+
+				<!-- Nav -->
+            <nav id="nav">
+<ul class="links">
+  <li class=""><a href="/">Home</a></li>
+  <li class=""><a href="/about/">About</a></li>
+  <li class=" active "><a href="/blog/">Notes</a></li>
+    <li class=""><a href="/presentations/">Presentations</a></li>
+    <li class=""><a href="/publications/">Publications</a></li>
+  <!-- I like the elements page, but it doesn't need to be in the nav
+    <li class=""><a href="/elements/">Elements</a></li>-->
+</ul>
+<ul class="icons">
+                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+    
+    
+    <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>
+    
+    
+                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
+            <!-- todo need to change this to a local icon -->
+            </ul>
+</nav>
+
+
+				<!-- Main -->
+				<div id="main">
+          <section class="post">
+    				<header class="major">
+      				<span class="date">28 May 2016</span>
+      				<h1>Footnotes and markdown</h1>
+      				<!-- this repeats the first few lines if you don't specify excerpt -->
+                    <!--<p><p>Footnotes are good<!--break-->:
+
+--&gt;
+      			</header>
+      			<div class="image main"><img src="" alt=""></div>
+      			<p></p>
+<p>Footnotes are good<!--break-->:</p>
+
+<h2 id="basic-footnotes">Basic footnotes</h2>
+
+<p>I just learned you can add a footnote in markdown with <code class="highlighter-rouge">[^fn-title-of-footnote]</code>, e.g.,:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>As global librarians, we can stop treating the library as a destination and start treating it as a hub.[^fn-wilkinson]
+</code></pre>
+</div>
+
+<p>Then, at the bottom of the page, add the name of the footnote again, followed by <code class="highlighter-rouge">:</code> and then text that you want to appear as a footnote:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>[^fn-wilkinson]: [Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)](http://www.slideshare.net/lanewilkinson)
+</code></pre>
+</div>
+
+<h2 id="fancier-footnotes-of-course">Fancier Footnotes? Of course.</h2>
+
+<p><a href="http://www.bigfootjs.com/">Bigfoot</a> brings some fanciness to footnotes. To get it going, <a href="http://www.bigfootjs.com/">download the javascript files from the bigfoot site</a>.</p>
+
+<p>I put the <code class="highlighter-rouge">bigfoot-default.css</code> file in jekyll’s <code class="highlighter-rouge">css</code> folder. I then created a <code class="highlighter-rouge">js</code> folder and put the <code class="highlighter-rouge">bigfoot.js</code> and <code class="highlighter-rouge">bigfoot.min.js</code> files in it.</p>
+
+<p>Next, I added the following to <code class="highlighter-rouge">head.html</code>:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>&lt;!-- JS --&gt;
+&lt;!-- bigfoot footnotes from http://www.bigfootjs.com/ --&gt;
+&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="/js/bigfoot.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    $.bigfoot();
+&lt;/script&gt;
+</code></pre>
+</div>
+
+<p>and</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>&lt;link rel="stylesheet" href="/css/bigfoot-default.css"&gt;
+</code></pre>
+</div>
+
+<p>It works!</p>
+
+<p>Now, some experimentation:</p>
+
+<h3 id="text-footnote">Text footnote</h3>
+<blockquote>
+  <p>As global librarians, we can stop treating the library as a destination and start treating it as a hub.<sup id="fnref:fn-wilkinson-text"><a href="#fn:fn-wilkinson-text" class="footnote">1</a></sup></p>
+</blockquote>
+
+<h3 id="text-footnote-w-link">Text footnote w/ link</h3>
+
+<blockquote>
+  <p>As global librarians, we can stop treating the library as a destination and start treating it as a hub.<sup id="fnref:fn-wilkinson-text-link"><a href="#fn:fn-wilkinson-text-link" class="footnote">2</a></sup></p>
+</blockquote>
+
+<h3 id="image-footnotes-w-links">Image footnotes w/ links?</h3>
+
+<blockquote>
+  <p>As global librarians, we can stop treating the library as a destination<sup id="fnref:fn-wilkinson-image-1"><a href="#fn:fn-wilkinson-image-1" class="footnote">3</a></sup> and start treating it as a hub.<sup id="fnref:fn-wilkinson-image-2"><a href="#fn:fn-wilkinson-image-2" class="footnote">4</a></sup></p>
+</blockquote>
+
+<p>Apologies in advance for the many footnotes to come….</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:fn-wilkinson-text">
+      <p>Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)] - http://www.slideshare.net/lanewilkinson <a href="#fnref:fn-wilkinson-text" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:fn-wilkinson-text-link">
+      <p><a href="http://www.slideshare.net/lanewilkinson">Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)</a> <a href="#fnref:fn-wilkinson-text-link" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:fn-wilkinson-image-1">
+      <p><img src="https://www.evernote.com/l/AN8xIQlpDWRJ5YTdu-s4Duz2GgcluNYWM6cB/image.png" alt="Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium"> <a href="http://www.slideshare.net/lanewilkinson">Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)</a> <a href="#fnref:fn-wilkinson-image-1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:fn-wilkinson-image-2">
+      <p><img src="https://www.evernote.com/l/AN-C4CqLTcZPNbNptPEcwWGBMCsWDLz8f_sB/image.png" alt="Skills That Transfer: Transliteracy and the Global Librarian - ACRL/NY 2011 Symposium"> <a href="http://www.slideshare.net/lanewilkinson">Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)</a> <a href="#fnref:fn-wilkinson-image-2" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+      		</section>
+                </div>
+
+
+
+				<!-- Footer -->
+        <!-- Actions Footer -->
+<footer id="footer">
+    <section>
+        
+        <ul class="actions vertical">
+            <li><a href="/about/" class="button fit">About</a></li>
+            <li><a href="/blog/" class="button fit">Notes</a></li>
+            <li><a href="/presentations/" class="button fit">Presentations</a></li>
+            <li><a href="/publications/" class="button fit">Publications</a></li>
+        </ul>
+    </section>
+    <section>
+        <!-- todo need to make this an include and incorporate if statements -->
+        <center>
+            <ul class="actions">
+                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>  
+                <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>  
+                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                <li>
+                    <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+                </li>
+                <!-- todo need to change this to a local icon -->
+            </ul>
+        </center>
+    </section>
+</footer>
+<!-- need to rework this whole thing 
+<footer id="footer">
+  <section>
+    <form method="POST" action="https://formspree.io/">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="3"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" /></li>
+      </ul>
+    </form>
+  </section>
+  <section class="split contact">
+    <section class="alt">
+      <h3>Location</h3>
+      <p>CA</p>
+    </section>
+    <section>
+      <h3>Phone</h3>
+      <p><a href="tel:"></a></p>
+    </section>
+    <section>
+      <h3>Email</h3>
+      <p><a href="mailto:"></a></p>
+    </section>
+    <section>
+      <h3>Social</h3>
+      <ul class="icons alt">
+        <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+        
+          <li><a href="https://facebook.com/" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+        
+        <li><a href="https://instagram.com/" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+        <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+      </ul>
+    </section>
+  </section>
+</footer>
+-->
+<!-- Copyright -->
+<div id="copyright">
+    <p>theme adapted from Massively: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
+</div>
+
+			</div>
+
+      <!-- Scripts -->
+  		<!-- DYN -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+			
+
+
+	</body>
+</html>

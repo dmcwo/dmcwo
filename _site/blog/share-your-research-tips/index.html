@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+--><html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title>Sharing Research Tips (like YouTube videos)</title>
+<meta name="description" content="">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="/assets/icon/manifest.json">
+<link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/custom.css">
+<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+        <header id="header">
+          <a href="/" class="logo">dmcwo's notebook</a>
+        </header>
+
+				<!-- Nav -->
+            <nav id="nav">
+<ul class="links">
+  <li class=""><a href="/">Home</a></li>
+  <li class=""><a href="/about/">About</a></li>
+  <li class=" active "><a href="/blog/">Notes</a></li>
+    <li class=""><a href="/presentations/">Presentations</a></li>
+    <li class=""><a href="/publications/">Publications</a></li>
+  <!-- I like the elements page, but it doesn't need to be in the nav
+    <li class=""><a href="/elements/">Elements</a></li>-->
+</ul>
+<ul class="icons">
+                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+    
+    
+    <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>
+    
+    
+                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
+            <!-- todo need to change this to a local icon -->
+            </ul>
+</nav>
+
+
+				<!-- Main -->
+				<div id="main">
+          <section class="post">
+    				<header class="major">
+      				<span class="date">13 Jan 2017</span>
+      				<h1>Sharing Research Tips (like YouTube videos)</h1>
+      				<!-- this repeats the first few lines if you don't specify excerpt -->
+                    <!--<p><p>I really like side-projects. So much so, that it is hard for me to keep some of my side projects on the side.</p>
+
+</p>-->
+      			</header>
+      			<div class="image main"><img src="" alt=""></div>
+      			<p></p>
+<p>I really like side-projects. So much so, that it is hard for me to keep some of my side projects on the side.</p>
+
+<p>Lately, I’ve been working (perhaps rather obsessively) on a site that tries to make well-designed instructional modules as easy to embed as YouTube videos. Not just <a href="https://www.youtube.com/playlist?list=PLV8eqWoGXke5D5bmwscUhow1RJKWZmMRZ">the videos themselves</a>, but short instructional sequences that can be embedded directly into all sorts of course management systems or other websites, and updated in one central location.</p>
+
+<h3 id="the-research-tips-and-strategies-site">The Research Tips and Strategies site</h3>
+
+<p>The first step was to put together <a href="https://dmcwo.github.io/research-tips/">a site where you can browse the different research tips</a> and grab the embed code for the tips you want to include in your own site:</p>
+
+<p><a href="https://dmcwo.github.io/research-tips/"><img src="https://www.evernote.com/l/AN9zi5uZhdZPA6_2Zc2Vy41CLqPJDI8VIRIB/image.png" alt="Embed Code Icon on the Research-Tips site"></a></p>
+
+<p>Clicking that little <i class="fa fa-code" aria-hidden="true"></i> code icon pops open a window and gives you an embed code, e.g.:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>
+&lt;iframe src="https://dmcwo.github.io/research-tips/embeds/questions/" width="100%" height="400px"&gt;&lt;/iframe&gt;
+
+</code></pre>
+</div>
+
+<h3 id="embedded-research-tips-as-mini-slideshows">Embedded research tips as mini-slideshows</h3>
+
+<p>Copying and pasting the embed code into your site, gives you something like this:</p>
+
+<iframe src="https://dmcwo.github.io/research-tips/embeds/questions/" width="100%" height="400px"></iframe>
+
+<p>The idea here is to use a mini-slideshow to:</p>
+
+<ol>
+  <li>quickly present a strategy or concept with an example or two</li>
+  <li>give the learner a chance to give it a try it out</li>
+  <li>And then provide a tips page pointing to additional resources, that can include videos and other resources that go into greater detail.</li>
+</ol>
+
+<p>Technology wise, everything is built in <a href="http://jekyllrb.com">Jekyll</a>, hosted on <a href="github.com/dmcwo/research-tips" target="_blank">github</a>, and themed with a <a href="https://github.com/dmcwo/dr-jekylls-materials">jekyll version</a> of the fun and amazing <a href="http://materializecss.com/" target="_blank">materializecss</a> framework. The embeddable slideshows mash-up jekyll and materialize w/ <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> to give it a slideshowey navigation.</p>
+
+<p>There are quite a few things still to work on. Materialize.css and Reveal.js don’t always get along, and the result has been some pretty weird behavior with images (which, if I haven’t fixed it yet, may be on display in the example above). All along the hope has been to make everything responsive, and that is more or less working with a few quirks here and there.</p>
+
+<p>In the long term, I’m interested in turning this into something that others can use - making it easy to grow a collection of tips and strategies.</p>
+
+<p>It has been a super fun project and I’m excited about trying it out with classes this quarter.</p>
+
+<p>If you would like to see how it works, check out the <a href="github.com/dmcwo/research-tips">code on github</a>. You can even create a new research tip w/ a pull request!</p>
+
+
+      		</section>
+                </div>
+
+
+
+				<!-- Footer -->
+        <!-- Actions Footer -->
+<footer id="footer">
+    <section>
+        
+        <ul class="actions vertical">
+            <li><a href="/about/" class="button fit">About</a></li>
+            <li><a href="/blog/" class="button fit">Notes</a></li>
+            <li><a href="/presentations/" class="button fit">Presentations</a></li>
+            <li><a href="/publications/" class="button fit">Publications</a></li>
+        </ul>
+    </section>
+    <section>
+        <!-- todo need to make this an include and incorporate if statements -->
+        <center>
+            <ul class="actions">
+                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>  
+                <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>  
+                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                <li>
+                    <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
+                </li>
+                <!-- todo need to change this to a local icon -->
+            </ul>
+        </center>
+    </section>
+</footer>
+<!-- need to rework this whole thing 
+<footer id="footer">
+  <section>
+    <form method="POST" action="https://formspree.io/">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="3"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" /></li>
+      </ul>
+    </form>
+  </section>
+  <section class="split contact">
+    <section class="alt">
+      <h3>Location</h3>
+      <p>CA</p>
+    </section>
+    <section>
+      <h3>Phone</h3>
+      <p><a href="tel:"></a></p>
+    </section>
+    <section>
+      <h3>Email</h3>
+      <p><a href="mailto:"></a></p>
+    </section>
+    <section>
+      <h3>Social</h3>
+      <ul class="icons alt">
+        <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+        
+          <li><a href="https://facebook.com/" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+        
+        <li><a href="https://instagram.com/" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+        <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+      </ul>
+    </section>
+  </section>
+</footer>
+-->
+<!-- Copyright -->
+<div id="copyright">
+    <p>theme adapted from Massively: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
+</div>
+
+			</div>
+
+      <!-- Scripts -->
+  		<!-- DYN -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/skel.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+			
+
+
+	</body>
+</html>

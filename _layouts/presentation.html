@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head> {% include head.html %} </head>
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header id="header"> <a href="{{ " / " | absolute_url }}" class="logo">{{site.title}}</a> </header>
+        <!-- Nav -->
+        {% include nav.html %}
+
+        <!-- Main -->
+        <div id="main">
+            <section class="post">
+                <header class="major"> <span class="date">
+                    {% if page.hidedayindate %}
+                            {{ page.date | date: '%B, %Y' }}
+                        {% else %}
+                            {{ page.date | date: '%B %d, %Y' }}
+                        {% endif %}
+                    </span>
+                    <h2>{{page.title}}</h2>
+                    <p class="presinfo"> {% if page.meetingname %} {{ page.meetingname | append: ". "}} {% endif %} {% if page.place %} {{ page.place | append: ". " }} {% endif %} </p> {% if page.presenters %}
+                    <p class="presinfo">{{ page.presenters }}</p> {% endif %}
+                    <!-- Buttons for slides, handout, etc. -->
+                    <p class="presbuttons"> {% if page.slideurl %} <a href="{{ page.slideurl }}" class="button icon fa-picture-o">Slides</a> {% endif %} {% if page.handouturl %} <a href="{{ page.handouturl }}" class="button icon fa-file-text-o">Handout</a> {% endif %} {% if page.meetingurl %} <a href="{{ page.meetingurl }}" class="button icon fa-calendar">Event Page</a> {% endif %} </p>
+                </header> 
+                {% if page.abstract %}
+                    <h3>Abstract</h3>
+                    <p class="abstract"> {{ page.abstract }} </p>
+                {% endif %}
+                <div class="image main"><img src="{{page.image}}" alt=""></div>
+                <p>{{content}}</p>
+            </section>
+          </div>
+        
+    </div>
+    <!-- Footer -->{% include foot.html %} </div>
+    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+
+</html>

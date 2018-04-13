@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head> {% include head.html %} </head>
+
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header id="header"> <a href="{{ " / " | absolute_url }}" class="logo">{{site.title}}</a> </header>
+        <!-- Nav -->
+        {% include nav.html %}
+        <!-- Main -->
+        <div id="main">
+            <!-- this creates a big feature at the top of the page. -->
+            <!--
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">Header</a></h2>
+                    <p>Paragraph</p>
+                </header>
+            </article>
+            -->
+            <!-- Publication List -->
+            <section class="posts"> {% for publication in site.publications reversed %}
+                <article>
+                    <header>
+                        <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} </p>
+                        <p> {% if publication.doi %} <a href="{{ publication.doi }}" class="btn zoombtn"><i class="fa fa-link" aria-hidden="true"></i> Permalink/DOI</a> {% endif %} </p>
+                    </header>
+                </article>{% endfor %} 
+            </section>
+        </div>
+        <!-- Footer -->{% include foot.html %} </div>
+    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+
+</html>
