@@ -14,3 +14,16 @@ permalink: presentations/lets-build-something-workshop
 ---
 Brecher Cook, D., & Worsham, D. (2018, April). Let’s Build Something!: A Rapid-Prototyping Instructional Design Workshop. Pre-conference workshop presented at the 2018 CARL Conference, The Academic Library in Times of Change, Redwood City, CA.
 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/libarbarian3?ref_src=twsrc%5Etfw">@libarbarian3</a> built something! thanks, <a href="https://twitter.com/danibcook?ref_src=twsrc%5Etfw">@danibcook</a> &amp; <a href="https://twitter.com/dmcwo?ref_src=twsrc%5Etfw">@dmcwo</a> for a great preconference!! 🤓 <a href="https://twitter.com/hashtag/buildsomethingcarl?src=hash&amp;ref_src=twsrc%5Etfw">#buildsomethingcarl</a> <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a> <a href="https://t.co/k4dWXUUk6B">pic.twitter.com/k4dWXUUk6B</a></p>&mdash; Paige S (@paigelib) <a href="https://twitter.com/paigelib/status/984869003540623360?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/buildsomethingcarl?src=hash&amp;ref_src=twsrc%5Etfw">#buildsomethingcarl</a> with <a href="https://twitter.com/danibcook?ref_src=twsrc%5Etfw">@danibcook</a> and <a href="https://twitter.com/dmcwo?ref_src=twsrc%5Etfw">@dmcwo</a> has been a fun instructional design workshop. I’ve already started building my prototype learning object in a Google Site. <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a></p>&mdash; Daniel Ransom (@ThePinakes) <a href="https://twitter.com/ThePinakes/status/984865631034998784?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great workshop on Rapid Prototyping instructional Design with <a href="https://twitter.com/danibcook?ref_src=twsrc%5Etfw">@danibcook</a> <a href="https://twitter.com/dmcwo?ref_src=twsrc%5Etfw">@dmcwo</a> <a href="https://twitter.com/hashtag/buildsomethingcarl?src=hash&amp;ref_src=twsrc%5Etfw">#buildsomethingcarl</a> <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a> <a href="https://t.co/LdwTGETUTe">pic.twitter.com/LdwTGETUTe</a></p>&mdash; Yvonne Wilber (@yvonnewilber) <a href="https://twitter.com/yvonnewilber/status/984869024734461952?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Fantastic workshop on learner-centered design thinking! <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a></p>&mdash; Yvonne Wilber (@yvonnewilber) <a href="https://twitter.com/yvonnewilber/status/984826914777919488?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
