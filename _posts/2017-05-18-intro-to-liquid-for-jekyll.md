@@ -2,7 +2,7 @@
 layout: post
 title:  "An introduction to liquid for jekyll site creators - Part 1"
 date:   2017-05-19 19:12:29 -0700
-excerpt: 
+excerpt: "I suppose it is a good thing that you can get quite far with jekyll site creation without really knowing what you are doing."
 tags: [tinkering, jekyll, liquid]
 ---
 I suppose it is a good thing that you can get quite far with [jekyll](https://jekyllrb.com) site creation without really knowing what you are doing. I've been playing around with jekyll for some time, and using it for [some projects at work](http://uclalibrary.github.io/research-tips) without, I've realized recently, a particularly clear understanding of quite a few foundational concepts. 

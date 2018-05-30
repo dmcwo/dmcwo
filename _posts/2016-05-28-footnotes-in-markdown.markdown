@@ -2,12 +2,11 @@
 layout: post
 title:  "Footnotes and markdown"
 date:   2016-05-28 8:12:29 -0700
+excerpt: "Footnotes are good. Very good!"
 tags: [tinkering, footnotes]
 ---
 
-Footnotes are good<!--break-->:
-
-## Basic footnotes
+Footnotes are good!
 
 I just learned you can add a footnote in markdown with ``` [^fn-title-of-footnote] ```, e.g.,:
 

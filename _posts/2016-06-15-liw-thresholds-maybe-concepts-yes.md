@@ -2,10 +2,11 @@
 layout: post
 title:  "Thresholds, maybe; concepts, yes?"
 date:   2016-06-15 17:12:29 -0700
+excerpt: "Just when it seemed the debates around the Framework were beginning to settle...."
 tags: [liw2016, acrl framework, library liaisons, curriculum mapping]
 ---
 
-Just when it started to seem as if debates around the *[Framework](http://www.ala.org/acrl/standards/ilframework)* were beginning to settle, the conversation sparked by [Andrea Baer](https://twitter.com/An_Baer)'s [excellent session](https://liw16.sched.org/event/5yjh/lofty-conversations-grounded-teaching-threshold-concepts-decoding-the-disciplines-and-our-pedagogical-praxis) at LIW [^fn-baer] had me questioning again.
+Just when it seemed the debates around the *[Framework](http://www.ala.org/acrl/standards/ilframework)* were beginning to settle, the conversation sparked by [Andrea Baer](https://twitter.com/An_Baer)'s [excellent session](https://liw16.sched.org/event/5yjh/lofty-conversations-grounded-teaching-threshold-concepts-decoding-the-disciplines-and-our-pedagogical-praxis) at LIW [^fn-baer] had me questioning again.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/liw16?src=hash">#liw16</a>  <a href="https://twitter.com/An_Baer">@An_Baer</a>  Looking froward to seeing this come together <a href="https://t.co/E1dMcWOl2e">pic.twitter.com/E1dMcWOl2e</a></p>&mdash; margy maclibrarian (@margymaclibrary) <a href="https://twitter.com/margymaclibrary/status/741347974295343104">June 10, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

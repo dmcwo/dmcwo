@@ -2,6 +2,7 @@
 layout: post
 title:  "Reviving old laptops w/ CloudReady"
 date:   2016-10-22 21:12:29 -0700
+excerpt: "People sometimes give me their discarded technologies. Maybe it is because they somehow sense my fondness for such things, or because I unknowingly transmit a deep belief that the life and utility of most everything should be longer."
 tags: [CloudReady, tinkering]
 ---
 People sometimes give me their discarded technologies. Maybe it is because they somehow sense my fondness for such things, or because I unknowingly transmit a deep belief that the life and utility of most everything should be longer. Maybe it is because I used to work in a sort of [natural history museum](http://lss.wisc.edu) for discarded formats and standards, and that a small part of our work was to transcode any recently found bits of sound or video on tape, or laserdisc, or betamax, or .... into other, newer standards. Or maybe they just saw a bunch of junk on a desk of mine and wanted thought it would be convenient to add their old laptop to it.

@@ -2,6 +2,7 @@
 layout: post
 title:  "FYE, critical librarianship, and healthy discontent at LIW2016"
 date:   2016-06-15 17:12:29 -0700
+excerpt: "Four key questions framed this conversational panel session on the intersections between fye and critical librarianship, but many more came up in discussion."
 tags: [liw2016, critical pedagogy, FYE, assessment]
 ---
 Four key questions framed this [conversational panel session](https://liw16.sched.org/event/5yjS/critical-foundations-intersections-between-critical-librarianship-and-first-year-experience) on the intersections between fye and critical librarianship, but many more came up in discussion. [@kevinseeber](http://twitter.com/kevinseeber) played MC alongside [@JessicaCritten](http://twitter.com/JessicaCritten),  [@nope4evr](http://twitter.com/nope4evr) and [@dani28](http://twitter.com/dani28).

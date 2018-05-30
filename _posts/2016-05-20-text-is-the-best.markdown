@@ -10,9 +10,9 @@ tag:
 ---
 I'm suddenly a huge fan of text files. Blogging w/ just text files -- why is that so cool? For some reason, it really is. I first got started playing around with [jekyll](jekyllrb.com) and then learned about [course-in-a-box](http://howto.p2pu.org/) both of which made me think that static is the new dynamic, for real.
 
-Not that it is all text. I just learned that if you can make this happen, too:
+Not that it is all text. I just learned that you can make this happen, too:
 
-![Straws in a window](../assets/img/window-straws.jpg)
+![Straws in a window](/assets/img/window-straws.jpg)
 
 What's next after that? Maybe more text?
 
@@ -23,5 +23,5 @@ What's next after that? Maybe more text?
 and then, maybe, these, too:
 
 * [Social Science Specialization](https://www.coursera.org/specializations/social-science)
-* [Date Mining Specialization](https://www.coursera.org/specializations/data-mining)
+* [Data Mining Specialization](https://www.coursera.org/specializations/data-mining)
 

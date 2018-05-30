@@ -2,7 +2,7 @@
 layout: post
 title:  "Sharing Research Tips (like YouTube videos)"
 date:   2017-01-13 19:12:29 -0700
-excerpt: 
+excerpt: "Lately, I've been working (perhaps rather obsessively) on a site that tries to make well-designed instructional modules as easy to embed as YouTube videos."
 tags: [tinkering, online learning, jekyll, material design]
 ---
 I really like side-projects. So much so, that it is hard for me to keep some of my side projects on the side.

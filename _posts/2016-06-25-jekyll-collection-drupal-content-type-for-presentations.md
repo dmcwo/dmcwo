@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating a Drupal-like content type in Jekyll for Presentations"
 date:   2016-06-25 19:12:29 -0700
-excerpt: 
+excerpt: "I'll probably always be a big fan of Drupal.... But for a small, personal site like this one, it feels like a bit much."
 tags: [tinkering, presentations, jekyll, Drupal]
 ---
 I'll probably always be a big fan of [Drupal](http://drupal.org). I absolutely loved working with Drupal to create platforms for communities to build and share knowledge together. But for a small, personal site like this one, it feels like a bit much. As [others have said](https://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/), running a server and a database, and keeping up with all the associated updates and patches, begins to feel like overhead, and for me, ultimately ends up becoming an excuse to not actually write anything! That said, running something in a hosted WordPress environment doesn't give adequate opportunities to tinker with things under the hood. So lately, I've felt like [Jekyll](jekyllrb.com) comes to the rescue by providing just the right balance of tinkering-time and a focus on content. As if I had any lingering doubts, I recently learned that [Jekyll's collections](http://jekyllrb.com/docs/collections/) function quite a bit like Drupal's content types + views framework. In other words, *you can make Drupal-like content types in Jekyll*. Brilliant.

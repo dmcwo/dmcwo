@@ -2,6 +2,7 @@
 layout: post
 title:  "LIW 2016 - Learning Spaces & Conference Events"
 date:   2016-06-14 17:12:29 -0700
+excerpt: "Oddly, a hallway was a highlight for me, but perhaps that shouldn't be so odd."
 tags: [learning spaces, liw2016]
 feature: /assets/img/liw16/bridge_1080.jpg
 ---
