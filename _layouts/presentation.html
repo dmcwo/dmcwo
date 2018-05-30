@@ -26,7 +26,12 @@
                     <p class="presinfo">{{ page.presenters }}</p> {% endif %}
                     <!-- Buttons for slides, handout, etc. -->
                     <p class="presbuttons"> {% if page.slideurl %} <a href="{{ page.slideurl }}" class="button icon fa-picture-o">Slides</a> {% endif %} {% if page.handouturl %} <a href="{{ page.handouturl }}" class="button icon fa-file-text-o">Handout</a> {% endif %} {% if page.meetingurl %} <a href="{{ page.meetingurl }}" class="button icon fa-calendar">Event Page</a> {% endif %} </p>
-                </header> 
+                </header>
+                <!-- todo: figure out what to do with feature 
+                {% if page.feature %}
+      			<div class="image main" style="width: 30%; float: right; padding: 30px; margin: 10px; border-width: 1px; border-style: solid;"><img src="{{page.feature}}" alt="{{ page.featurealt }}"></div>
+                {% endif %}
+                -->
                 {% if page.abstract %}
                     <h3>Abstract</h3>
                     <p class="abstract"> {{ page.abstract }} </p>

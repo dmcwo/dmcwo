@@ -24,15 +24,12 @@ permalink: /about/cv/
 
 ## Awards
 
-* Librarian of the Year, Librarian's Association of the University of California - Los Angeles, 2018.
-* Arlies Award - Best Reflection of Diversity, Association of Research Libraries, 2018. 
 * L&S Academic Staff Mid-Career Excellence Award. University of Wisconsin, Madison - College of Letters & Science. 2011.
 
 ## Professional Experience
 
 ### UCLA Library
 
-#### Team Lead for Teaching & Learning. 2017-present.
 #### Interim Dir. Teaching & Learning Services. 2016-2017.
 #### Teaching & Learning Services Coordinator. 2012-2016.
 

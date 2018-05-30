@@ -32,7 +32,9 @@
       				<!-- this repeats the first few lines if you don't specify excerpt -->
                     <!--<p>{{page.excerpt}}</p>-->
       			</header>
-      			<div class="image main"><img src="{{page.image}}" alt=""></div>
+                {% if page.feature %}
+      			<div class="image main"><img src="{{page.feature}}" alt="{{ page.featurealt }}"></div>
+                {% endif %}
       			<p>{{content}}</p>
       		</section>
                 </div>
