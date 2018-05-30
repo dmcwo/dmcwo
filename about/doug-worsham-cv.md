@@ -1,15 +1,13 @@
-
 ---
 layout: page
 title: Doug Worsham's Curriculum Vitae
-permalink: /about/cv/
+permalink: about/cv/
 ---
-<!-- todo: add anchors. TOC? maybe a special layout for cv? -->
+<!-- todo: add anchors. Side-TOC? maybe a special layout for cv? -->
 
 # Doug's Curriculum Vitae
 
 ## Education
-
 * M.A. English - Teaching English to Speakers of Other Languages (MA-TESOL). San Francisco State University. 2002.
 * B.A. English Literature. California State University - Long Beach. 1997.
 
@@ -122,10 +120,6 @@ permalink: /about/cv/
 * Hiring Committee. CLICC/DIIT Programmer/Analyst. Member. October, 2012 - February 2013.
 * Public Services Council. September 2012 – present.
 * Powell Technology Project Team (Digital Signage and Exhibits). September 2012 – March 2013.
-
-### UC-AFT
-
-Member at Large for UCLA Local Chapter of Unit 17.
 
 ### University of Wisconsin - Madison 
 * ComETS (Community of Education Technology Support at UW-Madison). Chair - Steering Committee - 2011-2012. Steering Committee Member and Chair - Membership and Community Team - 2009-2011.
