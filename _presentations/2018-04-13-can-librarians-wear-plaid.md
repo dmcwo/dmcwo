@@ -2,7 +2,8 @@
 layout: presentation
 title: "Can Librarians Wear Plaid? Early Insights into Forming a Matrix Organization"
 date: 2018-04-13
-presenters: Elizabeth Cheney, Rikke Ogaway, and Doug Worsham
+presenters: Elizabeth Cheney, Rikke Ogawa, and Doug Worsham
+meetingshortname: CARL
 meetingname: "CARL (California Academic & Research Libraries Conference) 2018"
 meetingurl: http://conf2018.carl-acrl.org/session/can-librarians-wear-plaid-early-insights-into-forming-a-matrix-organization/
 place: Redwood City, CA

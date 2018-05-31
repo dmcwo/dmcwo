@@ -3,6 +3,7 @@ layout: presentation
 title: "DIY Spaces in an Age of Change: Creating a STEM Collaborative Learning Center with Campus Partners"
 date: 2018-04-13
 presenters: Courtney Hoffner, Juan Jaime, Doug Worsham
+meetingshortname: CARL
 meetingname: "CARL (California Academic & Research Libraries Conference) 2018"
 meetingurl: http://conf2018.carl-acrl.org/session/diy-spaces-in-an-age-of-change-creating-a-stem-collaborative-learning-center-with-campus-partners/
 place: Redwood City, CA

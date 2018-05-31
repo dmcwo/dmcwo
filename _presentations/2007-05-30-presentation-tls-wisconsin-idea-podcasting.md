@@ -3,6 +3,7 @@ layout: presentation
 title: "Expanding the Wisconsin Idea – Extending the Classroom through Podcasting"
 date: 2007-05-30
 presenters: Ron Cramer and Doug Worsham
+meetingshortname: UW Madison Teaching & Learning Symposium
 meetingname: UW Madison Teaching & Learning Symposium
 meetingurl: 
 place: Madison, WI

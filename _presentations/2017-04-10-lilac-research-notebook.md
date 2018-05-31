@@ -3,6 +3,7 @@ layout: presentation
 title: "The Digital Research Notebook - A Simple Tool to Augment the One-Shot"
 date: 2017-04-10
 presenters: Julia Glassman and Doug Worsham
+meetingshortname: LILAC
 meetingname: "LILAC - Librarians Information Literacy Annual Conference"
 meetingurl: http://www.lilacconference.com/events/2017/the-digital-research-notebook-a-simple-tool-to-augment-the-one-shot
 place: Swansea, UK

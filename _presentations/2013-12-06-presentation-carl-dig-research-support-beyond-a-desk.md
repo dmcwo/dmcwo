@@ -3,6 +3,7 @@ layout: presentation
 title: "Try, Try Again: Defining Library Research Support Beyond a Desk"
 date: 2013-12-06
 presenters: Allison Benedetti and Doug Worsham
+meetingshortname: CARL
 meetingname: Reference as Place - California Academic and Research Libraries (CARL) Association
 meetingurl: http://carl-acrl.org/ig/carldigs/referenceasplace.html
 place: Fullterton, CA.

@@ -13,7 +13,7 @@
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
         <!-- Header -->
-        <header id="header"> <a href="{{ " / " | absolute_url }}" class="logo">{{site.title}}</a> </header>
+        <header id="header"> <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a> </header>
         <!-- Nav -->
         {% include nav.html %}
         <!-- Main -->
@@ -23,7 +23,8 @@
             <article class="post featured">
                 <header class="major">
                     <h2>¯\_(ツ)_/¯</h2>
-                    <p>{% assign counter = 1 %}{% for item in site.presentations %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} presentations.</p>
+                    <p>{% assign counter = 1 %}{% for item in site.presentations %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} presentations at places like {% assign mnlist = site.presentations | map: 'meetingshortname' | join: ',' | join: ',' | split: ',' | uniq | sort | shift %} <!-- I have no idea how this works, but found it here https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll -->
+                            {{ mnlist | join: ", "}}.</p>
                 </header>
             </article>
             

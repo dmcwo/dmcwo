@@ -3,6 +3,7 @@ layout: presentation
 title: "Wikis in Language Learning: Audience, Authorship, and Assessment."
 date: 2007-6-21
 presenters: Doug Worsham
+meetingshortname: IALLT
 meetingname: International Association of Language Learning Technology
 meetingurl: 
 place: Boston, MA

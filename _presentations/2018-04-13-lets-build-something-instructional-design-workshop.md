@@ -3,6 +3,7 @@ layout: presentation
 title: "Let’s Build Something!: A Rapid-Prototyping Instructional Design Workshop"
 date: 2018-04-13
 presenters: Dani Brecher Cook and Doug Worsham
+meetingshortname: CARL
 meetingname: "CARL (California Academic & Research Libraries Conference) 2018"
 meetingurl: http://conf2018.carl-acrl.org/session/lets-build-something-a-rapid-prototyping-instructional-design-workshop/
 place: Redwood City, CA

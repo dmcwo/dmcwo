@@ -4,6 +4,7 @@ title: "Collaborative Learning in a Networked Computer Lab"
 date: 2005-05-01
 hidedayindate: true
 presenters: Doug Worsham
+meetingshortname: UW Madison Teaching & Learning Symposium
 meetingname: UW Madison Teaching & Learning Symposium
 meetingurl: 
 place: Madison, WI

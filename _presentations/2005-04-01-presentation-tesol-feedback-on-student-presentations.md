@@ -4,6 +4,7 @@ title: "Using Technology to Provide Better Feedback on Students’ Presentation 
 date: 2005-04-01
 hidedayindate: true
 presenters: Doug Worsham
+meetingshortname: TESOL
 meetingname: TESOL - Teaching English to Speakers of Other Languages
 meetingurl: 
 place: San Antonio, TX

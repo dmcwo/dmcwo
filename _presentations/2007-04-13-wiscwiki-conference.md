@@ -3,6 +3,7 @@ layout: presentation
 title: "WiscWiki 2007 Conference Co-Organizer"
 date: 2007-04-13
 presenters: Doug Worsham
+meetingshortname: WiscWiki
 meetingname: WiscWiki 2007
 meetingurl: https://wiscwikis.wikispaces.com/WiscWiki2007
 place: Madison, WI

@@ -3,6 +3,7 @@ layout: presentation
 title: "Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget"
 date: 2010-01-20
 presenters: "Timothy Dugdale, Lindsey Schmidt, and Doug Worsham"
+meetingshortname: EDUCAUSE Learning Initiative
 meetingname: EDUCAUSE Learning Initiative
 meetingurl: http://net.educause.edu/ELI10/Program/1022371?PRODUCT_CODE=ELI10/SESS12
 place: Austin, TX

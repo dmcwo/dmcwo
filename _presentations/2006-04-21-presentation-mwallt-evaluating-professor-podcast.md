@@ -3,6 +3,7 @@ layout: presentation
 title: "Evaluating Professor Podcast"
 date: 2006-04-21
 presenters: Ron Cramer and Doug Worsham
+meetingshortname: MWALLT
 meetingname: Midwest Association of Language Learning and Technology
 meetingurl: 
 place: La Crosse, WI

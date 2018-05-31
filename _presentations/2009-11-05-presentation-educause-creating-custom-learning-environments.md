@@ -3,6 +3,7 @@ layout: presentation
 title: "Creating Custom Online Learning Environments with Drupal"
 date: 2009-11-05
 presenters: Gary Chinn and Doug Worsham
+meetingshortname: EDUCAUSE
 meetingname: EDUCAUSE 2009
 meetingurl: http://www.educause.edu/annual-conference/2009/creating-custom-online-learning-environments-drupal
 place: Denver, CO
