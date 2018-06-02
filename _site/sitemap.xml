@@ -150,7 +150,7 @@
      </url>
   
     <url>
-      <loc>/publications/</loc>
+      <loc>/cv/</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -166,6 +166,16 @@
        <changefreq>weekly</changefreq>
       
        <priority>1.0</priority>
+      
+     </url>
+  
+    <url>
+      <loc>/publications/</loc>
+       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
+      
+       <changefreq>weekly</changefreq>
+      
+       <priority>0.5</priority>
       
      </url>
   
@@ -186,6 +196,16 @@
        <changefreq>yearly</changefreq>
       
        <priority>0.7</priority>
+      
+     </url>
+  
+    <url>
+      <loc>/drafts/lots-of-trial-and-error/</loc>
+       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
+      
+       <changefreq>weekly</changefreq>
+      
+       <priority>0.5</priority>
       
      </url>
   

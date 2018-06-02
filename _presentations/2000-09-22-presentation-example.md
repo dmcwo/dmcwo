@@ -5,6 +5,7 @@ title: ""
 date: 1990-01-01
 presenters: 
 meetingname: 
+meetingshortname: 
 meetingurl: 
 place: 
 abstract: ""

@@ -5,13 +5,25 @@ date:   2017-01-13 19:12:29 -0700
 excerpt: 
 tags: [tinkering, online learning, failing fast]
 ---
-In libraries, we're in the early stages of a very important effort to re-think assessment. [ACRL's Value report](http://www.acrl.ala.org/value/), the impressive and growing number of [Assessment in Action](http://www.ala.org/acrl/AiA) projects, and an increased interest in [connections between libraries and SOTL (Scholarship of Teaching and Learning)](https://docs.google.com/document/d/19tSlZXLwrm0cl2kfmJMBVRC41MnZiVbvQVe3z8gm4gA/edit) all offer positive steps forward and practical approaches to assessment and improved communication of the essential value of library staff, services, and collections. In general, these are very good things.
+In libraries, we're in the early stages of a very important effort to re-think assessment. On the one hand, [ACRL's Value report](http://www.acrl.ala.org/value/) and the growing number of [Assessment in Action](http://www.ala.org/acrl/AiA) projects show widespread interest in more systematic, quantitative, and programmatic assessment. At the same time, we're seeing more and more unrest and discomfort among many library staff about how assessment is interpreted, discussed, and implemented in libraries. It may already be time to re-think our approach to assessment (again).
 
-At the same time, however, we're seeing more and more unrest and discomfort among many library staff about how assessment is interpreted, discussed, and implemented in libraries. It may already be time to re-think our approach to assessment (again).
+One challenge in our current practice, as I see it, is that the questions
 
-One challenge in our current practice, as I see it, is that the questions "how will you assess that?" and "how will we know if it is *working* or *not working*?" have become almost ritualistic, particularly among those who, for whatever reason, seem to be interested in finding a way to sink a project or idea. At times, these questions are asked from genuine, well-meaning, intellectual curiousity; but, in my experience at least, that doesn't seem to be the norm. The "assessment question" inevitably has an edge to it, an underlying purpose, a skeptical superiority that can be unnerving at conferences, and even more unsettling in meetings and brainstorming sessions.
+<blockquote>
+    How will you assess that?
+</blockquote>
 
-I first wrote about this [healthy discontent with our language of assessment]({{ "/liw-notes-critical-foundations#healthy-discontent" | prepend: site.url }}), in a reflection on #liw16[fn-liw16]. More recently, I've seen the thread continue at both #c4lib17[fn-c4lib17], and #lilac17[fn-lilac17]. In this post, I'm trying to bring together a few related strands from these three conferences, and turn them into a few reflective questions that might help us work our way toward a compelling, pedagogical, and generative language of assessment.
+and
+
+<blockquote>
+    How will we know if it is <em>working</em> or <em>not working</em>?
+</blockquote>
+
+have become almost ritualistic, particularly among those who seem to be interested in finding a way to sink a project or idea.
+
+At times, these questions are asked from genuine, well-meaning, intellectual curiousity; but, that is not always the case. More often than not, these assessment questions inevitably have an edge to them, an underlying purpose, a skeptical superiority that can be unnerving at conferences, and even more unsettling in meetings and brainstorming sessions.
+
+I first wrote about this [healthy discontent with our language of assessment]({{ "/liw-notes-critical-foundations#healthy-discontent" | prepend: site.url }}), in a reflection on #liw16[fn-liw16]. I've seen the thread continue at #c4lib17[fn-c4lib17], and #lilac17[fn-lilac17] and #carlconf2018[fn-carlconf2018]. In this post, I'm trying to bring together a few related strands from these various conferences, and turn them into a few reflective questions that might help us work our way toward a more compelling, pedagogical, and generative language of assessment.
 
 ### What's motivating our assessment strategy?
 
