@@ -4,7 +4,7 @@ title:  "From json resume to json cv - part 1"
 date:   2018-06-01 20:55:50 -0700
 categories: json resume cv
 ---
-I've been looking at ways to extend [json resume](https://jsonresume.org/) to cover more of the common elements in an academic cv.
+I've been looking at ways to extend [json resume](https://jsonresume.org/) to cover more of the common elements in an academic cv. Here's what I have: [json cv](https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json) and here are some notes on the changes so far:
 
 ### multiple positions at the same institution
 
