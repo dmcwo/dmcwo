@@ -134,8 +134,8 @@
 			],
 			"citations": [
 				{
-					"APA": "YourTitle",
-					"MLA": "2015-01-01"
+					"APA": "Full-APA-Citation",
+					"MLA": "Full-MLA-Citation"
 				}
 			]
 		}
@@ -154,8 +154,8 @@
 			],
 			"citations": [
 				{
-					"APA": "YourTitle",
-					"MLA": "2015-01-01"
+                    "APA": "Full-APA-Citation",
+					"MLA": "Full-MLA-Citation"
 				}
 			]
 		}

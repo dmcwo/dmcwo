@@ -68,8 +68,8 @@ For now, json cv tries to balance all this by adding citation format fields and 
         ],
 		"citations": [
 		  {
-          "APA": "YourTitle",
-		  "MLA": "2015-01-01"
+          "APA": "Full-APA-Citation",
+          "MLA": "Full-MLA-Citation"
 		  }
         ]
 		}
