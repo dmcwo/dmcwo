@@ -35,7 +35,8 @@
 	"work": [
 		{
 			"company": "CurrentInstitution",
-			"position": [
+			"position": "YourTitle",
+			"positions": [
 				{
 					"title": "YourTitle",
 					"startDate": "2017-01-01",
@@ -59,7 +60,8 @@
 		},
 		{
 			"company": "PreviousInstitution",
-			"position": [
+			"position": "YourTitle",
+			"positions": [
 				{
 					"title": "YourTitle",
 					"startDate": "2015-01-01",
@@ -121,11 +123,41 @@
 	],
 	"publications": [
 		{
-			"name": "PublicationTitle",
-			"publisher": "PublisherName",
+			"name": "PublicationTitle1",
+			"publisher": "PublisherName1",
 			"releaseDate": "2014-10-01",
 			"website": "http://your-publication-doi.org",
-			"summary": "Description..."
+			"summary": "Description1...",
+			"authors": [
+				"FirstAuthorName",
+				"SecondAuthorName"
+			],
+			"citations": [
+				{
+					"APA": "YourTitle",
+					"MLA": "2015-01-01"
+				}
+			]
+		}
+	],
+	"presentations": [
+		{
+			"name": "PresentationTitle",
+			"meetingName": "PublisherName1",
+			"meetingLocation": "MeetingLocation1",
+			"date": "2014-10-01",
+			"website": "http://your-publication-doi.org",
+			"abstract": "Description1...",
+			"presenters": [
+				"FirstAuthorName",
+				"SecondAuthorName"
+			],
+			"citations": [
+				{
+					"APA": "YourTitle",
+					"MLA": "2015-01-01"
+				}
+			]
 		}
 	],
 	"skills": [

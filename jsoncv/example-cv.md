@@ -1,6 +1,6 @@
 ---
 layout: cv
 title: YourName's CV
-permalink: /cv/
+permalink: /jsoncv/example-cv/
 ---
 hello cv!

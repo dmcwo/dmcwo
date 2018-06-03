@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-06-02T16:12:05-07:00</updated><id>/</id><title type="html">dmcwo’s notebook</title><subtitle>a place to jot things down</subtitle><entry><title type="html">Transparency in Assignment Design</title><link href="/blog/transparency-matters/" rel="alternate" type="text/html" title="Transparency in Assignment Design" /><published>2018-04-17T19:12:29-07:00</published><updated>2018-04-17T19:12:29-07:00</updated><id>/blog/transparency-matters</id><content type="html" xml:base="/blog/transparency-matters/">&lt;p&gt;One of my favorite concurrent sessions at CARL 2018 was &lt;a href=&quot;http://conf2018.carl-acrl.org/session/from-instruction-to-instructional-design-scalable-approaches-to-information-literacy/&quot;&gt;Maya Hobscheid’s “From Instruction to Instructional Design: Scalable Approaches to Information Literacy”&lt;/a&gt; which outlined a faculty development workshop focused on increasing transparency in assignment design. This presentation made the case for actively working with instructors on the design of their assignments, and showed the impact that these interventions can have.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-06-02T17:20:47-07:00</updated><id>/</id><title type="html">dmcwo’s notebook</title><subtitle>a place to jot things down</subtitle><entry><title type="html">From json resume to json cv - part 1</title><link href="/blog/json-cv/" rel="alternate" type="text/html" title="From json resume to json cv - part 1" /><published>2018-06-01T20:55:50-07:00</published><updated>2018-06-01T20:55:50-07:00</updated><id>/blog/json-cv</id><content type="html" xml:base="/blog/json-cv/">&lt;p&gt;I’ve been looking at ways to extend &lt;a href=&quot;https://jsonresume.org/&quot;&gt;json resume&lt;/a&gt; to cover more of the common elements in an academic cv.&lt;/p&gt;
+
+&lt;h3 id=&quot;multiple-positions-at-the-same-institution&quot;&gt;multiple positions at the same institution&lt;/h3&gt;
+
+&lt;p&gt;Currently, json resume only supports listing a single job title for each institution:&lt;/p&gt;
+
+&lt;h4 id=&quot;json-resume---position&quot;&gt;json resume - position&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;position&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YourTitle&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is great, unless you want to list multiple roles or job titles at the same institution. In json resume, you would have to create repeat entries for the same institution each time your job title changes. There are some threads suggesting changing &lt;code class=&quot;highlighter-rouge&quot;&gt;position&lt;/code&gt; to an array, but the proposals were not adopted.&lt;/p&gt;
+
+&lt;h4 id=&quot;json-resume---position-or-positions&quot;&gt;json resume - position or positions&lt;/h4&gt;
+&lt;p&gt;json cv takes the array approach for positions, allowing you to either keep the simple approach above, or list multiple positions as an array:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;positions&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YourTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;startDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2017-01-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;endDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Present&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YourPreviousTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;startDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-01-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;endDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2016-12-31&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;publications-and-presentations&quot;&gt;publications and presentations&lt;/h3&gt;
+&lt;p&gt;The next challenge is the limited set of data available to describe publications. There’s just not enough here to generate a formatted citation. There also doesn’t seem to be a way to list multiple authors for a publication:&lt;/p&gt;
+
+&lt;h4 id=&quot;json-resume---publications&quot;&gt;json resume - publications&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;publications&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublicationTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;publisher&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublisherName&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;releaseDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-10-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;website&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://your-publication-doi.org&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;summary&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Description...&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+	&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;I had initially considered integrating &lt;a href=&quot;https://citationstyles.org/&quot;&gt;CSL JSON&lt;/a&gt;, which is likely the best and most robust approach, but the massive number of fields and level of detail seemed a bit daunting.&lt;/p&gt;
+
+&lt;p&gt;For now, json cv tries to balance all this by adding citation format fields and an array for authors for each publication:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;publications&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublicationTitle1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;publisher&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublisherName1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;releaseDate&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-10-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;website&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://your-publication-doi.org&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;summary&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Description1...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;authors&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;FirstAuthorName&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;SecondAuthorName&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;citations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+          &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;APA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YourTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;MLA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2015-01-01&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;For the related challenge of presentations, json cv adds a new set of fields, modelled after publications:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span class=&quot;s2&quot;&gt;&quot;presentations&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PresentationTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;meetingName&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PublisherName1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;meetingLocation&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;MeetingLocation1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;date&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2014-10-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;website&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;http://your-publication-doi.org&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;abstract&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Description1...&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;presenters&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;FirstAuthorName&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+			&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;SecondAuthorName&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;citations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+			&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;APA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;YourTitle&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+			&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;MLA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2015-01-01&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+		&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;A little bit of duplication of information, but perhaps satisfactory for now?&lt;/p&gt;</content><summary type="html">I’ve been looking at ways to extend json resume to cover more of the common elements in an academic cv.</summary></entry><entry><title type="html">Transparency in Assignment Design</title><link href="/blog/transparency-matters/" rel="alternate" type="text/html" title="Transparency in Assignment Design" /><published>2018-04-17T19:12:29-07:00</published><updated>2018-04-17T19:12:29-07:00</updated><id>/blog/transparency-matters</id><content type="html" xml:base="/blog/transparency-matters/">&lt;p&gt;One of my favorite concurrent sessions at CARL 2018 was &lt;a href=&quot;http://conf2018.carl-acrl.org/session/from-instruction-to-instructional-design-scalable-approaches-to-information-literacy/&quot;&gt;Maya Hobscheid’s “From Instruction to Instructional Design: Scalable Approaches to Information Literacy”&lt;/a&gt; which outlined a faculty development workshop focused on increasing transparency in assignment design. This presentation made the case for actively working with instructors on the design of their assignments, and showed the impact that these interventions can have.&lt;/p&gt;
 
 &lt;p&gt;To get a sense of what this was all about, compare these two writing prompts:&lt;/p&gt;
 
@@ -58,7 +147,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;site.title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;/code&gt;: dmcwo’s notebook&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{site.time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;/code&gt;: 2018-06-02 16:12:05 -0700&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{site.time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;/code&gt;: 2018-06-02 17:20:47 -0700&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;page.title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;/code&gt;: An introduction to liquid for jekyll site creators - Part 1&lt;/p&gt;
 
@@ -451,80 +540,4 @@ Visit &lt;a href=&quot;http://dmcwo.github.io/tutorials/tutorial-a-generic-tutor
       &lt;p&gt;I’m still wondering if I should use the sub-module feature for this sort of thing ….?&amp;nbsp;&lt;a href=&quot;#fnref:fn-wondering&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="tinkering" /><category term="presentations" /><category term="markdown" /><category term="html" /><category term="reveal.js" /><summary type="html">Why bother coding a presentation? I'm not sure exactly. For fun?</summary></entry><entry><title type="html">Footnotes and markdown</title><link href="/blog/footnotes-in-markdown/" rel="alternate" type="text/html" title="Footnotes and markdown" /><published>2016-05-28T08:12:29-07:00</published><updated>2016-05-28T08:12:29-07:00</updated><id>/blog/footnotes-in-markdown</id><content type="html" xml:base="/blog/footnotes-in-markdown/">&lt;p&gt;Footnotes are good!&lt;/p&gt;
-
-&lt;p&gt;I just learned you can add a footnote in markdown with &lt;code class=&quot;highlighter-rouge&quot;&gt;[^fn-title-of-footnote]&lt;/code&gt;, e.g.,:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;As global librarians, we can stop treating the library as a destination and start treating it as a hub.[^fn-wilkinson]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Then, at the bottom of the page, add the name of the footnote again, followed by &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; and then text that you want to appear as a footnote:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[^fn-wilkinson]: [Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)](http://www.slideshare.net/lanewilkinson)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;fancier-footnotes-of-course&quot;&gt;Fancier Footnotes? Of course.&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.bigfootjs.com/&quot;&gt;Bigfoot&lt;/a&gt; brings some fanciness to footnotes. To get it going, &lt;a href=&quot;http://www.bigfootjs.com/&quot;&gt;download the javascript files from the bigfoot site&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I put the &lt;code class=&quot;highlighter-rouge&quot;&gt;bigfoot-default.css&lt;/code&gt; file in jekyll’s &lt;code class=&quot;highlighter-rouge&quot;&gt;css&lt;/code&gt; folder. I then created a &lt;code class=&quot;highlighter-rouge&quot;&gt;js&lt;/code&gt; folder and put the &lt;code class=&quot;highlighter-rouge&quot;&gt;bigfoot.js&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bigfoot.min.js&lt;/code&gt; files in it.&lt;/p&gt;
-
-&lt;p&gt;Next, I added the following to &lt;code class=&quot;highlighter-rouge&quot;&gt;head.html&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!-- JS --&amp;gt;
-&amp;lt;!-- bigfoot footnotes from http://www.bigfootjs.com/ --&amp;gt;
-&amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/bigfoot.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
-    $.bigfoot();
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;and&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/css/bigfoot-default.css&quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;It works!&lt;/p&gt;
-
-&lt;p&gt;Now, some experimentation:&lt;/p&gt;
-
-&lt;h3 id=&quot;text-footnote&quot;&gt;Text footnote&lt;/h3&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;As global librarians, we can stop treating the library as a destination and start treating it as a hub.&lt;sup id=&quot;fnref:fn-wilkinson-text&quot;&gt;&lt;a href=&quot;#fn:fn-wilkinson-text&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;text-footnote-w-link&quot;&gt;Text footnote w/ link&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As global librarians, we can stop treating the library as a destination and start treating it as a hub.&lt;sup id=&quot;fnref:fn-wilkinson-text-link&quot;&gt;&lt;a href=&quot;#fn:fn-wilkinson-text-link&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;image-footnotes-w-links&quot;&gt;Image footnotes w/ links?&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As global librarians, we can stop treating the library as a destination&lt;sup id=&quot;fnref:fn-wilkinson-image-1&quot;&gt;&lt;a href=&quot;#fn:fn-wilkinson-image-1&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; and start treating it as a hub.&lt;sup id=&quot;fnref:fn-wilkinson-image-2&quot;&gt;&lt;a href=&quot;#fn:fn-wilkinson-image-2&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Apologies in advance for the many footnotes to come….&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:fn-wilkinson-text&quot;&gt;
-      &lt;p&gt;Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)] - http://www.slideshare.net/lanewilkinson&amp;nbsp;&lt;a href=&quot;#fnref:fn-wilkinson-text&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:fn-wilkinson-text-link&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/lanewilkinson&quot;&gt;Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:fn-wilkinson-text-link&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:fn-wilkinson-image-1&quot;&gt;
-      &lt;p&gt;&lt;img src=&quot;https://www.evernote.com/l/AN8xIQlpDWRJ5YTdu-s4Duz2GgcluNYWM6cB/image.png&quot; alt=&quot;Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium&quot; /&gt; &lt;a href=&quot;http://www.slideshare.net/lanewilkinson&quot;&gt;Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:fn-wilkinson-image-1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:fn-wilkinson-image-2&quot;&gt;
-      &lt;p&gt;&lt;img src=&quot;https://www.evernote.com/l/AN-C4CqLTcZPNbNptPEcwWGBMCsWDLz8f_sB/image.png&quot; alt=&quot;Skills That Transfer: Transliteracy and the Global Librarian - ACRL/NY 2011 Symposium&quot; /&gt; &lt;a href=&quot;http://www.slideshare.net/lanewilkinson&quot;&gt;Skills That Transfer: Transliteracy and the Global Librarian (ACRL/NY 2011 Symposium)&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;#fnref:fn-wilkinson-image-2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><category term="tinkering" /><category term="footnotes" /><summary type="html">Footnotes are good. Very good!</summary></entry></feed>
+&lt;/div&gt;</content><category term="tinkering" /><category term="presentations" /><category term="markdown" /><category term="html" /><category term="reveal.js" /><summary type="html">Why bother coding a presentation? I'm not sure exactly. For fun?</summary></entry></feed>

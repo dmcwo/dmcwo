@@ -1,0 +1,104 @@
+---
+layout: post
+title:  "From json resume to json cv - part 1"
+date:   2018-06-01 20:55:50 -0700
+categories: json resume cv
+---
+I've been looking at ways to extend [json resume](https://jsonresume.org/) to cover more of the common elements in an academic cv.
+
+### multiple positions at the same institution
+
+Currently, json resume only supports listing a single job title for each institution:
+
+#### json resume - position
+{% highlight json %}
+"position": "YourTitle",
+{% endhighlight %}
+
+This is great, unless you want to list multiple roles or job titles at the same institution. In json resume, you would have to create repeat entries for the same institution each time your job title changes. There are some threads suggesting changing `position` to an array, but the proposals were not adopted.
+
+#### json resume - position or positions
+json cv takes the array approach for positions, allowing you to either keep the simple approach above, or list multiple positions as an array:
+
+{% highlight json %}
+"positions": [
+    {
+	"title": "YourTitle",
+	"startDate": "2017-01-01",
+	"endDate": "Present"
+    },
+    {
+	"title": "YourPreviousTitle",
+	"startDate": "2016-01-01",
+	"endDate": "2016-12-31"
+    }
+{% endhighlight %}
+
+### publications and presentations
+The next challenge is the limited set of data available to describe publications. There's just not enough here to generate a formatted citation. There also doesn't seem to be a way to list multiple authors for a publication:
+
+#### json resume - publications
+{% highlight json %}
+"publications": [
+	{
+	"name": "PublicationTitle",
+	"publisher": "PublisherName",
+	"releaseDate": "2014-10-01",
+	"website": "http://your-publication-doi.org",
+	"summary": "Description..."
+	}
+],
+{% endhighlight %}
+
+I had initially considered integrating [CSL JSON](https://citationstyles.org/), which is likely the best and most robust approach, but the massive number of fields and level of detail seemed a bit daunting.
+
+For now, json cv tries to balance all this by adding citation format fields and an array for authors for each publication:
+
+{% highlight json %}
+"publications": [
+		{
+        "name": "PublicationTitle1",
+		"publisher": "PublisherName1",
+		"releaseDate": "2014-10-01",
+		"website": "http://your-publication-doi.org",
+		"summary": "Description1...",
+		"authors": [
+		    "FirstAuthorName",
+            "SecondAuthorName"
+        ],
+		"citations": [
+		  {
+          "APA": "YourTitle",
+		  "MLA": "2015-01-01"
+		  }
+        ]
+		}
+],
+{% endhighlight %}
+
+For the related challenge of presentations, json cv adds a new set of fields, modelled after publications:
+
+{% highlight json %}
+"presentations": [
+		{
+        "name": "PresentationTitle",
+		"meetingName": "PublisherName1",
+		"meetingLocation": "MeetingLocation1",
+		"date": "2014-10-01",
+		"website": "http://your-publication-doi.org",
+		"abstract": "Description1...",
+		"presenters": [
+            "FirstAuthorName",
+			"SecondAuthorName"
+        ],
+		"citations": [
+		{
+			"APA": "YourTitle",
+			"MLA": "2015-01-01"
+		}
+        ]
+		}
+],
+{% endhighlight %}
+
+A little bit of duplication of information, but perhaps satisfactory for now?
