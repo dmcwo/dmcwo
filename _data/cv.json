@@ -1,7 +1,7 @@
 {
 	"basics": {
 		"name": "YourFirstName YourLastName",
-		"label": "YourPrimaryOrCurrentTitle",
+		"label": "Your primary professional role",
 		"picture": "FullProfileURL.jpg",
 		"email": "email@your-institution.edu",
 		"phone": "(333) 333-3333",
@@ -102,7 +102,7 @@
 	"education": [
 		{
 			"institution": "University",
-			"area": "Major / Department",
+			"area": "MajorOrDepartment",
 			"studyType": "DegreesAwarded",
 			"startDate": "2011-01-01",
 			"endDate": "2013-01-01",

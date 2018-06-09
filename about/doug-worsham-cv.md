@@ -7,9 +7,12 @@ permalink: about/cv/
 
 # Doug's Curriculum Vitae
 
+
 ## Education
+
 * M.A. English - Teaching English to Speakers of Other Languages (MA-TESOL). San Francisco State University. 2002.
 * B.A. English Literature. California State University - Long Beach. 1997.
+
 
 ### Professional Training
 
@@ -20,11 +23,13 @@ permalink: about/cv/
 * Project Leadership Communication. University of Wisconsin Madison Executive Education. Madison, WI. 2009.
 * Learning Technology Leadership Institute. EDUCAUSE. Madison, WI. 2008.
 
+
 ## Awards
 
 * Librarian of the Year, Librarian's Association of the University of California - Los Angeles, 2018.
 * Arlies Award - Best Reflection of Diversity, Association of Research Libraries, 2018. 
 * L&S Academic Staff Mid-Career Excellence Award. University of Wisconsin, Madison - College of Letters & Science. 2011.
+
 
 ## Professional Experience
 
@@ -77,7 +82,7 @@ permalink: about/cv/
 
 ## Publications
 
-* Glassman, J. and Worsham, D. (2017). [Digital Research Notebook: A Simple Tool for Reflective Learning](http://dx.doi.org/10.1108/RSR-10-2016-0063). Reference Services Review. 45.
+* Glassman, J. and Worsham, D. (2017). [Digital Research Notebook: A Simple Tool for Reflective Learning](http://dx.doi.org/10.1108/RSR-10-2016-0063). Reference Services Review. 45. Selected as one of the [Top Twenty Articles of 2017](http://www.ala.org/rt/sites/ala.org.rt/files/content/archive/2018jun.pdf) by the American Library Association - Library Instruction Roundtable.
 * Glassman, J., Lee, S., Salomon, D., Worsham, D. (2017). [Community Collections: Nurturing Student Curators](http://www.worldcat.org/oclc/971333311). Students lead the library : the importance of student contributions to the academic library.
 
 ## Conference Presentations 

@@ -4,7 +4,7 @@ title:  "From json resume to json cv - part 1"
 date:   2018-06-01 20:55:50 -0700
 categories: json resume cv
 ---
-I've been looking at ways to extend [json resume](https://jsonresume.org/) to cover more of the common elements in an academic cv. Here's what I have: [json cv](https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json) and here are some notes on the changes so far:
+I've been looking at ways to extend [json resume](https://jsonresume.org/) to cover more of the common elements in an academic cv. Here's a little bit of a start: [json cv](https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json) and here are some notes on the changes so far:
 
 ### multiple positions at the same institution
 
@@ -15,9 +15,9 @@ Currently, json resume only supports listing a single job title for each institu
 "position": "YourTitle",
 {% endhighlight %}
 
-This is great, unless you want to list multiple roles or job titles at the same institution. In json resume, you would have to create repeat entries for the same institution each time your job title changes. There are some threads suggesting changing `position` to an array, but the proposals were not adopted.
+This works fine, unless you want to list multiple roles or job titles at the same institution. In json resume, you would have to create repeat entries for the same institution each time your job title changes. There are some threads suggesting changing `position` to an array, but the proposals were not adopted.
 
-#### json resume - position or positions
+#### json cv - position or positions
 json cv takes the array approach for positions, allowing you to either keep the simple approach above, or list multiple positions as an array:
 
 {% highlight json %}
@@ -54,6 +54,7 @@ I had initially considered integrating [CSL JSON](https://citationstyles.org/), 
 
 For now, json cv tries to balance all this by adding citation format fields and an array for authors for each publication:
 
+#### json cv - publications
 {% highlight json %}
 "publications": [
 		{
@@ -76,6 +77,7 @@ For now, json cv tries to balance all this by adding citation format fields and 
 ],
 {% endhighlight %}
 
+#### json cv - presentations
 For the related challenge of presentations, json cv adds a new set of fields, modelled after publications:
 
 {% highlight json %}

@@ -15,3 +15,4 @@ apa: |
     Julia A Glassman, & Douglas M Worsham. (2017). Digital Research Notebook: A Simple Tool for Reflective Learning. Reference Services Review. https://doi.org/10.1108/RSR-10-2016-0063
 ---
 
+This article was selected as one of the [Top Twenty Articles of 2017](http://www.ala.org/rt/sites/ala.org.rt/files/content/archive/2018jun.pdf) by the American Library Association - Library Instruction Roundtable.
