@@ -3,8 +3,8 @@ title:              "dmcwo's notebook"
 bio:                'dmcwo'
 description:        "a place to jot things down"
 locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/dmcwo" # the subpath of your site, e.g. /blog
+url: "https://dmcwo.github.io" # the base hostname & protocol for your site
 
 defaults:
 - scope:
