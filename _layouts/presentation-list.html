@@ -55,7 +55,7 @@
                             <a href="{{ presentation.handouturl  | absolute_url }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
                         {% endif %}
                     {% endif %}
-                    {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ site.url }}{{ presentation.url }}" class="button">More information ></a></p>
+                    {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ presentation.url | absolute_url }}" class="button">More information ></a></p>
             </header>
             <!--</article>-->{% endfor %}
             <!--</section>-->
