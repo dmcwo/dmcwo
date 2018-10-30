@@ -10,7 +10,7 @@ place: Salt Lake City, UT
 abstract: "Although deep, sustained engagement with students is desirable, many librarians still work within the confines of the one-shot instruction session, some at universities serving tens of thousands of undergraduate students. Librarians must thus find creative ways to work at scale in order to help students craft thoughtful research questions, scaffold their research process, and think critically about the sources they find. To meet this challenge, librarians at UCLA created a digital “research notebook” which, through a combination of video tutorials and reflective writing prompts, guides student through the research process. The notebook can be assigned on its own, as a pre-assignment for a one-shot session, or as the backbone of a credit course or research consultation. This session will discuss the pedagogical framework of the notebook and offer simple ways participants can implement it at their own institutions."
 slideurl: https://docs.google.com/presentation/d/1lE_9dN0LFFpUhadSXaBgfdoN2aDBPnekgbwyfOsEjT8/edit?usp=sharing
 handouturl: http://j.mp/my-notebook
-feature: http://dmcwo.com/assets/img/liw16/liw-research-notebook.jpg
+feature: /dmcwo/assets/img/liw16/liw-research-notebook.jpg
 permalink: presentations/liw-digital-research-notebook/
 ---
 ### Research Notebook Templates

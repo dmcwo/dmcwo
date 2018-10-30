@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/dmcwo/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/dmcwo/" rel="alternate" type="text/html" /><updated>2018-10-30T15:59:51-07:00</updated><id>http://localhost:4000/dmcwo/feed.xml</id><title type="html">dmcwo’s notebook</title><subtitle>a place to jot things down</subtitle><entry><title type="html">From json resume to json cv - part 1</title><link href="http://localhost:4000/dmcwo/blog/json-cv/" rel="alternate" type="text/html" title="From json resume to json cv - part 1" /><published>2018-06-01T20:55:50-07:00</published><updated>2018-06-01T20:55:50-07:00</updated><id>http://localhost:4000/dmcwo/blog/json-cv</id><content type="html" xml:base="http://localhost:4000/dmcwo/blog/json-cv/">&lt;p&gt;I’ve been looking at ways to extend &lt;a href=&quot;https://jsonresume.org/&quot;&gt;json resume&lt;/a&gt; to cover more of the common elements in an academic cv. Here’s a little bit of a start: &lt;a href=&quot;https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json&quot;&gt;json cv&lt;/a&gt; and here are some notes on the changes so far:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.4">Jekyll</generator><link href="http://localhost:4000/dmcwo/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/dmcwo/" rel="alternate" type="text/html" /><updated>2018-10-30T16:08:51-07:00</updated><id>http://localhost:4000/dmcwo/feed.xml</id><title type="html">dmcwo’s notebook</title><subtitle>a place to jot things down</subtitle><entry><title type="html">From json resume to json cv - part 1</title><link href="http://localhost:4000/dmcwo/blog/json-cv/" rel="alternate" type="text/html" title="From json resume to json cv - part 1" /><published>2018-06-01T20:55:50-07:00</published><updated>2018-06-01T20:55:50-07:00</updated><id>http://localhost:4000/dmcwo/blog/json-cv</id><content type="html" xml:base="http://localhost:4000/dmcwo/blog/json-cv/">&lt;p&gt;I’ve been looking at ways to extend &lt;a href=&quot;https://jsonresume.org/&quot;&gt;json resume&lt;/a&gt; to cover more of the common elements in an academic cv. Here’s a little bit of a start: &lt;a href=&quot;https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json&quot;&gt;json cv&lt;/a&gt; and here are some notes on the changes so far:&lt;/p&gt;
 
 &lt;h3 id=&quot;multiple-positions-at-the-same-institution&quot;&gt;multiple positions at the same institution&lt;/h3&gt;
 
@@ -149,7 +149,7 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; {{ site.title }} &lt;/code&gt;: dmcwo’s notebook&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; {{site.time}} &lt;/code&gt;: 2018-10-30 15:59:51 -0700&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; {{site.time}} &lt;/code&gt;: 2018-10-30 16:08:51 -0700&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; {{ page.title }} &lt;/code&gt;: An introduction to liquid for jekyll site creators - Part 1&lt;/p&gt;
 
@@ -437,7 +437,7 @@ collections:
   &lt;/ol&gt;
 &lt;/div&gt;</content><author><name></name></author><category term="liw2016" /><category term="acrl framework" /><category term="library liaisons" /><category term="curriculum mapping" /><summary type="html">Just when it seemed the debates around the Framework were beginning to settle....</summary></entry><entry><title type="html">LIW 2016 - Learning Spaces &amp;amp; Conference Events</title><link href="http://localhost:4000/dmcwo/blog/liw-learning-spaces/" rel="alternate" type="text/html" title="LIW 2016 - Learning Spaces &amp; Conference Events" /><published>2016-06-14T17:12:29-07:00</published><updated>2016-06-14T17:12:29-07:00</updated><id>http://localhost:4000/dmcwo/blog/liw-learning-spaces</id><content type="html" xml:base="http://localhost:4000/dmcwo/blog/liw-learning-spaces/">&lt;p&gt;One of the many wonderful things about Library Instruction West was getting a chance to explore the &lt;a href=&quot;http://lib.utah.edu/index&quot;&gt;University of Utah’s Marriott Library&lt;/a&gt;.&lt;/p&gt;
 &lt;figure&gt;
-&lt;img src=&quot;/assets/img/liw16/imagine_1080.jpg&quot; alt=&quot;Imagine in giant letters on the library windows&quot; /&gt;
+&lt;img src=&quot;/dmcwo/assets/img/liw16/imagine_1080.jpg&quot; alt=&quot;Imagine in giant letters on the library windows&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;h3 id=&quot;happy-hallways&quot;&gt;Happy hallways&lt;/h3&gt;
@@ -445,9 +445,9 @@ collections:
 &lt;p&gt;Oddly, a hallway was a highlight for me, but perhaps that shouldn’t be so odd - perhaps more library hallways should get this kind of attention. I loved the big red spinning things - though do be careful if you decide to &lt;a href=&quot;https://twitter.com/LibrarianHollyL/status/741029315567968257&quot;&gt;try to sit in one&lt;/a&gt;. I also really liked this placement of browsing collections, as well as the booth-style study lounges along the side (with ample outlets and fancy kitchen countertops!).&lt;/p&gt;
 
 &lt;div class=&quot;imagebox&quot;&gt;
-  	&lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/red-things_1080.jpg&quot; alt=&quot;interesting red chairs&quot; /&gt;
-    &lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/red-thing-and-books_1080.jpg&quot; alt=&quot;browsing collection of recent fiction&quot; /&gt;
-    &lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/hallway-lounge_1080.jpg&quot; alt=&quot;nice study booths&quot; /&gt;
+  	&lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/red-things_1080.jpg&quot; alt=&quot;interesting red chairs&quot; /&gt;
+    &lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/red-thing-and-books_1080.jpg&quot; alt=&quot;browsing collection of recent fiction&quot; /&gt;
+    &lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/hallway-lounge_1080.jpg&quot; alt=&quot;nice study booths&quot; /&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&quot;academic-services-hub&quot;&gt;Academic Services Hub&lt;/h3&gt;
@@ -455,30 +455,30 @@ collections:
 &lt;p&gt;The library has &lt;a href=&quot;http://lib.utah.edu/services/&quot;&gt;a suite of academic services&lt;/a&gt;, including a research consultation space, little cubicles for campus advising, and a &lt;a href=&quot;http://lib.utah.edu/services/digital-scholarship-lab/index.php&quot;&gt;digital scholarship lab&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;imagebox&quot;&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/consultation-space_1080.jpg&quot; alt=&quot;Research Consultations&quot; /&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/college-advising_1080.jpg&quot; alt=&quot;College advising in the library&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/consultation-space_1080.jpg&quot; alt=&quot;Research Consultations&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/college-advising_1080.jpg&quot; alt=&quot;College advising in the library&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;There were plenty of cozy chairs all around, as well as ample group study space. Many of the group study rooms came outfitted with iMacs.&lt;/p&gt;
 
 &lt;div class=&quot;imagebox&quot;&gt;
-&lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/cozy-chairs_1080.jpg&quot; alt=&quot;Cozy cahirs&quot; /&gt;
-&lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/group-study_1080.jpg&quot; alt=&quot;Group study room with iMac&quot; /&gt;
-&lt;img class=&quot;third&quot; src=&quot;/assets/img/liw16/large-group-study-room_1080.jpg&quot; alt=&quot;Large group study room&quot; /&gt;
+&lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/cozy-chairs_1080.jpg&quot; alt=&quot;Cozy cahirs&quot; /&gt;
+&lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/group-study_1080.jpg&quot; alt=&quot;Group study room with iMac&quot; /&gt;
+&lt;img class=&quot;third&quot; src=&quot;/dmcwo/assets/img/liw16/large-group-study-room_1080.jpg&quot; alt=&quot;Large group study room&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;As I wandered around, I found a large, open floorplan computer lab with a few surprises - an accessibility room adjacent to the lab, a small collection of linux workstations, and ….&lt;/p&gt;
 
 &lt;div class=&quot;imagebox&quot;&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/accessibility-room_1080.jpg&quot; alt=&quot;Accessibility room adjacent to a large open floorplan computer lab.&quot; /&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/linux-workstations_1080.jpg&quot; alt=&quot;LInux workstations in the computer lab&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/accessibility-room_1080.jpg&quot; alt=&quot;Accessibility room adjacent to a large open floorplan computer lab.&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/linux-workstations_1080.jpg&quot; alt=&quot;LInux workstations in the computer lab&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;a tidy little area for 3D printing.&lt;/p&gt;
 
 &lt;div class=&quot;imagebox&quot;&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/3d-printing-1_1080.jpg&quot; alt=&quot;3D printing area 1&quot; /&gt;
-&lt;img class=&quot;half&quot; src=&quot;/assets/img/liw16/3d-printing-2_1080.jpg&quot; alt=&quot;3D printing area 2&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/3d-printing-1_1080.jpg&quot; alt=&quot;3D printing area 1&quot; /&gt;
+&lt;img class=&quot;half&quot; src=&quot;/dmcwo/assets/img/liw16/3d-printing-2_1080.jpg&quot; alt=&quot;3D printing area 2&quot; /&gt;
 &lt;/div&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Powder 3D printing vs plastic at the Marriott Library. Wow! &lt;a href=&quot;https://twitter.com/hashtag/liw16?src=hash&quot;&gt;#liw16&lt;/a&gt; &lt;a href=&quot;https://t.co/CrvFgF1CJD&quot;&gt;pic.twitter.com/CrvFgF1CJD&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bridget Nowlin (@bknowlin) &lt;a href=&quot;https://twitter.com/bknowlin/status/741319910538678276&quot;&gt;June 10, 2016&lt;/a&gt;&lt;/blockquote&gt;
@@ -494,7 +494,7 @@ collections:
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Peacock showing off for the librarians at Tracy Aviary last night! &lt;a href=&quot;https://twitter.com/hashtag/liw16?src=hash&quot;&gt;#liw16&lt;/a&gt; &lt;a href=&quot;https://t.co/0j7C4DZ2kT&quot;&gt;pic.twitter.com/0j7C4DZ2kT&lt;/a&gt;&lt;/p&gt;&amp;mdash; Emily Bullough (@leap4emily) &lt;a href=&quot;https://twitter.com/leap4emily/status/741317035095822341&quot;&gt;June 10, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;and quite more Macaw-flying-right-over-head than I’m used to:&lt;/p&gt;
+&lt;p&gt;and quite a bit more Macaw-flying-right-over-head than I’m used to:&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Rembrandt the Macaw @ &lt;a href=&quot;https://twitter.com/hashtag/liw16?src=hash&quot;&gt;#liw16&lt;/a&gt;! &lt;a href=&quot;https://t.co/YSlO2OnadI&quot;&gt;pic.twitter.com/YSlO2OnadI&lt;/a&gt;&lt;/p&gt;&amp;mdash; Liz King (@liblizking) &lt;a href=&quot;https://twitter.com/liblizking/status/741070544401928192&quot;&gt;June 10, 2016&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
