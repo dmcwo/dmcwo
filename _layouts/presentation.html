@@ -25,7 +25,22 @@
                     <p class="presinfo"> {% if page.meetingname %} {{ page.meetingname | append: ". "}} {% endif %} {% if page.place %} {{ page.place | append: ". " }} {% endif %} </p> {% if page.presenters %}
                     <p class="presinfo">{{ page.presenters }}</p> {% endif %}
                     <!-- Buttons for slides, handout, etc. -->
-                    <p class="presbuttons"> {% if page.slideurl %} <a href="{{ page.slideurl }}" class="button icon fa-picture-o">Slides</a> {% endif %} {% if page.handouturl %} <a href="{{ page.handouturl }}" class="button icon fa-file-text-o">Handout</a> {% endif %} {% if page.meetingurl %} <a href="{{ page.meetingurl }}" class="button icon fa-calendar">Event Page</a> {% endif %} </p>
+                    <p class="presbuttons">
+                        {% if page.slideurl %}
+                            {% if page.slideurl contains 'http' %}
+                                <a href="{{ page.slideurl }}" class="button icon fa-picture-o">Slides</a>
+                            {% else %}
+                                <a href="{{ page.slideurl | absolute_url }}" class="button icon fa-picture-o">Slides</a>
+                            {% endif %}
+                        {% endif %}
+                        {% if page.handouturl %}
+                            {% if page.handouturl contains 'http' %}
+                                <a href="{{ page.handouturl }}" class="button icon fa-file-text-o">Handout</a>
+                            {% else %}
+                                <a href="{{ page.handouturl | absolute_url }}" class="button icon fa-file-text-o">Handout</a>
+                            {% endif %}
+                        {% endif %}
+                        {% if page.meetingurl %} <a href="{{ page.meetingurl }}" class="button icon fa-calendar">Event Page</a> {% endif %} </p>
                 </header>
                 <!-- todo: figure out what to do with feature 
                 {% if page.feature %}

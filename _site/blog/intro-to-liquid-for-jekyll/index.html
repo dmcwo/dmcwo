@@ -4,29 +4,29 @@
 	html5up.net | @ajlkn
   Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
---><html>
+-->
+<html>
 	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 <title>An introduction to liquid for jekyll site creators - Part 1</title>
 <meta name="description" content="">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="/assets/icon/manifest.json">
-<link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 <!-- CSS -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/custom.css">
-<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
+<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
 
 	</head>
 	<body class="is-loading">
@@ -36,19 +36,19 @@
 
 				<!-- Header -->
         <header id="header">
-          <a href="/" class="logo">dmcwo's notebook</a>
+          <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a>
         </header>
 
 				<!-- Nav -->
             <nav id="nav">
 <ul class="links">
-  <li class=""><a href="/">Home</a></li>
-  <li class=""><a href="/about/">About</a></li>
-  <li class=" active "><a href="/blog/">Notes</a></li>
-    <li class=""><a href="/presentations/">Presentations</a></li>
-    <li class=""><a href="/publications/">Publications</a></li>
+  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
+  <li class=""><a href="http://localhost:4000/dmcwo/about/">About</a></li>
+  <li class=" active "><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
+    <li class=""><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
   <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -85,23 +85,21 @@
 
 <p>Liquid describes itself as an “open-source template language”<sup id="fnref:fn-liquid"><a href="#fn:fn-liquid" class="footnote">1</a></sup>.</p>
 
-<p>In the context of jekyll, this means that Liquid enables you to use little bits of code, like <code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>, to display content and information about your site, in this case, the title of a page. So, for example, if I add the code <code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code> to the code on this page, I will get the title of this page: <em>An introduction to liquid for jekyll site creators - Part 1</em>.</p>
+<p>In the context of jekyll, this means that Liquid enables you to use little bits of code, like <code class="highlighter-rouge"> {{ page.title }} </code>, to display content and information about your site, in this case, the title of a page. So, for example, if I add the code <code class="highlighter-rouge"> {{ page.title }} </code> to the code on this page, I will get the title of this page: <em>An introduction to liquid for jekyll site creators - Part 1</em>.</p>
 
-<p>Liquid calls things like <code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code> <em>Objects</em> and they are extraordinarily handy in jekyll. You’ll use objects all the time and find them in jekyll themes and code snippets.</p>
+<p>Liquid calls things like <code class="highlighter-rouge"> {{ page.title }} </code> <em>Objects</em> and they are extraordinarily handy in jekyll. You’ll use objects all the time and find them in jekyll themes and code snippets.</p>
 
 <p><em>Objects</em> come into play quite often in <em>layouts</em> which jekyll uses to define how pages that appear frequently in your site will look. Most jekyll themes have a layout called <code class="highlighter-rouge">post.html</code> which defines the structure for every post on your site.</p>
 
 <p>The <code class="highlighter-rouge">post.html</code> file might contain a few lines of code similar to the following, which can describe how the page title and date should appear for every post on the site:</p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 &lt;h3&gt;{{ page.title }}&lt;/h3&gt;
 &lt;em&gt;{{ page.date | date_to_string }}&lt;/em&gt;
 
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p><em>Objects</em> also come into play whenever you want to display the title of your site, which is defined in your <code class="highlighter-rouge">_config.yml</code> file. Once defined, you can place the object <code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">site.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code> anywhere in your code, and the title of your site will appear. Change the site title in <code class="highlighter-rouge">_config.yml</code> and it will instantly change everywhere on your site.</p>
+<p><em>Objects</em> also come into play whenever you want to display the title of your site, which is defined in your <code class="highlighter-rouge">_config.yml</code> file. Once defined, you can place the object <code class="highlighter-rouge"> {{ site.title }} </code> anywhere in your code, and the title of your site will appear. Change the site title in <code class="highlighter-rouge">_config.yml</code> and it will instantly change everywhere on your site.</p>
 
 <h4 id="a-few-key-things-to-know-about-liquid-objects">A few key things to know about Liquid Objects:</h4>
 <ul>
@@ -111,13 +109,13 @@
 
 <h4 id="some-common-liquid-objects-used-in-jekyll-and-what-they-output-on-this-page">Some common liquid objects used in jekyll, and what they output on this page</h4>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">site.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: dmcwo’s notebook</p>
+<p><code class="highlighter-rouge"> {{ site.title }} </code>: dmcwo’s notebook</p>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{site.time</span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: 2018-06-02 22:01:14 -0700</p>
+<p><code class="highlighter-rouge"> {{site.time}} </code>: 2018-10-30 15:56:20 -0700</p>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.title</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: An introduction to liquid for jekyll site creators - Part 1</p>
+<p><code class="highlighter-rouge"> {{ page.title }} </code>: An introduction to liquid for jekyll site creators - Part 1</p>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{page.url</span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: /blog/intro-to-liquid-for-jekyll/</p>
+<p><code class="highlighter-rouge"> {{page.url}} </code>: /blog/intro-to-liquid-for-jekyll/</p>
 
 <p>Super useful, right? It gets quite a bit better, though! In the next post, I’ll dive into how jekyll leverages Liquid <em>tags</em> and <em>filters</em> which is where the real magic happens!</p>
 
@@ -127,11 +125,11 @@
 
 <p>Compare the output for this liquid object:</p>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{page.tags</span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: tinkeringjekyllliquid</p>
+<p><code class="highlighter-rouge"> {{page.tags}} </code>: tinkeringjekyllliquid</p>
 
 <p>with this output, where we have added a filter to change how the output is displayed:</p>
 
-<p><code class="highlighter-rouge"><span class="w"> </span><span class="p">{</span><span class="err">{</span><span class="w"> </span><span class="err">page.tags</span><span class="w">  </span><span class="err">|</span><span class="w"> </span><span class="err">array_to_sentence_string</span><span class="w"> </span><span class="p">}</span><span class="err">}</span><span class="w"> </span></code>: tinkering, jekyll, and liquid</p>
+<p><code class="highlighter-rouge"> {{ page.tags  | array_to_sentence_string }} </code>: tinkering, jekyll, and liquid</p>
 
 <div class="footnotes">
   <ol>
@@ -152,10 +150,10 @@
     <section>
         
         <ul class="actions vertical">
-            <li><a href="/about/" class="button fit">About</a></li>
-            <li><a href="/blog/" class="button fit">Notes</a></li>
-            <li><a href="/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="/publications/" class="button fit">Publications</a></li>
+            <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
+            <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
+            <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
+            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
         </ul>
     </section>
     <section>
@@ -230,12 +228,12 @@
 
       <!-- Scripts -->
   		<!-- DYN -->
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/jquery.scrollex.min.js"></script>
-<script src="/assets/js/jquery.scrolly.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
 
 			
 

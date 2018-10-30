@@ -4,29 +4,29 @@
 	html5up.net | @ajlkn
   Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
---><html>
+-->
+<html>
 	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
 <title>Creating a Drupal-like content type in Jekyll for Presentations</title>
 <meta name="description" content="">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="/assets/icon/manifest.json">
-<link rel="mask-icon" href="/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-
+<!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 <!-- CSS -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-<link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="/assets/css/custom.css">
-<noscript><link rel="stylesheet" href="/assets/css/noscript.css"></noscript>
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
+<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
 
 	</head>
 	<body class="is-loading">
@@ -36,19 +36,19 @@
 
 				<!-- Header -->
         <header id="header">
-          <a href="/" class="logo">dmcwo's notebook</a>
+          <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a>
         </header>
 
 				<!-- Nav -->
             <nav id="nav">
 <ul class="links">
-  <li class=""><a href="/">Home</a></li>
-  <li class=""><a href="/about/">About</a></li>
-  <li class=" active "><a href="/blog/">Notes</a></li>
-    <li class=""><a href="/presentations/">Presentations</a></li>
-    <li class=""><a href="/publications/">Publications</a></li>
+  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
+  <li class=""><a href="http://localhost:4000/dmcwo/about/">About</a></li>
+  <li class=" active "><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
+    <li class=""><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
   <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -89,8 +89,7 @@
 
 <p>Then, I took a look at how <a href="http://zotero.org">Zotero</a> handles presentations to come up with an initial set of metadata for each presentation. This metadata gets stored in the <a href="https://jekyllrb.com/docs/frontmatter/">front matter</a> in each presentation’s markdown file. Each of the lines in the front matter functions a bit like a simple <em>field</em> in a Drupal content type. Here’s <a href="http://github.com/dmcwo/Notebook-Moon/_presentations/2000-09-22-presentation-example.md">an example</a>:</p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code>---
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: presentation
 title: ""
 date: 1990-01-01
@@ -104,8 +103,7 @@ handouturl:
 feature: 
 permalink: presentations/short-title/
 ---
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Next, I created <a href="https://github.com/dmcwo/Notebook-Moon/tree/gh-pages/_presentations">a few markdown files</a> in the <code class="highlighter-rouge">_presentations</code> folder following this format.</p>
 
@@ -113,14 +111,12 @@ permalink: presentations/short-title/
 
 <p>The next step was to create a <code class="highlighter-rouge">presentations</code> directory and an <code class="highlighter-rouge">index.html</code> file. There’s not much to this file. It is pretty much just going to refer to a new Jekyll <code class="highlighter-rouge">layout</code> called <code class="highlighter-rouge">presentation-list</code> that we will define in a bit.</p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code>---
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
 layout: presentation-list
 title: All Presentations
 excerpt: "A List of Presentations"
 ---
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Then, I copied <code class="highlighter-rouge">layouts/post-list.html</code> to <code class="highlighter-rouge">layouts/presentation-list.html</code>and then adapted for the <code class="highlighter-rouge">presentations</code> collection. It is a rather long file, so <a href="https://github.com/dmcwo/Notebook-Moon/blob/gh-pages/_layouts/presentation-list.html">take a look to get the full story</a>.</p>
 
@@ -132,14 +128,12 @@ excerpt: "A List of Presentations"
 
 <p>Next up, I added the following to <code class="highlighter-rouge">config.yml</code></p>
 
-<div class="highlighter-rouge">
-<pre class="highlight"><code># Collections
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Collections
 collections:
     presentations:
         output: true
         permalink: /presentations/:path/
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>That’s it! Now we’ve got <a href="http://dmcwo.com/presentations/">a list of presentations</a>, and <a href="http://dmcwo.com//presentations/liw-digital-research-notebook/">an individual page for each presentation</a>. Pretty cool!</p>
 
@@ -169,10 +163,10 @@ collections:
     <section>
         
         <ul class="actions vertical">
-            <li><a href="/about/" class="button fit">About</a></li>
-            <li><a href="/blog/" class="button fit">Notes</a></li>
-            <li><a href="/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="/publications/" class="button fit">Publications</a></li>
+            <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
+            <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
+            <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
+            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
         </ul>
     </section>
     <section>
@@ -247,12 +241,12 @@ collections:
 
       <!-- Scripts -->
   		<!-- DYN -->
-<script src="/assets/js/jquery.min.js"></script>
-<script src="/assets/js/jquery.scrollex.min.js"></script>
-<script src="/assets/js/jquery.scrolly.min.js"></script>
-<script src="/assets/js/skel.min.js"></script>
-<script src="/assets/js/util.js"></script>
-<script src="/assets/js/main.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
+<script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
 
 			
 
