@@ -5,7 +5,7 @@ permalink: about/cv/
 ---
 <!-- todo: add anchors. Side-TOC? maybe a special layout for cv? -->
 
-# Doug's Curriculum Vitae
+# Doug's CV
 
 
 ## Education
@@ -16,6 +16,7 @@ permalink: about/cv/
 
 ### Professional Training
 
+* Library Management Skills Institute II: The Organization. Association of Research Libraries. October, 2018.
 * Instructional Design Essentials e-Course. American Library Association. 2015.
 * Assessment Immersion. Association of College & Research Libraries. November 2014.
 * Program Track Immersion. Association of College & Research Libraries. July 2013.
@@ -27,7 +28,6 @@ permalink: about/cv/
 ## Awards
 
 * Librarian of the Year, Librarian's Association of the University of California - Los Angeles, 2018.
-* Arlies Award - Best Reflection of Diversity, Association of Research Libraries, 2018. 
 * L&S Academic Staff Mid-Career Excellence Award. University of Wisconsin, Madison - College of Letters & Science. 2011.
 
 

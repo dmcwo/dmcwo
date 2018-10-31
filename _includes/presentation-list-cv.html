@@ -3,7 +3,7 @@
         <ul>
             <li>
             	{% if presentation.abstract %}
-            		<a href="{{ site.url }}{{ presentation.url }}">{{ presentation.title }}</a>.
+            		<a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a>.
                 {% else %}
                 	{{ presentation.title | append: ". " }}
                 {% endif %}
@@ -23,10 +23,18 @@
                                 {{ presentation.presenters | append: "."}}
                 {% endif %}
                              {% if presentation.slideurl %}
-                                <a style="text-decoration: none;" href="{{ presentation.slideurl }}"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                {% if presentation.slideurl contains 'http' %}
+                                    <a style="text-decoration: none;" href="{{ presentation.slideurl }}"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                {% else %}
+                                    <a style="text-decoration: none;" href="{{ presentation.slideurl | absolute_url }}"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                {% endif %}
                              {% endif %}
                              {% if presentation.handouturl %}
-                             <a style="text-decoration: none;" href="{{ presentation.handouturl }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                {% if presentation.handouturl contains 'http' %}
+                                    <a style="text-decoration: none;" href="{{ presentation.handouturl }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                {% else %}
+                                    <a style="text-decoration: none;" href="{{ presentation.handouturl | absolute_url }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                {% endif %}
                              {% endif %}
                              {% if presentation.meetingurl %}
                                 <a style="text-decoration: none;" href="{{ presentation.meetingurl }}"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>
