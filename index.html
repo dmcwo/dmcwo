@@ -60,7 +60,7 @@ sitemap:
                         {% for presentation in somepresentations limit:2 %}
                         <article>
                             <header>
-                                {% if presentation.feature %}
+                                {% if presentation.feature and presentation.feature-alt %}
                                 <span class="image fit"><a href="{{ presentation.url | absolute_url }}"><img src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}" style="object-fit: contain; height: 300px;" /></a></span>
                                 {% endif %}
                                 <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>

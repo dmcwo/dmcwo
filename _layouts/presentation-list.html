@@ -32,16 +32,22 @@
             <!--<section class="posts">-->{% for presentation in site.presentations reversed %}
             <!--<article>-->
             <header>
-                <h2><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h2>
-                <p> <span class="date">
-                        {% if presentation.hidedayindate %}
+                {% if presentation.feature and presentation.feature-alt %}
+                    <div class="box alt">
+                        <div class="row 50% uniform">
+                            <div class="4u">
+                                <span class="image fit"><a href="{{ presentation.url | absolute_url }}"><img src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}" style="object-fit: contain; height: 100%;" /></a></span>
+                            </div>
+                            <div class="8u">
+                                <h2><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h2>
+                                <p> <span class="date">
+                                {% if presentation.hidedayindate %}
                                 {{ presentation.date | date: '%B, %Y' | append: ". " }}
-                        {% else %}
+                                {% else %}
                                 {{ presentation.date | date: '%B %d, %Y' | append: ". "}}
-                        {% endif %}
-                    </span> {% if presentation.meetingname %} {{ presentation.meetingname | append: ". " }} {% endif %} {% if presentation.place %} {{ presentation.place | append: ". " }} {% endif %} {% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>
-                <p> 
-                    {% if presentation.slideurl %}
+                                {% endif %}
+                                </span> {% if presentation.meetingname %} {{ presentation.meetingname | append: ". " }} {% endif %} {% if presentation.place %} {{ presentation.place | append: ". " }} {% endif %} {% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>
+                                 {% if presentation.slideurl %}
                         {% if presentation.slideurl contains 'http' %}
                                 <a href="{{ presentation.slideurl }}" class="button icon fa-picture-o">Slides</a>
                             {% else %}
@@ -56,6 +62,35 @@
                         {% endif %}
                     {% endif %}
                     {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ presentation.url | absolute_url }}" class="button">More information ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                {% else %}
+                    <h2><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h2>
+                <p> <span class="date">
+                        {% if presentation.hidedayindate %}
+                                {{ presentation.date | date: '%B, %Y' | append: ". " }}
+                        {% else %}
+                                {{ presentation.date | date: '%B %d, %Y' | append: ". "}}
+                        {% endif %}
+                    </span> {% if presentation.meetingname %} {{ presentation.meetingname | append: ". " }} {% endif %} {% if presentation.place %} {{ presentation.place | append: ". " }} {% endif %} {% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>
+                     {% if presentation.slideurl %}
+                        {% if presentation.slideurl contains 'http' %}
+                                <a href="{{ presentation.slideurl }}" class="button icon fa-picture-o">Slides</a>
+                            {% else %}
+                                <a href="{{ presentation.slideurl | absolute_url }}" class="button icon fa-picture-o">Slides</a>
+                        {% endif %}
+                    {% endif %}
+                    {% if presentation.handouturl %}
+                        {% if presentation.handouturl contains 'http' %}
+                            <a href="{{ presentation.handouturl }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                        {% else%}
+                            <a href="{{ presentation.handouturl  | absolute_url }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                        {% endif %}
+                    {% endif %}
+                    {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ presentation.url | absolute_url }}" class="button">More information ></a></p>
+                {% endif %}
+                <p> 
             </header>
             <!--</article>-->{% endfor %}
             <!--</section>-->
