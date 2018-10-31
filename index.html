@@ -60,7 +60,10 @@ sitemap:
                         {% for presentation in somepresentations limit:2 %}
                         <article>
                             <header>
-                                <h3><a href="{{ site.url }}{{ presentation.url }}">{{ presentation.title }}</a></h3>
+                                {% if presentation.feature %}
+                                <span class="image fit"><a href="{{ presentation.url | absolute_url }}"><img src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}" style="object-fit: contain; height: 300px;" /></a></span>
+                                {% endif %}
+                                <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>
                 <p> <span class="date">
                         {% if presentation.hidedayindate %}
                                 {{ presentation.date | date: '%B, %Y' | append: ". " }}
