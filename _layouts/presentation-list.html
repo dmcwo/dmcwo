@@ -35,10 +35,10 @@
                 {% if presentation.feature and presentation.feature-alt %}
                     <div class="box alt">
                         <div class="row 50% uniform">
-                            <div class="4u">
+                            <div class="3u">
                                 <span class="image fit"><a href="{{ presentation.url | absolute_url }}"><img src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}" style="object-fit: contain; height: 100%;" /></a></span>
                             </div>
-                            <div class="8u">
+                            <div class="9u">
                                 <h2><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h2>
                                 <p> <span class="date">
                                 {% if presentation.hidedayindate %}
