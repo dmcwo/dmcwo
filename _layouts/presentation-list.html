@@ -49,9 +49,9 @@
                                 </span> {% if presentation.meetingname %} {{ presentation.meetingname | append: ". " }} {% endif %} {% if presentation.place %} {{ presentation.place | append: ". " }} {% endif %} {% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>
                                  {% if presentation.slideurl %}
                         {% if presentation.slideurl contains 'http' %}
-                                <a href="{{ presentation.slideurl }}" class="button icon fa-picture-o">Slides</a>
+                                <a href="{{ presentation.slideurl }}" class="button icon fa-picture-o"><span>Slides</span></a>
                             {% else %}
-                                <a href="{{ presentation.slideurl | absolute_url }}" class="button icon fa-picture-o">Slides</a>
+                                <a href="{{ presentation.slideurl | absolute_url }}" class="button icon fa-picture-o"><span>Slides</span></a>
                         {% endif %}
                     {% endif %}
                     {% if presentation.handouturl %}

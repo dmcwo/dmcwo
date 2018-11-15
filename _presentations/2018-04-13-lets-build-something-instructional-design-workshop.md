@@ -16,6 +16,8 @@ permalink: presentations/lets-build-something-workshop
 ---
 Brecher Cook, D., & Worsham, D. (2018, April). Let’s Build Something!: A Rapid-Prototyping Instructional Design Workshop. Pre-conference workshop presented at the 2018 CARL Conference, The Academic Library in Times of Change, Redwood City, CA.
 
+Conference proceedings: [http://conf2018.carl-acrl.org/conference-proceedings/](http://conf2018.carl-acrl.org/session/lets-build-something-a-rapid-prototyping-instructional-design-workshop/)
+
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/libarbarian3?ref_src=twsrc%5Etfw">@libarbarian3</a> built something! thanks, <a href="https://twitter.com/danibcook?ref_src=twsrc%5Etfw">@danibcook</a> &amp; <a href="https://twitter.com/dmcwo?ref_src=twsrc%5Etfw">@dmcwo</a> for a great preconference!! 🤓 <a href="https://twitter.com/hashtag/buildsomethingcarl?src=hash&amp;ref_src=twsrc%5Etfw">#buildsomethingcarl</a> <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a> <a href="https://t.co/k4dWXUUk6B">pic.twitter.com/k4dWXUUk6B</a></p>&mdash; Paige S (@paigelib) <a href="https://twitter.com/paigelib/status/984869003540623360?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
