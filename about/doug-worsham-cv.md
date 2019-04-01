@@ -85,6 +85,10 @@ permalink: about/cv/
 * Glassman, J. and Worsham, D. (2017). [Digital Research Notebook: A Simple Tool for Reflective Learning](http://dx.doi.org/10.1108/RSR-10-2016-0063). Reference Services Review. 45. Selected as one of the [Top Twenty Articles of 2017](http://www.ala.org/rt/sites/ala.org.rt/files/content/archive/2018jun.pdf) by the American Library Association - Library Instruction Roundtable.
 * Glassman, J., Lee, S., Salomon, D., Worsham, D. (2017). [Community Collections: Nurturing Student Curators](http://www.worldcat.org/oclc/971333311). Students lead the library : the importance of student contributions to the academic library.
 
+### Blog posts and writing for the web
+
+* Marcyk, E., Ravaei, K., Worsham, D. (2019). [Wheel of Sources - PRIMO Site of the Month Interview for March 2019](https://acrl.ala.org/IS/instruction-tools-resources-2/pedagogy/primo-peer-reviewed-instruction-materials-online/primo-site-of-the-month/march-2019-site-of-the-month/).
+
 ## Conference Presentations 
 
 {% include presentation-list-cv.html %}
@@ -155,7 +159,7 @@ In this Digital Humanities capstone course, students worked collaboratively to c
 
 <!-- should include website design section? with Madison work?-->
 
-### Online Learning Modules
+### Online Learning Website and Module Development
 
 [Cornerstone Research Workshops Online](https://ccle.ucla.edu/course/view/wire?section=1) - Project Lead for design and development of 6 online research and writing skills workshops.
 
