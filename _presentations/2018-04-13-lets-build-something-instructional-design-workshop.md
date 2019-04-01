@@ -34,11 +34,11 @@ With these two framing concepts in mind, the goal of the workshop was to take pa
 4. Do less to make more.
 5. Move from “constructive criticism” to “collaborative co-construction.”
 
-Take in Figure [1].
+<img src="{{ '/assets/img/figures/cook-worsham_Figure1.jpg' | absolute_url }}" class="figure" alt="Figure 1: The Build Something mini-manifesto." />
 
 Next, workshop participants reflected on and shared their ideas on learner-centeredness and design thinking, collaborating in a variety of ways to describe and define these concepts.
 
-Take in Figure [2].
+<img src="{{ '/assets/img/figures/cook-worsham_Figure2.jpg' | absolute_url }}" class="figure" alt="Figure 2: Participant word cloud." />
 
 ## Approaches for Defining Context, Learning Challenges, and Breakthroughs
 
@@ -57,7 +57,7 @@ As a part of our larger goal for the workshop to build confidence and break down
 ### Four Paths Prototyping
 One of the most important concepts in design thinking is intentionally leveraging both divergent thinking (coming up with a variety of different ideas and possibilities) and convergent thinking (focusing and narrowing possibilities to select an initial approach). In the four paths prototyping activity, participants rapidly explored four different ways to approach an instructional challenge. This divergent process helps designers work past their initial assumptions and explore a wider variety of pathways and possibilities. In order to help participants overcome initial fears about the drawing aspect of four-paths prototyping, the presenters shared some of our own prototypes, demonstrating that advanced (or even basic) artistic skills are not required for this activity.
 
-Take in Figure [3].
+<img src="{{ '/assets/img/figures/cook-worsham_Figure3.jpg' | absolute_url }}" class="figure" alt="Figure 3: 4 paths prototype." />
 
 A key aspect of the four paths activity is that it is very fast. Participants were given five minutes to complete the activity. At first, completing the task in this time frame seems impossible, but as in the previous design thinking activities, the time limit helps foster rapid idea generation, reduce self-critique, and encourage fearless exploration. 
 
@@ -65,7 +65,7 @@ A key aspect of the four paths activity is that it is very fast. Participants we
 
 Participants were then asked to select one of their four paths ideas to flesh out during the rest of the workshop. Depending on the modality of the learning object, we provided storyboarding and wireframing templates for videos, online tutorials, and workshops, or participants could opt to just use blank paper to start sketching out a section of their prototype. Once again, we limited the amount of time for each iteration of the planning, giving participants 20 minutes for the first sketch and 15 minutes for a second draft, with time for collaborative and structured feedback in between. Finally, participants were given seven minutes to draft a plan for completing their project when they returned to their home campus.
 
-Take in Figure [4]
+<img src="{{ '/assets/img/figures/cook-worsham_Figure4.jpg' | absolute_url }}" class="figure" alt="Figure 4: Examples of participant rapid-prototyping." />
 
 ## Feedback Gathering Techniques
     
@@ -81,16 +81,16 @@ Participants in the workshop each walked away with:
 * An actionable prototype of a learning object or activity that they could then continue iterating, test, and complete at home
 * A crowd-sourced list of tools of various costs and complexities for creating learning objects
 
-## Citations
-Action Verbs for Learning Objectives. (n.d.). Education Oasis. Retrieved from http://agsci.psu.edu/elearning/pdf/objective_verbs.pdf 
-Both, T., & Baggereor, D. (2009). Design Thinking Bootleg. Retrieved April 10, 2018, from https://dschool.stanford.edu/resources/the-bootcamp-bootleg 
-Gray, D., Brown, S., & Macanufo, J. (2010). Gamestorming: a playbook for innovators, rulebreakers, and changemakers. Farnham: O’Reilly. Retrieved from http://public.eblib.com/choice/publicfullrecord.aspx?p=562862
-Klipfel, K. M., & Cook, D. B. (2017). Learner-centered pedagogy: Principles and practice. Chicago: ALA Editions.
-Krug, S., & Matcho, M. (2010). Rocket surgery made easy: the do-it-yourself guide to finding and fixing usability problems. Berkeley, CA: New Riders.
-UCLA WI+RE (Writing Instruction + Research Education). (n.d.). Strategies for Research and Writing. Retrieved April 10, 2018, from https://uclalibrary.github.io/research-tips/ 
+## References
+* Action Verbs for Learning Objectives. Education Oasis. Retrieved from [http://agsci.psu.edu/elearning/pdf/objective_verbs.pdf](http://agsci.psu.edu/elearning/pdf/objective_verbs.pdf) 
+* Both, T., & Baggereor, D. (2009). Design Thinking Bootleg. Retrieved April 10, 2018, from [https://dschool.stanford.edu/resources/the-bootcamp-bootleg](https://dschool.stanford.edu/resources/the-bootcamp-bootleg) 
+* Gray, D., Brown, S., & Macanufo, J. (2010). Gamestorming: a playbook for innovators, rulebreakers, and changemakers. Farnham: O’Reilly. Retrieved from [http://public.eblib.com/choice/publicfullrecord.aspx?p=562862](http://public.eblib.com/choice/publicfullrecord.aspx?p=562862)
+* Klipfel, K. M., & Cook, D. B. (2017). Learner-centered pedagogy: Principles and practice. Chicago: ALA Editions.
+* Krug, S., & Matcho, M. (2010). Rocket surgery made easy: the do-it-yourself guide to finding and fixing usability problems. Berkeley, CA: New Riders.
+* UCLA WI+RE (Writing Instruction + Research Education). Strategies for Research and Writing. Retrieved April 10, 2018, from [https://uclalibrary.github.io/research-tips/](https://uclalibrary.github.io/research-tips/)
 
 
-
+## Conference tweets
 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/libarbarian3?ref_src=twsrc%5Etfw">@libarbarian3</a> built something! thanks, <a href="https://twitter.com/danibcook?ref_src=twsrc%5Etfw">@danibcook</a> &amp; <a href="https://twitter.com/dmcwo?ref_src=twsrc%5Etfw">@dmcwo</a> for a great preconference!! 🤓 <a href="https://twitter.com/hashtag/buildsomethingcarl?src=hash&amp;ref_src=twsrc%5Etfw">#buildsomethingcarl</a> <a href="https://twitter.com/hashtag/carlconf2018?src=hash&amp;ref_src=twsrc%5Etfw">#carlconf2018</a> <a href="https://t.co/k4dWXUUk6B">pic.twitter.com/k4dWXUUk6B</a></p>&mdash; Paige S (@paigelib) <a href="https://twitter.com/paigelib/status/984869003540623360?ref_src=twsrc%5Etfw">April 13, 2018</a></blockquote>
