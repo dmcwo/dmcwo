@@ -189,14 +189,12 @@ Mapping Your Research Ideas. With Renee Romero and Emily Appleton. [YouTube](htt
 
 [Neerlandia-journaal](http://german.lss.wisc.edu/podcast/Neerlandia_Journaal) "Learn Dutch vocabulary, grammar, and culture through a newscast about the Netherlands!"
 
-### Selected MOOCs, Micro-credentials, and Other Learning Experiences
+### Selected Certificates, Courses, Micro-credentials, and Other Learning Experiences
 
-#### MOOCS
+* Introduction to Typography by California Institute of the Arts on Coursera. [Certificate earned at Sunday, April 28, 2019](https://www.coursera.org/account/accomplishments/verify/66YCGSJKV44V).
+*  [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) using Jekyll and Github pages. [Completed on Codecademy May 31, 2016](https://www.codecademy.com/dmcwo#completed).
+* [Learn Git](https://www.codecademy.com/learn/learn-git). [Completed on Codecademy June 1, 2016](https://www.codecademy.com/dmcwo#completed).
 * Learning How to Learn: Powerful mental tools to help you master tough subjects by University of California, San Diego on Coursera. Certificate earned on January 31, 2016.
-
-#### [Codecademy](https://www.codecademy.com/dmcwo#completed)
-*  [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) using Jekyll and Github pages. May 31, 2016.
-* [Learn Git](https://www.codecademy.com/learn/learn-git). June 1, 2016.
 
 
 ## Selected workshops taught
