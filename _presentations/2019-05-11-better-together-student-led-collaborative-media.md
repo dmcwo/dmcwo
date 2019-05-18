@@ -10,9 +10,17 @@ place: Minneapolis, MN
 abstract: "It’s 2019. You work at a library and are interested in collaborating with campus partners to create interactive media. Maybe you have grand plans, maybe you aren’t sure where to start. Either way, this presentation will help you make those plans a reality. Join us to learn how a team of librarians without any formal experience in media production collaborate with a group of library student employees and campus partners to produce award-winning instruction, outreach, and reference media that is culturally responsive, student-centered, and relatable to the institution’s student body."
 slideurl: http://bit.ly/better-together-slides
 handouturl: https://drive.google.com/file/d/1vrBl3XRONkFkOGs4ulzOrlCwofTTlYi6/view?usp=sharing
-feature: 
-feature-alt: 
+feature: better-together-title-slide.jpg
+feature-alt: "Better together title slide"
 permalink: presentations/better-together-student-led-media
 ---
-<a class="twitter-moment" href="https://twitter.com/i/moments/1127249559208562693?ref_src=twsrc%5Etfw">Better Together: Student-Led Collaborative Media Creation #loex2019</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h3>Slides</h3>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTvRRpaXi5uQkfCJRWkYPjAd3le7BseHdsweDOTpOU4moReIAa261RcOFBiMgK3FV0qPqjOR5PXVw7I/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<div class="row">
+    <div class="8u 12u$(small)">
+        <h3>Presentation feedback</h3>
+        <a class="twitter-moment" href="https://twitter.com/i/moments/1127249559208562693?ref_src=twsrc%5Etfw">Better Together: Student-Led Collaborative Media Creation #loex2019</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
