@@ -15,11 +15,11 @@ feature-alt: "Better together title slide"
 permalink: presentations/better-together-student-led-media
 ---
 <h3>Slides</h3>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTvRRpaXi5uQkfCJRWkYPjAd3le7BseHdsweDOTpOU4moReIAa261RcOFBiMgK3FV0qPqjOR5PXVw7I/embed?start=false&loop=false&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTvRRpaXi5uQkfCJRWkYPjAd3le7BseHdsweDOTpOU4moReIAa261RcOFBiMgK3FV0qPqjOR5PXVw7I/embed?start=false&loop=false&delayms=10000" frameborder="0" width="100%" height="420ß" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <div class="row">
     <div class="8u 12u$(small)">
-        <h3>Presentation feedback</h3>
+        <h3>Conference tweets</h3>
         <a class="twitter-moment" href="https://twitter.com/i/moments/1127249559208562693?ref_src=twsrc%5Etfw">Better Together: Student-Led Collaborative Media Creation #loex2019</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
