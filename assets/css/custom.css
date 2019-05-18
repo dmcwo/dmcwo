@@ -51,7 +51,15 @@ header.major .presbuttons {
 
 			}
 
-			@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
+
+				#main > .post {
+					padding: 6rem 4rem 4rem 4rem ;
+				}
+
+			}
+
+@media screen and (max-width: 736px) {
 
 				#main > .post {
 					padding: 4rem 2rem 2rem 2rem ;
@@ -68,6 +76,14 @@ header.major .presbuttons {
 						margin: 0 0 1.5rem 0;
 					}
 
+			}
+
+/* less massively on the header fontsizes */
+
+			#main > .post header.major > h1, #main > .post header.major h2 {
+				font-size: 2rem;
+				line-height: 1.1;
+				margin: 0 0 2rem 0;
 			}
 
 
