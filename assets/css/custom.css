@@ -40,6 +40,37 @@ header.major .presbuttons {
     text-align: center;
 }
 
+
+/* margins? */
+
+@media screen and (max-width: 1280px) {
+
+				#main > .post {
+					padding: 6rem 10rem 4rem 10rem ;
+				}
+
+			}
+
+			@media screen and (max-width: 736px) {
+
+				#main > .post {
+					padding: 4rem 2rem 2rem 2rem ;
+				}
+
+					#main > .post header.major > .date {
+						margin-top: -1rem;
+						margin-bottom: 2rem;
+					}
+
+					#main > .post header.major > h1, #main > .post header.major h2 {
+						font-size: 2.5rem;
+						line-height: 1.2;
+						margin: 0 0 1.5rem 0;
+					}
+
+			}
+
+
 /*
 #intro {
     text-align: left;
