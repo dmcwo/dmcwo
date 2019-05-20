@@ -88,6 +88,7 @@ permalink: about/cv/
 ### Blog posts and writing for the web
 
 * Marcyk, E., Ravaei, K., Worsham, D. (2019). [Wheel of Sources - PRIMO Site of the Month Interview for March 2019](https://acrl.ala.org/IS/instruction-tools-resources-2/pedagogy/primo-peer-reviewed-instruction-materials-online/primo-site-of-the-month/march-2019-site-of-the-month/).
+* Worsham, Doug. (2018). [The Quarterly Interview: Doug Worsham](https://commons.emich.edu/loexquarterly/vol45/iss1/5). LOEX Quarterly. 
 
 ## Conference Presentations 
 
