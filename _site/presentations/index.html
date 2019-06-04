@@ -6,44 +6,92 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-
-<head> <meta charset="utf-8" />
+	<head>
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 <title>Presentations</title>
 <meta name="description" content="description">
+<!-- favicons -->
+<!-- ******** -->
+<!-- todo:: replace these -->
+<!--
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/%20/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/%20/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/%20/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/%20/assets/icon/browserconfig.xml">
+-->
 
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
-<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<!-- Android theme color. See https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
+<meta name="theme-color" content="#00314F">
+
+<!-- don't know what these do -->
+<!-- ******** -->
+
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<!-- CSS -->
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
-<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
- </head>
 
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header"> <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a> </header>
-        <!-- Nav -->
-        <nav id="nav">
+<!-- CSS -->
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/bootstrap-sketchy.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom-sketchy.css" />
+
+<noscript>
+    <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
+</noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="http://localhost:4000/dmcwo/index.html" class="logo">dmcwo's notebook</a>
+				</header>
+
+				<!-- Nav -->
+            <!-- Navigation -->
+<!-- https://startbootstrap.com/snippets/navbar-logo/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/dmcwo/">
+        
+          dmcwo's notebook
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/blog">Notes</a>
+        </li>
+          <li>
+              <a class="nav-link" href="/dmcwo/elements">Elements</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/contact">Contact</a>
+        </li>
+     </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav id="nav">
 <ul class="links">
-  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/about/">About</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
     <li class=" active "><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
-    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
-  <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Writing</a></li>
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -54,714 +102,527 @@
     
                 <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
                 <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
-            <!-- todo need to change this to a local icon -->
             </ul>
 </nav>
-        <!-- Main -->
-        <div id="main">
-            <!-- this creates a big feature at the top of the page. -->
-            
-            <article class="post featured">
-                <header class="major">
-                    <h2>¯\_(ツ)_/¯</h2>
-                    <p>39 presentations at places like  <!-- I have no idea how this works, but found it here https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll -->
-                            CARL, CIC Learning Technology Group, EDUCAUSE, EDUCAUSE Learning Initiative, FLEAT, IALLT, LILAC, LOEX, Library Instruction West, Library Journal Webinar, MWALLT, NMC, SFSU MATESOL, SWALLT, Symposium for Teaching and Learning Excellence, TESOL, THATCamp, UW Madison Teaching &amp; Learning Symposium, WiscWiki.</p>
-                </header>
-            </article>
-            
-            <!-- Presentation List -->
-            <!--<section class="posts">-->
-            <!--<article>-->
-            <header>
-                
-                    <div class="box alt">
-                        <div class="row 50% uniform">
-                            <div class="4u 12u(small) 12u(xsmall)">
-                                <span class="image fit"><a href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop"><img src="http://localhost:4000/dmcwo/assets/img/features/build-imperfect-solutions.jpg" alt="Build imperfect solutions quickly, and on purpose." style="object-fit: contain; height: 100%;"></a></span>
-                            </div>
-                            <div class="8u 12u(small) 12u(xsmall)">
-                                <h2><a href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop">Let’s Build Something!: A Rapid-Prototyping Instructional Design Workshop</a></h2>
-                                <p> <span class="date">
-                                
-                                April 13, 2018. 
-                                
-                                </span>  CARL (California Academic &amp; Research Libraries Conference) 2018.    Redwood City, CA.    Dani Brecher Cook and Doug Worsham.  </p>
-                                 
-                        
-                                <a href="https://docs.google.com/presentation/d/1_4PALvAJJTSSAdy5pjJ3ilW7nB-kRwjmzeGj0tWQv5k/edit?usp=sharing" class="button icon fa-picture-o"><span>Slides</span></a>
-                            
-                    
-                    
-                        
-                            <a href="https://ucla.box.com/v/build-something-toolkit" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://conf2018.carl-acrl.org/session/lets-build-something-a-rapid-prototyping-instructional-design-workshop/" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop" class="button">More information &gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <div class="box alt">
-                        <div class="row 50% uniform">
-                            <div class="4u 12u(small) 12u(xsmall)">
-                                <span class="image fit"><a href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid"><img src="http://localhost:4000/dmcwo/assets/img/features//2018-04-CARL-Can-Librarians-Wear-Plaid-Poster.png" alt="Image of poster: Can Librarians Wear Plaid - Early insights into forming a matrix organization" style="object-fit: contain; height: 100%;"></a></span>
-                            </div>
-                            <div class="8u 12u(small) 12u(xsmall)">
-                                <h2><a href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid">Can Librarians Wear Plaid? Early Insights into Forming a Matrix Organization</a></h2>
-                                <p> <span class="date">
-                                
-                                April 13, 2018. 
-                                
-                                </span>  CARL (California Academic &amp; Research Libraries Conference) 2018.    Redwood City, CA.    Elizabeth Cheney, Rikke Ogawa, and Doug Worsham.  </p>
-                                 
-                    
-                        
-                            <a href="http://localhost:4000/dmcwo/assets/posters/2018-04-CARL-Can-Librarians-Wear-Plaid-Poster.pdf" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://conf2018.carl-acrl.org/session/can-librarians-wear-plaid-early-insights-into-forming-a-matrix-organization/" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid" class="button">More information &gt;</a>
-                            </div>
-                        </div>
-                    </div>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/diy-spaces-in-an-age-of-change">DIY Spaces in an Age of Change: Creating a STEM Collaborative Learning Center with Campus Partners</a></h2>
-                <p> <span class="date">
-                        
-                                April 13, 2018. 
-                        
-                    </span>  CARL (California Academic &amp; Research Libraries Conference) 2018.    Redwood City, CA.    Courtney Hoffner, Juan Jaime, Doug Worsham.  </p>
-                     
-                    
-                        
-                            <a href="http://localhost:4000/dmcwo/assets/posters/2018-04-13-CARL-DIY-Spaces.pdf" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://conf2018.carl-acrl.org/session/diy-spaces-in-an-age-of-change-creating-a-stem-collaborative-learning-center-with-campus-partners/" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/diy-spaces-in-an-age-of-change" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/flipping-engineering-information-literacy-instruction">Flipping Engineering Information Literacy Instruction</a></h2>
-                <p> <span class="date">
-                        
-                                February 23, 2018. 
-                        
-                    </span>  Southern California Instruction Librarians Works 2018.    Culver City, CA.    Elizabeth Cheney and Tony Aponte.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/flipping-engineering-information-literacy-instruction" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/exploring-your-options-with-online-research-skills-instruction">Exploring Your Options with Hybrid and Online Research Skills Instruction </a></h2>
-                <p> <span class="date">
-                        
-                                September 14, 2017. 
-                        
-                    </span>  UCLA Library Staff Professional Development Presentation.    Los Angeles, CA.    Doug Worsham.  </p>
-                     
-                        
-                                <a href="https://www.slideshare.net/secret/DFhILqEa3IQnt6" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/exploring-your-options-with-online-research-skills-instruction" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/healthy-discontent-about-assessment">Common threads of healthy discontent about assessment</a></h2>
-                <p> <span class="date">
-                        
-                                May 31, 2017. 
-                        
-                    </span>  LAUC Conference Round-up.    Los Angeles, CA.    Doug Worsham.  </p>
-                     
-                        
-                                <a href="http://localhost:4000/dmcwo/assets/slides/LAUC-Conference-Round-up-2-for-writing.pdf" class="button icon fa-picture-o">Slides</a>
-                        
-                    
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/healthy-discontent-about-assessment" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/lilac-digital-research-notebook/">The Digital Research Notebook - A Simple Tool to Augment the One-Shot</a></h2>
-                <p> <span class="date">
-                        
-                                April 10, 2017. 
-                        
-                    </span>  LILAC - Librarians Information Literacy Annual Conference.    Swansea, UK.    Julia Glassman and Doug Worsham.  </p>
-                     
-                        
-                                <a href="https://docs.google.com/presentation/d/1p6VOVlmERKJN55f_A9GzMoqI5jooHai7O1GuCBCIQsY/pub?start=false&amp;loop=false&amp;delayms=30000" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                        
-                            <a href="http://j.mp/my-notebook" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://www.lilacconference.com/events/2017/the-digital-research-notebook-a-simple-tool-to-augment-the-one-shot" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/lilac-digital-research-notebook/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/liw-learning-theories-and-approaches/">Breaking It Down and Climbing Back Up: Learning Theories and Approaches to Instruction</a></h2>
-                <p> <span class="date">
-                        
-                                June 10, 2016. 
-                        
-                    </span>  Library Instruction West.    Salt Lake City, UT.    Erica DeFrain, Julia Glassman, Nicole Pagowsky, and Doug Worsham.  </p>
-                     
-                        
-                                <a href="https://docs.google.com/presentation/d/1RDFzcVYk9qcSMCTZZ5hLIhAL0HBgpV7jud64T7Qgkoc/edit?usp=sharing" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                        
-                            <a href="http://schd.ws/hosted_files/liw16/f7/LIW-2016-Breaking%20it%20Down%20and%20Climbing%20Back%20up-Handout.pdf" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://liw16.sched.org/event/5yjR/breaking-it-down-and-climbing-back-up-learning-theories-and-approaches-to-instruction" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/liw-learning-theories-and-approaches/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/liw-digital-research-notebook/">Digital Research Notebook: A Simple Tool for Reflective Learning</a></h2>
-                <p> <span class="date">
-                        
-                                June 10, 2016. 
-                        
-                    </span>  Library Instruction West.    Salt Lake City, UT.    Julia Glassman and Doug Worsham.  </p>
-                     
-                        
-                                <a href="https://docs.google.com/presentation/d/1lE_9dN0LFFpUhadSXaBgfdoN2aDBPnekgbwyfOsEjT8/edit?usp=sharing" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                        
-                            <a href="http://j.mp/my-notebook" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://liw16.sched.org/event/5yk8/short-sessions-guided-adventures-in-team-hiking-collaborations-between-librarians-and-writing-program-faculty-to-flip-the-one-shot-library-workshop-digital-research-notebook-a-simple-tool-for-reflective-learning-at-scale" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/liw-digital-research-notebook/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/iallt-participatory-design-and-evaluation/">Participatory Design &amp; Learning Space Evaluation</a></h2>
-                <p> <span class="date">
-                        
-                                March 17, 2016. 
-                        
-                    </span>  International Association for Language Learning &amp; Technology Webinar Series.    Online Webinar.    Doug Worsham.  </p>
-                     
-                        
-                                <a href="http://www.slideshare.net/dmcwo/participatory-design-learning-space-evaluation" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                     <a href="http://www.iallt.org/page-1843136" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/iallt-participatory-design-and-evaluation/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/lj-data-assessment-and-participatory-design/">Data, Assessment, and Participatory Design: Rethinking Information Literacy, Spaces, and Services in Two Academic Libraries</a></h2>
-                <p> <span class="date">
-                        
-                                December 10, 2014. 
-                        
-                    </span>  Library Journal Webinar Series.    Online.    Char Booth, Sarah Lower, and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://lj.libraryjournal.com/2014/11/webcasts/data-assessment-and-participatory-design-rethinking-information-literacy-spaces-and-services-in-two-academic-libraries/" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/lj-data-assessment-and-participatory-design/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/loex-writing-searching-thinking-learning/">Writing, Searching, Thinking, Learning: Cross-Training Peer Research and Writing Tutors to Maximize Student Success</a></h2>
-                <p> <span class="date">
-                        
-                                May 10, 2014. 
-                        
-                    </span>  LOEX Annual Conference.    Grand Rapids, MI.    Julia Glassman, Christine Holten, and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://www.loexconference.org/sessions.html" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/loex-writing-searching-thinking-learning/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/swallt-participatory-design/">Participatory Design: Insights, Ideabox, Action Plan</a></h2>
-                <p> <span class="date">
-                        
-                                April 11, 2014. 
-                        
-                    </span>  Southwest Association of Language Learning and Technology.    Los Angeles, CA..    Doug Worsham.  </p>
-                     
-                    
-                     <a href="https://sites.google.com/site/swallt2014/home/conference-schedule" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/swallt-participatory-design/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/carl-dig-leading-the-way/">CARL-DIG: Leading the Way: Innovative Reference Models</a></h2>
-                <p> <span class="date">
-                        
-                                April 05, 2014. 
-                        
-                    </span>  California Academic &amp; Research Libraries Association.    San Jose, CA.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://carl-conference.org/sessions/153" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/carl-dig-leading-the-way/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/carl-dig-beyond-a-desk/">Try, Try Again: Defining Library Research Support Beyond a Desk</a></h2>
-                <p> <span class="date">
-                        
-                                December 06, 2013. 
-                        
-                    </span>  Reference as Place - California Academic and Research Libraries (CARL) Association.    Fullterton, CA..    Allison Benedetti and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://carl-acrl.org/ig/carldigs/referenceasplace.html" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/carl-dig-beyond-a-desk/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/that-camp-socal-drupal-starter-kit/">Drupal Starter-Kit: Intro to Drupal Content and Views</a></h2>
-                <p> <span class="date">
-                        
-                                September 04, 2012. 
-                        
-                    </span>  THATCamp Southern California.    CSU Fullerton.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://socal2012.thatcamp.org/workshops/" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/that-camp-socal-drupal-starter-kit/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/iallt-collaborative-sites/">Collaborative Sites for Language, Literature, and Culture</a></h2>
-                <p> <span class="date">
-                        
-                                June 23, 2011. 
-                        
-                    </span>  International Association for Language Learning Technology.    Irvine, CA.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="https://www.iallt.org/thursday_june_23" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/iallt-collaborative-sites/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/nmc-knowledge-building-for-dh/">Knowledge Building for the Digital Humanities</a></h2>
-                <p> <span class="date">
-                        
-                                June 16, 2011. 
-                        
-                    </span>  New Media Consortium Summer Conference.    Madison, WI.    Chad Shorter, Todd Goddard, and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://www.nmc.org/pdf/2011/2011_NMC_Summer_Conference_Program.pdf" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/nmc-knowledge-building-for-dh/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/eli-collaborative-conundrum/">Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget</a></h2>
-                <p> <span class="date">
-                        
-                                January 20, 2010. 
-                        
-                    </span>  EDUCAUSE Learning Initiative.    Austin, TX.    Timothy Dugdale, Lindsey Schmidt, and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://net.educause.edu/ELI10/Program/1022371?PRODUCT_CODE=ELI10/SESS12" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/eli-collaborative-conundrum/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/educause-creating-custom-learning-environments/">Creating Custom Online Learning Environments with Drupal</a></h2>
-                <p> <span class="date">
-                        
-                                November 05, 2009. 
-                        
-                    </span>  EDUCAUSE 2009.    Denver, CO.    Gary Chinn and Doug Worsham.  </p>
-                     
-                        
-                                <a href="http://www.educause.edu/sites/default/files/library/presentations/E09/PS113/e09-poster-uw-penn2.pdf" class="button icon fa-picture-o">Slides</a>
-                            
-                    
-                    
-                        
-                            <a href="http://www.educause.edu/sites/default/files/library/presentations/E09/PS113/collaborative-sites-e09.pdf" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
-                        
-                    
-                     <a href="http://www.educause.edu/annual-conference/2009/creating-custom-online-learning-environments-drupal" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/educause-creating-custom-learning-environments/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/stle-moving-toward-student-centered-learning/">Moving Toward Student-Centered Learning with Collaborative Technologies</a></h2>
-                <p> <span class="date">
-                        
-                                February 26, 2009. 
-                        
-                    </span>  Symposium for Teaching and Learning Excellence.    Madison, WI.    Lauren Shawl and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://www.minds.wisconsin.edu/handle/1793/35054?show=full" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/stle-moving-toward-student-centered-learning/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/educause-personal-authoring-technologies/">Blogs, Wikis, and Podcasts: Personal Authoring Technologies Enrich Communication and Expression for You and Your Students</a></h2>
-                <p> <span class="date">
-                        
-                                October 23, 2007. 
-                        
-                    </span>  EDUCAUSE 2007 Annual Conference.    Seattle, WA.    Blaire Bundy, Ron Cramer, and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://www.educause.edu/annual-conference/2007/seminar-03f-blogs-wikis-and-podcasts-personal-authoring-technologies-enrich-communication-and-expressi" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/educause-personal-authoring-technologies/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/iallt-wikis-audience-authorship-assessment/">Wikis in Language Learning: Audience, Authorship, and Assessment.</a></h2>
-                <p> <span class="date">
-                        
-                                June 21, 2007. 
-                        
-                    </span>  International Association of Language Learning Technology.    Boston, MA.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/iallt-wikis-audience-authorship-assessment/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-wisconsin-idea-podcasting/">Expanding the Wisconsin Idea – Extending the Classroom through Podcasting</a></h2>
-                <p> <span class="date">
-                        
-                                May 30, 2007. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Ron Cramer and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-wisconsin-idea-podcasting/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-wikis-foster-collaboration/">Using Wikis to Foster Collaboration and Enhance Teaching and Learning</a></h2>
-                <p> <span class="date">
-                        
-                                May 30, 2007. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-wikis-foster-collaboration/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-social-networking-remix-culture/">Social Networking and Remix Culture</a></h2>
-                <p> <span class="date">
-                        
-                                May 30, 2007. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-social-networking-remix-culture/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-ls-lessonshare/">L&amp;S LessonShare - Networking the Lesson Plan</a></h2>
-                <p> <span class="date">
-                        
-                                May 30, 2007. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-ls-lessonshare/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/wiscwiki-conference/">WiscWiki 2007 Conference Co-Organizer</a></h2>
-                <p> <span class="date">
-                        
-                                April 13, 2007. 
-                        
-                    </span>  WiscWiki 2007.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="https://wiscwikis.wikispaces.com/WiscWiki2007" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/wiscwiki-conference/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/cicltg-podcast-polyglots/">Podcast Polyglots: Language Faculty Speak Beyond the Borders of the Campus</a></h2>
-                <p> <span class="date">
-                        
-                                November 07, 2006. 
-                        
-                    </span>  CIC Learning Technology Group Conference.    Minneapolis, MN..    Ron Cramer and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/cicltg-podcast-polyglots/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/c2es-meet-professor-podcast/">Meet Professor Podcast – What We’ve Learned About Academic Podcasts</a></h2>
-                <p> <span class="date">
-                        
-                                June 08, 2006. 
-                        
-                    </span>  C2ES 2006.    Madison, WI..    Ron Cramer and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/c2es-meet-professor-podcast/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/mwallt-evaluating-professor-podcast/">Evaluating Professor Podcast</a></h2>
-                <p> <span class="date">
-                        
-                                April 21, 2006. 
-                        
-                    </span>  Midwest Association of Language Learning and Technology.    La Crosse, WI.    Ron Cramer and Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/mwallt-evaluating-professor-podcast/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/fleat-making-wikis-work/">Making Wikis Work</a></h2>
-                <p> <span class="date">
-                        
-                                August 08, 2005. 
-                        
-                    </span>  Foreign Language Education and Technology.    Provo, UT.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://fleat5.byu.edu/_files/17Worsham.pdf" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>  <a href="http://localhost:4000/dmcwo/presentations/fleat-making-wikis-work/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-improving-class-discussions-online-chats/">Confidence, Quality and Quantity: Improving Class Discussions with Online Chats</a></h2>
-                <p> <span class="date">
-                        
-                                May, 2005. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-improving-class-discussions-online-chats/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tls-collaborative-learning-lab/">Collaborative Learning in a Networked Computer Lab</a></h2>
-                <p> <span class="date">
-                        
-                                May, 2005. 
-                        
-                    </span>  UW Madison Teaching &amp; Learning Symposium.    Madison, WI.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tls-collaborative-learning-lab/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tesol-lessonbuilder/">Create Your Own Multimedia Lessons with LessonBuilder</a></h2>
-                <p> <span class="date">
-                        
-                                April, 2005. 
-                        
-                    </span>  TESOL - Teaching English to Speakers of Other Languages.    San Antonio, TX.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tesol-lessonbuilder/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/example/tesol-feedback-on-student-presentations">Using Technology to Provide Better Feedback on Students’ Presentation Skills</a></h2>
-                <p> <span class="date">
-                        
-                                April, 2005. 
-                        
-                    </span>  TESOL - Teaching English to Speakers of Other Languages.    San Antonio, TX.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/example/tesol-feedback-on-student-presentations" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/tesol-instant-documentaries">Bring Community to Class with Instant Documentaries</a></h2>
-                <p> <span class="date">
-                        
-                                April, 2004. 
-                        
-                    </span>  Teaching English to Speakers of Other Languages (TESOL).    Long Beach, CA.    Doug Worsham.  </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/tesol-instant-documentaries" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--<article>-->
-            <header>
-                
-                    <h2><a href="http://localhost:4000/dmcwo/presentations/sfsu-matesol-unrehearsed-communication/">Unrehearsed Communication in Low Level ESL Classrooms</a></h2>
-                <p> <span class="date">
-                        
-                                May, 2002. 
-                        
-                    </span>  San Francisco State University MA TESOL Conference.    San Francisco, CA.    </p>
-                     
-                    
-                     <a href="http://localhost:4000/dmcwo/presentations/sfsu-matesol-unrehearsed-communication/" class="button">More information &gt;</a>
-                
-                <p> 
-            </p></header>
-            <!--</article>-->
-            <!--</section>-->
-            <!-- end presentation list -->
-            
+-->
+				<!-- Main -->
+				<div id="main">
+
+					<!-- Post -->
+					<section class="post">
+						<p></p>
+<div class="container">
+<header class="major mt-5 mb-4">
+    <div class="row mt-5 align-items-center">
+        <div class="col-12 col-md-4 mx-auto">
+            <h2><center>¯\_(ツ)_/¯ Presentations</center></h2>
         </div>
-        <!-- Footer --><!-- Actions Footer -->
+        <div class="col-12 col-md-8 mt-3">
+            <p><small class="text-muted">40 presentations at places like  <!-- I have no idea how this works, but found it here https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll -->
+                            CARL, CIC Learning Technology Group, EDUCAUSE, EDUCAUSE Learning Initiative, FLEAT, IALLT, LILAC, LOEX, Library Instruction West, Library Journal Webinar, MWALLT, NMC, SFSU MATESOL, SWALLT, Symposium for Teaching and Learning Excellence, TESOL, THATCamp, UW Madison Teaching &amp; Learning Symposium, WiscWiki.</small></p>
+        </div>
+    </div>
+                    
+</header>
+
+<!-- Presentation List -->
+    <hr>
+      
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-4">
+          <a href="http://localhost:4000/dmcwo/presentations/better-together-student-led-media">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="http://localhost:4000/dmcwo/assets/img/features/better-together-title-slide.jpg" alt="Better together title slide">
+          </a>
+        </div>
+          
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 11, 2019 at LOEX. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/better-together-student-led-media">Better Together: Student-Led Collaborative Media Creation</a></h3>
+          <p>It’s 2019. You work at a library and are interested in collaborating with campus partners to create interactive media. Maybe...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/better-together-student-led-media">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-4">
+          <a href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="http://localhost:4000/dmcwo/assets/img/features/build-imperfect-solutions.jpg" alt="Build imperfect solutions quickly, and on purpose.">
+          </a>
+        </div>
+          
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 13, 2018 at CARL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop">Let’s Build Something!: A Rapid-Prototyping Instructional Design Workshop</a></h3>
+          <p>You already know what learning outcomes are. You’ve made more than enough LibGuides. Now you’re ready to do something different....</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/lets-build-something-workshop">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-4">
+          <a href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="http://localhost:4000/dmcwo/assets/img/features//2018-04-CARL-Can-Librarians-Wear-Plaid-Poster.png" alt="Image of poster: Can Librarians Wear Plaid - Early insights into forming a matrix organization">
+          </a>
+        </div>
+          
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 13, 2018 at CARL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid">Can Librarians Wear Plaid? Early Insights into Forming a Matrix Organization</a></h3>
+          <p>In 2016-2017, most public services units in UCLA Library were merged into a new reporting structure under a single Associate...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 13, 2018 at CARL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/diy-spaces-in-an-age-of-change">DIY Spaces in an Age of Change: Creating a STEM Collaborative Learning Center with Campus Partners</a></h3>
+          <p>What happens when key campus partners are running very successful undergraduate education programs but don’t have adequate space for them?...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/diy-spaces-in-an-age-of-change">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">February 23, 2018 at Southern California Instruction Librarians Works 2018</span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/flipping-engineering-information-literacy-instruction">Flipping Engineering Information Literacy Instruction</a></h3>
+          <p>The UCLA Science and Engineering Library (or SEL) has a longstanding engagement with Engineering 183: Engineering and Society, which requires...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/flipping-engineering-information-literacy-instruction">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">September 14, 2017 at UCLA Library Staff Professional Development Presentation</span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/exploring-your-options-with-online-research-skills-instruction">Exploring Your Options with Hybrid and Online Research Skills Instruction </a></h3>
+          <p>Your options for hybrid and online approaches to research skills and information literacy instruction just keep growing! In addition to...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/exploring-your-options-with-online-research-skills-instruction">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 31, 2017 at LAUC Conference Round-up</span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/healthy-discontent-about-assessment">Common threads of healthy discontent about assessment</a></h3>
+          <p>In libraries, we're in the early stages of a very important effort to re-think assessment. ACRL's Value report, the impressive...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/healthy-discontent-about-assessment">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 10, 2017 at LILAC. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/lilac-digital-research-notebook/">The Digital Research Notebook - A Simple Tool to Augment the One-Shot</a></h3>
+          <p>Although deep, sustained engagement with students is desirable, many librarians still work within the confines of the one-shot instruction session,...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/lilac-digital-research-notebook/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 10, 2016 at Library Instruction West. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/liw-learning-theories-and-approaches/">Breaking It Down and Climbing Back Up: Learning Theories and Approaches to Instruction</a></h3>
+          <p>Active learning, constructivism, socio-constructivism, critical pedagogy, critical constructivism - these learning theories are more than just buzzwords. They’re important instructional...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/liw-learning-theories-and-approaches/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 10, 2016 at Library Instruction West. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/liw-digital-research-notebook/">Digital Research Notebook: A Simple Tool for Reflective Learning</a></h3>
+          <p>Although deep, sustained engagement with students is desirable, many librarians still work within the confines of the one-shot instruction session,...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/liw-digital-research-notebook/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">March 17, 2016 at IALLT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/iallt-participatory-design-and-evaluation/">Participatory Design &amp; Learning Space Evaluation</a></h3>
+          <p>Join in for this opportunity to discuss and share ideas on a diverse toolkit for designing and investigating the success...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/iallt-participatory-design-and-evaluation/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">December 10, 2014 at Library Journal Webinar. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/lj-data-assessment-and-participatory-design/">Data, Assessment, and Participatory Design: Rethinking Information Literacy, Spaces, and Services in Two Academic Libraries</a></h3>
+          <p>The Claremont Colleges Library has developed a range of approaches to holistically evaluating information literacy (IL) learning and perceptions among...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/lj-data-assessment-and-participatory-design/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 10, 2014 at LOEX. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/loex-writing-searching-thinking-learning/">Writing, Searching, Thinking, Learning: Cross-Training Peer Research and Writing Tutors to Maximize Student Success</a></h3>
+          <p>Any college instructor who assigns essays or research papers will tell you that writing and research are deeply intertwined. Doesn't...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/loex-writing-searching-thinking-learning/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 11, 2014 at SWALLT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/swallt-participatory-design/">Participatory Design: Insights, Ideabox, Action Plan</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/swallt-participatory-design/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 05, 2014 at CARL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/carl-dig-leading-the-way/">CARL-DIG: Leading the Way: Innovative Reference Models</a></h3>
+          <p>Academic libraries are always changing in order to stay relevant with the unique and dynamic needs of users. Historically, reference...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/carl-dig-leading-the-way/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">December 06, 2013 at CARL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/carl-dig-beyond-a-desk/">Try, Try Again: Defining Library Research Support Beyond a Desk</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/carl-dig-beyond-a-desk/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">September 04, 2012 at THATCamp. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/that-camp-socal-drupal-starter-kit/">Drupal Starter-Kit: Intro to Drupal Content and Views</a></h3>
+          <p>What can you do with Drupal? Bring your laptop and find out in this hands-on introduction to the Drupal content...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/that-camp-socal-drupal-starter-kit/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 23, 2011 at IALLT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/iallt-collaborative-sites/">Collaborative Sites for Language, Literature, and Culture</a></h3>
+          <p>What makes great language, literature, and culture learning happen? In this interactive demonstration, the presenters will discuss that very question,...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/iallt-collaborative-sites/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 16, 2011 at NMC. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/nmc-knowledge-building-for-dh/">Knowledge Building for the Digital Humanities</a></h3>
+          <p>The L&amp;S Collaborative Sites pilot project at the University of Wisconsin - Madison, a platform for the rapid development of...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/nmc-knowledge-building-for-dh/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">January 20, 2010 at EDUCAUSE Learning Initiative. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/eli-collaborative-conundrum/">Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget</a></h3>
+          <p>Students and instructors have access to a broad range of collaborative technologies for group projects, but successful group work is...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/eli-collaborative-conundrum/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">November 05, 2009 at EDUCAUSE. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/educause-creating-custom-learning-environments/">Creating Custom Online Learning Environments with Drupal</a></h3>
+          <p>Student collaboration and knowledge building are at the heart of two pilot projects at Penn State and UW–Madison. Learn how...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/educause-creating-custom-learning-environments/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">February 26, 2009 at Symposium for Teaching and Learning Excellence. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/stle-moving-toward-student-centered-learning/">Moving Toward Student-Centered Learning with Collaborative Technologies</a></h3>
+          <p>You’ve heard the buzz words: knowledge construction, collaborative group work, Web 2.0. But what does this look like in a...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/stle-moving-toward-student-centered-learning/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">October 23, 2007 at EDUCAUSE. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/educause-personal-authoring-technologies/">Blogs, Wikis, and Podcasts: Personal Authoring Technologies Enrich Communication and Expression for You and Your Students</a></h3>
+          <p>Personal authoring technologies have made it easier than ever for instructors and students to contribute their thoughts, experiences, and opinions...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/educause-personal-authoring-technologies/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 21, 2007 at IALLT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/iallt-wikis-audience-authorship-assessment/">Wikis in Language Learning: Audience, Authorship, and Assessment.</a></h3>
+          <p>This session looks at the role of audience, authorship, and assessment in two very different wiki projects – a semester...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/iallt-wikis-audience-authorship-assessment/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 30, 2007 at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-wisconsin-idea-podcasting/">Expanding the Wisconsin Idea – Extending the Classroom through Podcasting</a></h3>
+          <p>How do we use podcasting to extend the borders of the campus to the borders of the state? We will...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-wisconsin-idea-podcasting/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 30, 2007 at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-wikis-foster-collaboration/">Using Wikis to Foster Collaboration and Enhance Teaching and Learning</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-wikis-foster-collaboration/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 30, 2007 at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-social-networking-remix-culture/">Social Networking and Remix Culture</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-social-networking-remix-culture/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May 30, 2007 at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-ls-lessonshare/">L&amp;S LessonShare - Networking the Lesson Plan</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-ls-lessonshare/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 13, 2007 at WiscWiki. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/wiscwiki-conference/">WiscWiki 2007 Conference Co-Organizer</a></h3>
+          <p>Organized and delivered a successful University of Wisconsin system-wide conference allowing instructors and staff to share their knowledge and experience...</p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/wiscwiki-conference/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">November 07, 2006 at CIC Learning Technology Group. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/cicltg-podcast-polyglots/">Podcast Polyglots: Language Faculty Speak Beyond the Borders of the Campus</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/cicltg-podcast-polyglots/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">June 08, 2006 at C2ES 2006</span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/c2es-meet-professor-podcast/">Meet Professor Podcast – What We’ve Learned About Academic Podcasts</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/c2es-meet-professor-podcast/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April 21, 2006 at MWALLT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/mwallt-evaluating-professor-podcast/">Evaluating Professor Podcast</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/mwallt-evaluating-professor-podcast/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">August 08, 2005 at FLEAT. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/fleat-making-wikis-work/">Making Wikis Work</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/fleat-making-wikis-work/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May, 2005.  at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-improving-class-discussions-online-chats/">Confidence, Quality and Quantity: Improving Class Discussions with Online Chats</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-improving-class-discussions-online-chats/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May, 2005.  at UW Madison Teaching &amp; Learning Symposium. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tls-collaborative-learning-lab/">Collaborative Learning in a Networked Computer Lab</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tls-collaborative-learning-lab/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April, 2005.  at TESOL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tesol-lessonbuilder/">Create Your Own Multimedia Lessons with LessonBuilder</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tesol-lessonbuilder/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April, 2005.  at TESOL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/example/tesol-feedback-on-student-presentations">Using Technology to Provide Better Feedback on Students’ Presentation Skills</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/example/tesol-feedback-on-student-presentations">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">April, 2004.  at TESOL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/tesol-instant-documentaries">Bring Community to Class with Instant Documentaries</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/tesol-instant-documentaries">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">May, 2002.  at SFSU MATESOL. </span></small></p>
+          <h3><a href="http://localhost:4000/dmcwo/presentations/sfsu-matesol-unrehearsed-communication/">Unrehearsed Communication in Low Level ESL Classrooms</a></h3>
+          <p></p>
+          <a class="btn btn-primary" href="http://localhost:4000/dmcwo/presentations/sfsu-matesol-unrehearsed-communication/">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      
+</div>
+<!-- /container -->
+
+					</section>
+					</div>
+
+				<!-- Footer -->
+        <!-- Actions Footer -->
 <footer id="footer">
     <section>
         
@@ -769,7 +630,7 @@
             <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
             <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
             <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
+            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Writing</a></li>
         </ul>
     </section>
     <section>
@@ -838,15 +699,28 @@
 <!-- Copyright -->
 <div id="copyright">
     <p>theme adapted from Massively: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
-</div> </div>
-    <!-- Scripts --><!-- DYN -->
+</div>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dmcwo/assets/scripts.js"></script>
+
+
+
+<!-- DYN -->
+<!-- do you need:
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
- 
- </body>
+-->
+			
 
+
+	</body>
 </html>

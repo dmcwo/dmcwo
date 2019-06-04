@@ -1,13 +1,44 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: page
+title: Presentations
+description: A list of presentations
+---
+<div class="container">
+<header class="major mt-5 mb-4">
+    <div class="row mt-5">
+        <div class="col-12 col-md-4 mx-auto">
+            <h2>📓 Notes</h2>
+        </div>
+        <div class="col-12 col-md-8 px-3">
+            <p><small>{% assign counter = 1 %}{% for item in site.posts %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} notes about things like {% for tag in site.tags %} {{ tag | first }}{% unless forloop.last %},{% endunless %} {% endfor %}.</small></p>
+        </div>
+    </div>
+                    
+</header>
 
-<head> {% include head.html %} </head>
+<!-- Post List -->
+    <hr>
+      {% for post in site.posts %}
+      <div class="row">
+        {% if post.image and post.image-alt %}
+        <div class="col-12 col-md-4">
+          <a href="{{ post.url | absolute_url }}">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}">
+          </a>
+        </div>
+          {% endif %}
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">{% if presentation.hidedayindate %}{{ presentation.date | date: '%B, %Y' | append: ". " }}{% else %}{{ presentation.date | date: '%B %d, %Y'  }}{% endif %}{% if presentation.meetingname or presentation.meetingshortname %} at {% if presentation.meetingshortname %}{{ presentation.meetingshortname }}. {% else %}{{ presentation.meetingname }}{% endif %}{% endif %}</span></small></p>
+          <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>
+          <p>{{ presentation.abstract | strip_html | truncatewords: 20 }}</p>
+          <a class="btn btn-primary" href="{{ presentation.url | absolute_url }}">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      {% endfor %}
+</div><!-- /container -->
+
 
 <body class="is-loading">
     <!-- Wrapper -->
@@ -15,7 +46,7 @@
         <!-- Header -->
         <header id="header"> <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a> </header>
         <!-- Nav -->
-         {% include nav.html %}
+         {% include navbar.html %}
         <!-- Main -->
         <div id="main">
             <article class="post featured">
@@ -40,7 +71,7 @@
                     {% endfor %} 
                     </section>
         </div>
-        <!-- Footer -->{% include foot.html %} </div>
-    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+        <!-- Footer -->{% include footer.html %} </div>
+    <!-- Scripts -->{% include scripts.html %} {% include tracking.html %} </body>
 
 </html>

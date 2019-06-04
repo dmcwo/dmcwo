@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<!-- full screen opener -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center mx-auto p-4">
+        <div class="bs-component">
+            <div style="height: 82px;"></div>
+              <div class="jumbotron bg-white p-3">
+                  {% if site.profile %}
+                    <img class="rounded-circle img-fluid w-25 border border-primary" src="{{ site.profile }}" alt="{% if site.profile-alt %}{{ site.profile-alt }}{% else %}{{ site.title }} profile image{% endif %}">
+            {% endif %} 
+                <h1 class="display-4" >{{ site.title }}</h1>
+                <p>{{ site.description }}</p>
+                <hr class="my-4">
+                <p>
+                    <!-- todo:: use <div class="btn-group-vertical btn-block" data-toggle="buttons"> on xs and sm only -->
+                  <a class="btn btn-primary btn-sm" href="{{'/about' | relative_url }}" role="button">About</a>
+                    <a class="btn btn-primary btn-sm" href="{{'/presentations' | relative_url }}" role="button">¯\_(ツ)_/¯ Presentations</a>
+                    <a class="btn btn-primary btn-sm" href="{{'/publications' | relative_url }}" role="button"><i class="fas fa-book" aria-hidden="true"></i> Writing</a>
+                    <a class="btn btn-primary btn-sm" href="{{'/blog' | relative_url }}" role="button">📓 Notes</a>
+                </p>
+                  {% assign somepresentations = site.presentations | reverse %}
+                  {% assign somepublications = site.publications | reverse %}
+                  <!-- todo:: figure out "and" here:  assign somepresandpubs = somepresentations and somepublications  -->
+                  <p><small>Latest: {% for item in somepresentations limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in somepublications limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in site.posts limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}{% endfor %}</a></small></p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</header>
+               
+
+

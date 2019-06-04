@@ -9,25 +9,37 @@
 	<head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 <title>Doug Worsham's Curriculum Vitae</title>
 <meta name="description" content="">
+<!-- favicons -->
+<!-- ******** -->
+<!-- todo:: replace these -->
+<!--
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/%20/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/%20/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/%20/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/%20/assets/icon/browserconfig.xml">
+-->
 
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
-<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<!-- Android theme color. See https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
+<meta name="theme-color" content="#00314F">
+
+<!-- don't know what these do -->
+<!-- ******** -->
+
 <!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<!-- CSS -->
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
-<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
 
+<!-- CSS -->
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/bootstrap-sketchy.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom-sketchy.css" />
+
+<noscript>
+    <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
+</noscript>
 	</head>
 	<body class="is-loading">
 
@@ -40,15 +52,46 @@
 				</header>
 
 				<!-- Nav -->
-            <nav id="nav">
+            <!-- Navigation -->
+<!-- https://startbootstrap.com/snippets/navbar-logo/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/dmcwo/">
+        
+          dmcwo's notebook
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  active " href="/dmcwo/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/blog">Notes</a>
+        </li>
+          <li>
+              <a class="nav-link" href="/dmcwo/elements">Elements</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/contact">Contact</a>
+        </li>
+     </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav id="nav">
 <ul class="links">
-  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
   <li class=" active "><a href="http://localhost:4000/dmcwo/about/">About</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
     <li class=""><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
-    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
-  <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Writing</a></li>
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -59,9 +102,9 @@
     
                 <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
                 <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
-            <!-- todo need to change this to a local icon -->
             </ul>
 </nav>
+-->
 				<!-- Main -->
 				<div id="main">
 
@@ -168,11 +211,46 @@
 
 <ul>
   <li>Marcyk, E., Ravaei, K., Worsham, D. (2019). <a href="https://acrl.ala.org/IS/instruction-tools-resources-2/pedagogy/primo-peer-reviewed-instruction-materials-online/primo-site-of-the-month/march-2019-site-of-the-month/">Wheel of Sources - PRIMO Site of the Month Interview for March 2019</a>.</li>
+  <li>Worsham, Doug. (2018). <a href="https://commons.emich.edu/loexquarterly/vol45/iss1/5">The Quarterly Interview: Doug Worsham</a>. LOEX Quarterly.</li>
 </ul>
 
 <h2 id="conference-presentations">Conference Presentations</h2>
 
 <div> <!--formerly class="post-list"-->
+    
+        <ul>
+            <li>
+            	
+            		<a href="http://localhost:4000/dmcwo/presentations/better-together-student-led-media">Better Together: Student-Led Collaborative Media Creation</a>.
+                
+                
+                                May 11, 2019. 
+                
+
+                
+                                LOEX (Library Orientation Exchange) 2019. 
+                
+                            
+                                Minneapolis, MN. 
+                
+                
+                                Renee Romero, Doug Worsham, and Annie Pho.
+                
+                             
+                                
+                                    <a style="text-decoration: none;" href="http://bit.ly/better-together-slides"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                
+                             
+                             
+                                
+                                    <a style="text-decoration: none;" href="https://drive.google.com/file/d/1vrBl3XRONkFkOGs4ulzOrlCwofTTlYi6/view?usp=sharing"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                
+                             
+                             
+                                <a style="text-decoration: none;" href="http://www.loexconference.org/sessions.html#Romero"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a>
+                             
+            </li>
+        </ul>
     
         <ul>
             <li>
@@ -1291,19 +1369,15 @@
 
 <p><a href="http://german.lss.wisc.edu/podcast/Neerlandia_Journaal">Neerlandia-journaal</a> “Learn Dutch vocabulary, grammar, and culture through a newscast about the Netherlands!”</p>
 
-<h3 id="selected-moocs-micro-credentials-and-other-learning-experiences">Selected MOOCs, Micro-credentials, and Other Learning Experiences</h3>
+<h3 id="selected-certificates-courses-micro-credentials-and-other-learning-experiences">Selected Certificates, Courses, Micro-credentials, and Other Learning Experiences</h3>
 
-<h4 id="moocs">MOOCS</h4>
 <ul>
+  <li>Introduction to Typography by California Institute of the Arts on Coursera. <a href="https://www.coursera.org/account/accomplishments/verify/66YCGSJKV44V">Certificate earned at Sunday, April 28, 2019</a>.</li>
+  <li>
+<a href="https://www.codecademy.com/learn/deploy-a-website">Deploy a Website</a> using Jekyll and Github pages. <a href="https://www.codecademy.com/dmcwo#completed">Completed on Codecademy May 31, 2016</a>.</li>
+  <li>
+<a href="https://www.codecademy.com/learn/learn-git">Learn Git</a>. <a href="https://www.codecademy.com/dmcwo#completed">Completed on Codecademy June 1, 2016</a>.</li>
   <li>Learning How to Learn: Powerful mental tools to help you master tough subjects by University of California, San Diego on Coursera. Certificate earned on January 31, 2016.</li>
-</ul>
-
-<h4 id="codecademy"><a href="https://www.codecademy.com/dmcwo#completed">Codecademy</a></h4>
-<ul>
-  <li>
-<a href="https://www.codecademy.com/learn/deploy-a-website">Deploy a Website</a> using Jekyll and Github pages. May 31, 2016.</li>
-  <li>
-<a href="https://www.codecademy.com/learn/learn-git">Learn Git</a>. June 1, 2016.</li>
 </ul>
 
 <h2 id="selected-workshops-taught">Selected workshops taught</h2>
@@ -1346,7 +1420,7 @@
             <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
             <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
             <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
+            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Writing</a></li>
         </ul>
     </section>
     <section>
@@ -1420,14 +1494,21 @@
 			</div>
 
 			<!-- Scripts -->
-			<!-- DYN -->
+			<script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dmcwo/assets/scripts.js"></script>
+
+
+
+<!-- DYN -->
+<!-- do you need:
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
-
+-->
 			
 
 
