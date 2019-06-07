@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Presentations
-description: A list of presentations
+title: Notes
+description: A collection of notes
 ---
 <div class="container">
 <header class="major mt-5 mb-4">
@@ -17,61 +17,22 @@ description: A list of presentations
 </header>
 
 <!-- Post List -->
-    <hr>
-      {% for post in site.posts %}
+<hr>
+{% for post in site.posts %}
       <div class="row">
-        {% if post.image and post.image-alt %}
-        <div class="col-12 col-md-4">
-          <a href="{{ post.url | absolute_url }}">
-            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">{% if post.hidedayindate %}{{ post.date | date: '%B, %Y' | append: ". " }}{% else %}{{ post.date | date: '%B %d, %Y'  }}{% endif %}</span></small></p>
+          </div>
+          {% if post.image and post.image-alt %}
+          <div class="col col-md-auto">
+              <a href="{{ post.url | absolute_url }}">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 100px;" src="{{ post.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ post.feature-alt }}">
           </a>
-        </div>
+          </div>
           {% endif %}
-        <div class="col-12 col-md-8">
-            <p><small class="text-muted"><span class="date">{% if presentation.hidedayindate %}{{ presentation.date | date: '%B, %Y' | append: ". " }}{% else %}{{ presentation.date | date: '%B %d, %Y'  }}{% endif %}{% if presentation.meetingname or presentation.meetingshortname %} at {% if presentation.meetingshortname %}{{ presentation.meetingshortname }}. {% else %}{{ presentation.meetingname }}{% endif %}{% endif %}</span></small></p>
-          <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>
-          <p>{{ presentation.abstract | strip_html | truncatewords: 20 }}</p>
-          <a class="btn btn-primary" href="{{ presentation.url | absolute_url }}">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
-        </div>
-      </div>
-      <!-- /.row -->
-      <hr>
-      {% endfor %}
-</div><!-- /container -->
-
-
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header"> <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a> </header>
-        <!-- Nav -->
-         {% include navbar.html %}
-        <!-- Main -->
-        <div id="main">
-            <article class="post featured">
-                <header class="major">
-                    <h2><a href="#">📓</a></h2>
-                    <p>{% assign counter = 1 %}{% for item in site.posts %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} notes about things like {% for tag in site.tags %} {{ tag | first }}{% unless forloop.last %},{% endunless %} {% endfor %}.</p>
-                </header>
-            </article>
-            <!-- Post -->
-            <section class="posts"> {% for post in site.posts %}
-                <!--{% assign mod3 = forloop.index | modulo: 3 %}-->
-                <article>
-                    <header> <span class="date">{{ post.date | date_to_string }}</span>
-                        <h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2> </header>
-                    <a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-                    <p>{{ post.excerpt }}</p>
-                    <ul class="actions">
-                        <li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    {% endfor %} 
-                    </section>
-        </div>
-        <!-- Footer -->{% include footer.html %} </div>
-    <!-- Scripts -->{% include scripts.html %} {% include tracking.html %} </body>
-
-</html>
+          <div class="col col-md-auto">
+              <h3><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+          </div>
+    </div>
+    <hr>
+{% endfor %}
