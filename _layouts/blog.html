@@ -4,8 +4,8 @@ title: Notes
 description: A collection of notes
 ---
 <div class="container">
-<header class="major mt-5 mb-4">
-    <div class="row mt-5">
+<header class="mb-4">
+    <div class="row mt-5 align-items-center">
         <div class="col-12 col-md-4 mx-auto">
             <h2>📓 Notes</h2>
         </div>
@@ -31,7 +31,7 @@ description: A collection of notes
           </div>
           {% endif %}
           <div class="col col-md-auto">
-              <h3><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h3>
+              <h3><small><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></small></h3>
           </div>
     </div>
     <hr>
