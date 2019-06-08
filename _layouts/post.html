@@ -2,7 +2,7 @@
 layout: default
 ---
 {% if page.feature %}
-<div class="py-5 bg-image-full" style="background-image: url('{{ page.feature | prepend: site.feature-dir | absolute_url}}'); background-color: dimgray;">
+<div class="py-5 bg-image-full" style="background-image: url('{{ page.feature | absolute_url}}'); background-color: dimgray;">
     {% endif %}
 <header class="mb-4" style="margin-top: 6em;">
   <div class="overlay"></div>
