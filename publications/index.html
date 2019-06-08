@@ -1,5 +1,29 @@
 ---
-layout: publication-list
+layout: page
 title: Writing
 excerpt: "A List of Publications and Writing"
 ---
+<h2>Writing</h2>
+
+{% assign groups = site.publications | group_by: "category" | sort: "name" %}
+
+{% for group in groups %}
+<h3 class="mt-4">{{ group.name | capitalize | append:'s' }}</h3>
+    {% for publication in group.items %}
+    <div class="row">
+        {% if publication.cover %}
+        <div class="d-none d-md-block col-md-2">
+            {% if publication.doi %}<a href="{{ publication.doi }}">{% endif %}<img src="{{ publication.cover | absolute_url }}" alt="{{ publication.title | append:' cover page' }}" class="img-fluid border shadow" style="background-color: black">{% if publication.doi %}</a>{% endif %}
+        </div>
+        {% endif %}
+        <div class="col-12 col-md-10">
+             <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} </p>
+            <p>{% if publication.doi %} <a href="{{ publication.doi }}" class="btn"><i class="fa fa-link" aria-hidden="true"></i> Permalink/DOI</a> {% endif %} </p>
+        </div>
+    </div> 
+    {%endfor%}
+{%endfor%}
+
+<hr>
+
+

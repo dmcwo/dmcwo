@@ -1,0 +1,62 @@
+<!-- Navigation -->
+<!-- https://startbootstrap.com/snippets/navbar-logo/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{'/' | relative_url }}">
+        {% if site.logo %}
+        <img class="rounded-circle" src="{{ site.profile }}" width="50" height="50" alt="{% if site.profile-alt %}{{ site.profile-alt }}{% else %}{{ site.title }} profile image{% endif %}"> 
+        {% endif %}
+          {{ site.title }}
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link {% if page.url == "/" %} active {% endif %}" href="{{'/' | relative_url }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url contains '/about/' %} active {% endif %}" href="{{'/about' | relative_url }}">About</a>
+        </li>
+         <li>
+              <a class="nav-link" href="{{'/presentations' | relative_url }}">Presentations</a>
+          </li>
+          <li>
+              <a class="nav-link" href="{{'/publications' | relative_url }}">Writing</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="{{'/blog' | relative_url }}">Notes</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="{{'/contact' | relative_url }}">Contact</a>
+        </li>-->
+     </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav id="nav">
+<ul class="links">
+  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">About</a></li>
+  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url }}">Notes</a></li>
+    <li class="{% if page.url contains '/presentations/' %} active {% endif %}"><a href="{{ "/presentations/" | absolute_url }}">Presentations</a></li>
+    <li class="{% if page.url contains '/publications/' %} active {% endif %}"><a href="{{ "/publications/" | absolute_url }}">Writing</a></li>
+</ul>
+<ul class="icons">
+                <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+    {% if site.facebook %}
+    <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+    {% endif %}
+    {% if site.linkedin %}
+    <li><a href="http://linkedin.com/in/{{site.linkedin}}" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>
+    {% endif %}
+    {% if site.instagram %}            
+    <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+    {% endif %}
+                <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
+            </ul>
+</nav>
+-->

@@ -1,43 +1,86 @@
 <!DOCTYPE html>
+
 <html>
 
-<head> <meta charset="utf-8" />
+  <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 <title>Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget</title>
 <meta name="description" content="">
+<!-- favicons -->
+<!-- ******** -->
+<!-- todo:: replace these -->
+<!--
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/%20/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/%20/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/%20/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/%20/assets/icon/browserconfig.xml">
+-->
 
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
-<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<!-- Android theme color. See https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
+<meta name="theme-color" content="#00314F">
+
+<!-- don't know what these do -->
+<!-- ******** -->
+
 <!-- font awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<!-- CSS -->
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
-<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
- </head>
+<script src="https://kit.fontawesome.com/574bad5f3d.js"></script>
 
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header"> <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a> </header>
-        <!-- Nav -->
-        <nav id="nav">
+<!-- CSS -->
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/bootstrap-sketchy.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom-sketchy.css" />
+
+<noscript>
+    <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
+</noscript>
+
+  <body class="d-flex flex-column">
+      
+     <!-- Navigation -->
+<!-- https://startbootstrap.com/snippets/navbar-logo/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/dmcwo/">
+        
+          dmcwo's notebook
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/about">About</a>
+        </li>
+         <li>
+              <a class="nav-link" href="/dmcwo/presentations">Presentations</a>
+          </li>
+          <li>
+              <a class="nav-link" href="/dmcwo/publications">Writing</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/blog">Notes</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="/dmcwo/contact">Contact</a>
+        </li>-->
+     </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav id="nav">
 <ul class="links">
-  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/about/">About</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
     <li class=" active "><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
-    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
-  <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Writing</a></li>
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -48,127 +91,117 @@
     
                 <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
                 <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
-            <!-- todo need to change this to a local icon -->
             </ul>
 </nav>
-
-        <!-- Main -->
-        <div id="main">
-            <section class="post">
-                <header class="major"> <span class="date">
-                    
-                            January 20, 2010
-                        
-                    </span>
-                    <h2>Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget</h2>
-                    <p class="presinfo">  EDUCAUSE Learning Initiative.    Austin, TX.   </p> 
-                    <p class="presinfo">Timothy Dugdale, Lindsey Schmidt, and Doug Worsham</p> 
-                    <!-- Buttons for slides, handout, etc. -->
-                    <p class="presbuttons">
-                        
-                        
-                         <a href="http://net.educause.edu/ELI10/Program/1022371?PRODUCT_CODE=ELI10/SESS12" class="button icon fa-calendar">Event Page</a>  </p>
-                </header>
-                <!-- todo: figure out what to do with feature 
-                
-                -->
-                
-                    <h3>Abstract</h3>
-                    <p class="abstract"> Students and instructors have access to a broad range of collaborative technologies for group projects, but successful group work is not just about the technology. In this session, the presenters will use research data and personal experience collected from a yearlong program at the University of Wisconsin-Madison on “Technology-Enhanced Collaborative Group Work” to highlight the principles of successful group work. Attendees will participate in a discussion on preparing instructors and students for collaboration, designing appropriate group assignments, assessing the process and product of group work, and choosing the *right* technology for collaboration. </p>
-                
-                <div class="image main"><img src="" alt=""></div>
-                <p>
-</p>
-            </section>
-          </div>
-        
-    </div>
-    <!-- Footer --><!-- Actions Footer -->
-<footer id="footer">
-    <section>
-        
-        <ul class="actions vertical">
-            <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
-            <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
-            <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
-        </ul>
-    </section>
-    <section>
-        <!-- todo need to make this an include and incorporate if statements -->
-        <center>
-            <ul class="actions">
-                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>  
-                <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>  
-                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-                <li>
-                    <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
-                </li>
-                <!-- todo need to change this to a local icon -->
-            </ul>
-        </center>
-    </section>
-</footer>
-<!-- need to rework this whole thing 
-<footer id="footer">
-  <section>
-    <form method="POST" action="https://formspree.io/">
-      <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="3"></textarea>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
-      </ul>
-    </form>
-  </section>
-  <section class="split contact">
-    <section class="alt">
-      <h3>Location</h3>
-      <p>CA</p>
-    </section>
-    <section>
-      <h3>Phone</h3>
-      <p><a href="tel:"></a></p>
-    </section>
-    <section>
-      <h3>Email</h3>
-      <p><a href="mailto:"></a></p>
-    </section>
-    <section>
-      <h3>Social</h3>
-      <ul class="icons alt">
-        <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-        
-          <li><a href="https://facebook.com/" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-        
-        <li><a href="https://instagram.com/" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-      </ul>
-    </section>
-  </section>
-</footer>
 -->
-<!-- Copyright -->
-<div id="copyright">
-    <p>theme adapted from Massively: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
-</div> 
-    <!-- Scripts --><!-- DYN -->
+
+    <!-- top of page image -->
+    <div class="py-5 bg-image-full" style="background-color: dimgray;">
+    <!--<div style="height: 200px;"></div>-->
+    <header class="mb-4" style="margin-top: 6em;">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+            <div class="card border-primary">
+                <p class="card-header"> 
+                            January 20, 2010
+                        </p>
+                  <div class="card-body">
+                      <h1>Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget</h1>
+                      <p class="card-text">  EDUCAUSE Learning Initiative.    Austin, TX.   </p> 
+                    <p class="card-text">Timothy Dugdale, Lindsey Schmidt, and Doug Worsham</p> 
+                      <!-- Buttons for slides, handout, etc. -->
+                    <div class="text-center ">
+                      <div class="btn-group">
+                        
+                        
+                        
+                            <a class="btn btn-primary btn-sm" href="http://net.educause.edu/ELI10/Program/1022371?PRODUCT_CODE=ELI10/SESS12" role="button"><i class="far fa-calendar-alt" aria-hidden="true"></i> Event Page</a>
+                        
+                      </div>
+                      </div>
+                      <!-- /buttons -->
+                      
+                </div>
+                <!--<div class="card-footer text-muted"><small><span class="float-left">Posted in: </span><span class="float-right"> include read_time.html content=page.content </span></small></div>-->
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</header>
+</div>
+
+
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+              
+                <h2>Abstract</h2>    
+                <p class="lead">Students and instructors have access to a broad range of collaborative technologies for group projects, but successful group work is not just about the technology. In this session, the presenters will use research data and personal experience collected from a yearlong program at the University of Wisconsin-Madison on “Technology-Enhanced Collaborative Group Work” to highlight the principles of successful group work. Attendees will participate in a discussion on preparing instructors and students for collaboration, designing appropriate group assignments, assessing the process and product of group work, and choosing the *right* technology for collaboration.</p>
+              
+            
+
+          </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        <div class="clearfix">
+          
+          <a class="btn btn-primary float-left" href="/dmcwo/presentations/educause-creating-custom-learning-environments/"
+            data-toggle="tooltip" data-placement="top" title="Creating Custom Online Learning Environments with Drupal">&larr; Previous<span class="d-none d-md-inline">
+              Presentation</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/dmcwo/presentations/nmc-knowledge-building-for-dh/"
+            data-toggle="tooltip" data-placement="top" title="Knowledge Building for the Digital Humanities">Next<span class="d-none d-md-inline">
+              Presentation</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+      
+      <div id="sticky-footer-content">  
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+              <div class="btn-group mx-auto" role="group" aria-label="Footer Buttons">
+                  <a href="https://twitter.com/dmcwo" rel="nofollow"><button type="button" class="btn btn-primary fab fa-twitter" aria-label="Twitter"></button></a>
+                <a href="https://linkedin.com/doug-worsham" rel="nofollow"><button type="button" class="btn btn-primary fab fa-linkedin-in" aria-label="linkedin"></button></a>
+                  <a href="https://github.com/dmcwo" rel="nofollow"><button type="button" class="btn btn-primary fab fa-github" aria-label="github"></button></a>
+                  <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><button type="button" class="btn btn-primary"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></button></a>
+              </div>
+    </div>
+  </footer>
+</div>
+      
+    <script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dmcwo/assets/scripts.js"></script>
+
+
+
+<!-- DYN -->
+<!-- do you need:
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
- 
- </body>
+-->
+
+  </body>
 
 </html>

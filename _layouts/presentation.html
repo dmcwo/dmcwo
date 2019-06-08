@@ -1,63 +1,93 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-<head> {% include head.html %} </head>
-
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header"> <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a> </header>
-        <!-- Nav -->
-        {% include nav.html %}
-
-        <!-- Main -->
-        <div id="main">
-            <section class="post">
-                <header class="major"> <span class="date">
-                    {% if page.hidedayindate %}
+<!-- top of page image -->
+    <div class="py-5 bg-image-full" style="{% if page.banner %}background-image: url('{{ page.banner | prepend: site.feature-dir | absolute_url}}'); {% else %}background-color: dimgray;{% endif %}">
+    <!--<div style="height: 200px;"></div>-->
+    <header class="mb-4" style="margin-top: 6em;">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+      <div class="{% if page.wide %}col-xl-10 col-lg-11{% else %}col-lg-8 col-md-10{% endif %} mx-auto">
+        <div class="page-heading">
+            <div class="card border-primary">
+                <p class="card-header"> {% if page.hidedayindate %}
                             {{ page.date | date: '%B, %Y' }}
                         {% else %}
                             {{ page.date | date: '%B %d, %Y' }}
-                        {% endif %}
-                    </span>
-                    <h2>{{page.title}}</h2>
-                    <p class="presinfo"> {% if page.meetingname %} {{ page.meetingname | append: ". "}} {% endif %} {% if page.place %} {{ page.place | append: ". " }} {% endif %} </p> {% if page.presenters %}
-                    <p class="presinfo">{{ page.presenters }}</p> {% endif %}
-                    <!-- Buttons for slides, handout, etc. -->
-                    <p class="presbuttons">
+                        {% endif %}</p>
+                  <div class="card-body">
+                      <h1>{{ page.title}}{% if page.subtitle %}<small> - {{ page.subtitle }}</small>{% endif %}</h1>
+                      <p class="card-text"> {% if page.meetingname %} {{ page.meetingname | append: ". "}} {% endif %} {% if page.place %} {{ page.place | append: ". " }} {% endif %} </p> {% if page.presenters %}
+                    <p class="card-text">{{ page.presenters }}</p> {% endif %}
+                      <!-- Buttons for slides, handout, etc. -->
+                    <div class="text-center ">
+                      <div class="btn-group">
                         {% if page.slideurl %}
                             {% if page.slideurl contains 'http' %}
-                                <a href="{{ page.slideurl }}" class="button icon fa-picture-o">Slides</a>
+                                <a class="btn btn-primary btn-sm" href="{{ page.slideurl }}" role="button"><i class="far fa-images" aria-hidden="true"></i> Slides</a>
                             {% else %}
-                                <a href="{{ page.slideurl | absolute_url }}" class="button icon fa-picture-o">Slides</a>
+                                <a class="btn btn-primary btn-sm" href="{{ page.slideurl | absolute_url }}" role="button"><i class="far fa-images" aria-hidden="true"></i> Slides</a>    
                             {% endif %}
                         {% endif %}
                         {% if page.handouturl %}
                             {% if page.handouturl contains 'http' %}
-                                <a href="{{ page.handouturl }}" class="button icon fa-file-text-o">Handout</a>
+                                <a class="btn btn-primary btn-sm" href="{{ page.handouturl }}" role="button"><i class="fas fa-file-invoice" aria-hidden="true"></i> Handout</a>
                             {% else %}
-                                <a href="{{ page.handouturl | absolute_url }}" class="button icon fa-file-text-o">Handout</a>
+                                <a class="btn btn-primary btn-sm" href="{{ page.handouturl | absolute_url }}" role="button"><i class="fas fa-file-invoice" aria-hidden="true"></i> Handout</a>
                             {% endif %}
                         {% endif %}
-                        {% if page.meetingurl %} <a href="{{ page.meetingurl }}" class="button icon fa-calendar">Event Page</a> {% endif %} </p>
-                </header>
-                <!-- todo: figure out what to do with feature 
-                {% if page.feature %}
-      			<div class="image main" style="width: 30%; float: right; padding: 30px; margin: 10px; border-width: 1px; border-style: solid;"><img src="{{page.feature}}" alt="{{ page.featurealt }}"></div>
-                {% endif %}
-                -->
-                {% if page.abstract %}
-                    <h3>Abstract</h3>
-                    <p class="abstract"> {{ page.abstract }} </p>
-                {% endif %}
-                <div class="image main"><img src="{{page.image}}" alt=""></div>
-                <p>{{content}}</p>
-            </section>
-          </div>
-        
+                        {% if page.meetingurl %}
+                            <a class="btn btn-primary btn-sm" href="{{ page.meetingurl }}" role="button"><i class="far fa-calendar-alt" aria-hidden="true"></i> Event Page</a>
+                        {% endif %}
+                      </div>
+                      </div>
+                      <!-- /buttons -->
+                      
+                </div>
+                <!--<div class="card-footer text-muted"><small><span class="float-left">Posted in: {{ page.categories }}</span><span class="float-right"> include read_time.html content=page.content </span></small></div>-->
+            </div>
+        </div>
+      </div>
     </div>
-    <!-- Footer -->{% include foot.html %} </div>
-    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+    </div>
+</header>
+</div>
 
-</html>
+
+  <div class="container mt-5">
+      <div class="row">
+          <div class="{% if page.wide %}col-xl-10 col-lg-11{% else %}col-lg-8 col-md-10{% endif %} mx-auto">
+              {% if page.abstract %}
+                <h2>Abstract</h2>    
+                <p class="lead">{{ page.abstract }}</p>
+              {% endif %}
+            {{ content }}
+          </div>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        <div class="clearfix">
+          {% if page.previous.url %}
+          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+              Presentation</span></a>
+          {% endif %}
+          {% if page.next.url %}
+          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+              Presentation</span> &rarr;</a>
+          {% endif %}
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+

@@ -1,49 +1,86 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+
 <html>
 
-<head> <meta charset="utf-8" />
+  <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
 <title>Jekyll Theme - Blog Page - Massively</title>
 <meta name="description" content="Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.">
+<!-- favicons -->
+<!-- ******** -->
+<!-- todo:: replace these -->
+<!--
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/%20/assets/icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon-16x16.png">
+<link rel="manifest" href="http://localhost:4000/dmcwo/%20/assets/icon/manifest.json">
+<link rel="mask-icon" href="http://localhost:4000/dmcwo/%20/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://localhost:4000/dmcwo/%20/assets/icon/favicon.ico">
+<meta name="msapplication-config" content="http://localhost:4000/dmcwo/%20/assets/icon/browserconfig.xml">
+-->
 
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/dmcwo/assets/icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:4000/dmcwo/assets/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:4000/dmcwo/assets/icon/favicon-16x16.png">
-<link rel="manifest" href="http://localhost:4000/dmcwo/assets/icon/manifest.json">
-<link rel="mask-icon" href="http://localhost:4000/dmcwo/assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="http://localhost:4000/dmcwo/assets/icon/favicon.ico">
-<meta name="msapplication-config" content="http://localhost:4000/dmcwo/assets/icon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<!-- Android theme color. See https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android -->
+<meta name="theme-color" content="#00314F">
+
+<!-- don't know what these do -->
+<!-- ******** -->
+
 <!-- font awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-<!-- CSS -->
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/main.css" />
-<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom.css" />
-<noscript><link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/noscript.css" /></noscript>
- </head>
+<script src="https://kit.fontawesome.com/574bad5f3d.js"></script>
 
-<body class="is-loading">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header"> <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a> </header>
-        <!-- Nav -->
-         <nav id="nav">
+<!-- CSS -->
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/bootstrap-sketchy.css" />
+<link rel="stylesheet" href="http://localhost:4000/dmcwo/assets/css/custom-sketchy.css" />
+
+<noscript>
+    <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
+</noscript>
+
+  <body class="d-flex flex-column">
+      
+     <!-- Navigation -->
+<!-- https://startbootstrap.com/snippets/navbar-logo/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="/dmcwo/">
+        
+          dmcwo's notebook
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="/dmcwo/about">About</a>
+        </li>
+         <li>
+              <a class="nav-link" href="/dmcwo/presentations">Presentations</a>
+          </li>
+          <li>
+              <a class="nav-link" href="/dmcwo/publications">Writing</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/dmcwo/blog">Notes</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="/dmcwo/contact">Contact</a>
+        </li>-->
+     </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+<nav id="nav">
 <ul class="links">
-  <li class=""><a href="http://localhost:4000/dmcwo/">Home</a></li>
   <li class=""><a href="http://localhost:4000/dmcwo/about/">About</a></li>
   <li class=" active "><a href="http://localhost:4000/dmcwo/blog/">Notes</a></li>
     <li class=""><a href="http://localhost:4000/dmcwo/presentations/">Presentations</a></li>
-    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Publications</a></li>
-  <!-- I like the elements page, but it doesn't need to be in the nav
-    <li class=""><a href="http://localhost:4000/dmcwo/elements/">Elements</a></li>-->
+    <li class=""><a href="http://localhost:4000/dmcwo/publications/">Writing</a></li>
 </ul>
 <ul class="icons">
                 <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
@@ -54,278 +91,221 @@
     
                 <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
                 <li><a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a></li>
-            <!-- todo need to change this to a local icon -->
             </ul>
 </nav>
-        <!-- Main -->
-        <div id="main">
-            <article class="post featured">
-                <header class="major">
-                    <h2><a href="#">📓</a></h2>
-                    <p>15 notes about things like  markdown,  text,  jekyll,  google fonts,  notebooks,  tinkering,  footnotes,  presentations,  html,  reveal.js,  learning spaces,  liw2016,  acrl framework,  library liaisons,  curriculum mapping,  critical pedagogy,  FYE,  assessment,  Drupal,  CloudReady,  online learning,  material design,  liquid,  transparency,  assignment design,  CARL 2018 .</p>
-                </header>
-            </article>
-            <!-- Post -->
-            <section class="posts"> 
-                <!---->
-                <article>
-                    <header> <span class="date">01 Jun 2018</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/json-cv/">From json resume to json cv - part 1</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/json-cv/" class="image fit"><img src="" alt=""></a>
-                    <p></p>
-<p>I’ve been looking at ways to extend <a href="https://jsonresume.org/">json resume</a> to cover more of the common elements in an academic cv. Here’s a little bit of a start: <a href="https://github.com/dmcwo/dmcwo/blob/gh-pages/_data/cv.json">json cv</a> and here are some notes on the changes so far:</p>
-
-
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/json-cv/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">17 Apr 2018</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/transparency-matters/">Transparency in Assignment Design</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/transparency-matters/" class="image fit"><img src="" alt=""></a>
-                    <p>Assignments, activities, and other learning experiences can be more or less transparent depending on how they are designed.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/transparency-matters/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">19 May 2017</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/intro-to-liquid-for-jekyll/">An introduction to liquid for jekyll site creators - Part 1</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/intro-to-liquid-for-jekyll/" class="image fit"><img src="" alt=""></a>
-                    <p>I suppose it is a good thing that you can get quite far with jekyll site creation without really knowing what you are doing.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/intro-to-liquid-for-jekyll/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">13 Jan 2017</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/share-your-research-tips/">Sharing Research Tips (like YouTube videos)</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/share-your-research-tips/" class="image fit"><img src="" alt=""></a>
-                    <p>Lately, I've been working (perhaps rather obsessively) on a site that tries to make well-designed instructional modules as easy to embed as YouTube videos.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/share-your-research-tips/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">22 Oct 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/reviving-old-laptops/">Reviving old laptops w/ CloudReady</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/reviving-old-laptops/" class="image fit"><img src="" alt=""></a>
-                    <p>People sometimes give me their discarded technologies. Maybe it is because they somehow sense my fondness for such things, or because I unknowingly transmit a deep belief that the life and utility of most everything should be longer.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/reviving-old-laptops/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">25 Jun 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/jekyll-collection-drupal-content-type-for-presentations/">Creating a Drupal-like content type in Jekyll for Presentations</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/jekyll-collection-drupal-content-type-for-presentations/" class="image fit"><img src="" alt=""></a>
-                    <p>I'll probably always be a big fan of Drupal.... But for a small, personal site like this one, it feels like a bit much.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/jekyll-collection-drupal-content-type-for-presentations/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">15 Jun 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/liw-notes-critical-foundations/">FYE, critical librarianship, and healthy discontent at LIW2016</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/liw-notes-critical-foundations/" class="image fit"><img src="" alt=""></a>
-                    <p>Four key questions framed this conversational panel session on the intersections between fye and critical librarianship, but many more came up in discussion.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/liw-notes-critical-foundations/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">15 Jun 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/liw-thresholds-maybe-concepts-yes/">Thresholds, maybe; concepts, yes?</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/liw-thresholds-maybe-concepts-yes/" class="image fit"><img src="" alt=""></a>
-                    <p>Just when it seemed the debates around the Framework were beginning to settle....</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/liw-thresholds-maybe-concepts-yes/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">14 Jun 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/liw-learning-spaces/">LIW 2016 - Learning Spaces &amp; Conference Events</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/liw-learning-spaces/" class="image fit"><img src="" alt=""></a>
-                    <p>Oddly, a hallway was a highlight for me, but perhaps that shouldn't be so odd.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/liw-learning-spaces/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">02 Jun 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/coding-presentations/">Coding a presentation</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/coding-presentations/" class="image fit"><img src="" alt=""></a>
-                    <p>Why bother coding a presentation? I'm not sure exactly. For fun?</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/coding-presentations/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">28 May 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/footnotes-in-markdown/">Footnotes and markdown</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/footnotes-in-markdown/" class="image fit"><img src="" alt=""></a>
-                    <p>Footnotes are good. Very good!</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/footnotes-in-markdown/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">26 May 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/notebooks/">Notebooks 📓</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/notebooks/" class="image fit"><img src="" alt=""></a>
-                    <p>I've always wanted to be one of those people with shelves of moleskines, each one full of ideas and dreamwork.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/notebooks/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">21 May 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/a-post-about-pages/">Jekyll posts and google fonts.</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/a-post-about-pages/" class="image fit"><img src="" alt=""></a>
-                    <p>Google fonts + Jekyll = :-)</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/a-post-about-pages/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                    
-                <!---->
-                <article>
-                    <header> <span class="date">20 May 2016</span>
-                        <h2><a href="http://localhost:4000/dmcwo/blog/text-is-the-best/">Text is the best.</a></h2> </header>
-                    <a href="http://localhost:4000/dmcwo/blog/text-is-the-best/" class="image fit"><img src="" alt=""></a>
-                    <p>I'm suddenly a huge fan of text files.</p>
-                    <ul class="actions">
-                        <li><a href="http://localhost:4000/dmcwo/blog/text-is-the-best/" class="button">Full Story</a></li>
-                    </ul>
-                </article>
-
-                     
-                    </section>
-        </div>
-        <!-- Footer --><!-- Actions Footer -->
-<footer id="footer">
-    <section>
-        
-        <ul class="actions vertical">
-            <li><a href="http://localhost:4000/dmcwo/about/" class="button fit">About</a></li>
-            <li><a href="http://localhost:4000/dmcwo/blog/" class="button fit">Notes</a></li>
-            <li><a href="http://localhost:4000/dmcwo/presentations/" class="button fit">Presentations</a></li>
-            <li><a href="http://localhost:4000/dmcwo/publications/" class="button fit">Publications</a></li>
-        </ul>
-    </section>
-    <section>
-        <!-- todo need to make this an include and incorporate if statements -->
-        <center>
-            <ul class="actions">
-                <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>  
-                <li><a href="http://linkedin.com/in/doug-worsham" class="icon fa-linkedin" rel="nofollow"><span class="label">LinkedIn</span></a></li>  
-                <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-                <li>
-                    <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></a>
-                </li>
-                <!-- todo need to change this to a local icon -->
-            </ul>
-        </center>
-    </section>
-</footer>
-<!-- need to rework this whole thing 
-<footer id="footer">
-  <section>
-    <form method="POST" action="https://formspree.io/">
-      <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="3"></textarea>
-      </div>
-      <ul class="actions">
-        <li><input type="submit" value="Send Message" /></li>
-      </ul>
-    </form>
-  </section>
-  <section class="split contact">
-    <section class="alt">
-      <h3>Location</h3>
-      <p>CA</p>
-    </section>
-    <section>
-      <h3>Phone</h3>
-      <p><a href="tel:"></a></p>
-    </section>
-    <section>
-      <h3>Email</h3>
-      <p><a href="mailto:"></a></p>
-    </section>
-    <section>
-      <h3>Social</h3>
-      <ul class="icons alt">
-        <li><a href="https://twitter.com/dmcwo" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-        
-          <li><a href="https://facebook.com/" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-        
-        <li><a href="https://instagram.com/" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/dmcwo" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-      </ul>
-    </section>
-  </section>
-</footer>
 -->
-<!-- Copyright -->
-<div id="copyright">
-    <p>theme adapted from Massively: <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
-</div> </div>
-    <!-- Scripts --><!-- DYN -->
+
+    <div style="height: 42px"></div>
+<div class="container mt-5 h-100">
+    <div class="row">
+        <div class="col col-md-9 col-lg-8 mx-auto">
+            <div class="container">
+<header class="mb-4">
+    <div class="row mt-5 align-items-center">
+        <div class="col-12 col-md-4 mx-auto">
+            <h2>📓 Notes</h2>
+        </div>
+        <div class="col-12 col-md-8 px-3">
+            <p><small>15 notes about things like  markdown,  text,  jekyll,  google fonts,  notebooks,  tinkering,  footnotes,  presentations,  html,  reveal.js,  learning spaces,  liw2016,  acrl framework,  library liaisons,  curriculum mapping,  critical pedagogy,  FYE,  assessment,  Drupal,  CloudReady,  online learning,  material design,  liquid,  transparency,  assignment design,  CARL 2018 .</small></p>
+        </div>
+    </div>
+                    
+</header>
+
+<!-- Post List -->
+<hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 01, 2018</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/json-cv/" style="text-decoration: none;">From json resume to json cv - part 1</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">April 17, 2018</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/transparency-matters/" style="text-decoration: none;">Transparency in Assignment Design</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">May 19, 2017</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/intro-to-liquid-for-jekyll/" style="text-decoration: none;">An introduction to liquid for jekyll site creators - Part 1</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">January 13, 2017</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/share-your-research-tips/" style="text-decoration: none;">Sharing Research Tips (like YouTube videos)</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">October 22, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/reviving-old-laptops/" style="text-decoration: none;">Reviving old laptops w/ CloudReady</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 25, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/jekyll-collection-drupal-content-type-for-presentations/" style="text-decoration: none;">Creating a Drupal-like content type in Jekyll for Presentations</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 15, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/liw-notes-critical-foundations/" style="text-decoration: none;">FYE, critical librarianship, and healthy discontent at LIW2016</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 15, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/liw-thresholds-maybe-concepts-yes/" style="text-decoration: none;">Thresholds, maybe; concepts, yes?</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 14, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/liw-learning-spaces/" style="text-decoration: none;">LIW 2016 - Learning Spaces & Conference Events</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">June 02, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/coding-presentations/" style="text-decoration: none;">Coding a presentation</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">May 28, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/footnotes-in-markdown/" style="text-decoration: none;">Footnotes and markdown</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">May 26, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/notebooks/" style="text-decoration: none;">Notebooks 📓</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">May 21, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/a-post-about-pages/" style="text-decoration: none;">Jekyll posts and google fonts.</a></h3>
+          </div>
+    </div>
+    <hr>
+
+      <div class="row align-items-center">
+          <div class="col col-md-auto">
+              <p><small class="text-muted"><span class="date">May 20, 2016</span></small></p>
+          </div>
+          
+          <div class="col col-md-auto">
+              <h3 style="font-size: .9em;"><a href="http://localhost:4000/dmcwo/blog/text-is-the-best/" style="text-decoration: none;">Text is the best.</a></h3>
+          </div>
+    </div>
+    <hr>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+      
+      <div id="sticky-footer-content">  
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+              <div class="btn-group mx-auto" role="group" aria-label="Footer Buttons">
+                  <a href="https://twitter.com/dmcwo" rel="nofollow"><button type="button" class="btn btn-primary fab fa-twitter" aria-label="Twitter"></button></a>
+                <a href="https://linkedin.com/doug-worsham" rel="nofollow"><button type="button" class="btn btn-primary fab fa-linkedin-in" aria-label="linkedin"></button></a>
+                  <a href="https://github.com/dmcwo" rel="nofollow"><button type="button" class="btn btn-primary fab fa-github" aria-label="github"></button></a>
+                  <a href="https://orcid.org/0000-0002-4945-5773" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><button type="button" class="btn btn-primary"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon"></button></a>
+              </div>
+    </div>
+  </footer>
+</div>
+      
+    <script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dmcwo/assets/scripts.js"></script>
+
+
+
+<!-- DYN -->
+<!-- do you need:
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrollex.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/jquery.scrolly.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/skel.min.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
- 
- </body>
+-->
+
+  </body>
 
 </html>

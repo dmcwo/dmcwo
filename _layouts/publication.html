@@ -9,7 +9,7 @@
         <!-- Header --><!-- todo: couldn't this be an include? -->
         <header id="header"> <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a> </header>
         <!-- Nav -->
-         {% include nav.html %}
+         {% include navbar.html %}
         <!-- Main -->
         <div id="main">
             <section class="post">
@@ -56,7 +56,7 @@
            
         
     </div>
-    <!-- Footer -->{% include foot.html %} </div>
-    <!-- Scripts -->{% include scripts-main.html %} {% include tracking.html %} </body>
+    <!-- Footer -->{% include footer.html %} </div>
+    <!-- Scripts -->{% include scripts.html %} {% include tracking.html %} </body>
 
 </html>

@@ -1,0 +1,117 @@
+/* font experiments */
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Itim&display=swap'); */
+
+:root {
+  --font-family-sans-serif: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  height: 100%;
+  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.tooltip {
+  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.popover {
+  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 400;
+}
+
+/* leads and blockquotes border-radius: 25px 25px 55px 5px/5px 55px 25px 25px; */
+.lead {
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-style: solid;
+  border-color: #eee;
+  border-width: thin;
+  border-radius: 5px 55px 25px 25px/25px 25px 55px 5px;
+}
+
+.blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  border-width: thin;
+  border-radius: 5px 35px 25px 25px/25px 25px 45px 5px;
+  padding: 1.5em 1.5em 1.5em;
+  margin: 1.5em 0;
+  position: relative;
+}
+.blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'PT Sans', sans-serif;
+  color: #666;
+  text-align: center;
+}
+/*
+.blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #e74c3c;
+}
+*/
+
+/* masthead */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://source.unsplash.com/_4815u_ACqQ/1920x1080'); /* https://source.unsplash.com/BtbjCFUvBXs/1920x1080 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* top of page banner images from https://startbootstrap.com/templates/full-width-pics/ */
+.bg-image-full {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.bwfilter {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+/* sticky footer */
+
+#sticky-footer-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}

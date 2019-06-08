@@ -34,11 +34,11 @@ With these two framing concepts in mind, the goal of the workshop was to take pa
 4. Do less to make more.
 5. Move from “constructive criticism” to “collaborative co-construction.”
 
-<img src="{{ '/assets/img/figures/cook-worsham_Figure1.jpg' | absolute_url }}" class="figure" alt="Figure 1: The Build Something mini-manifesto." />
+<img src="{{ '/assets/img/figures/cook-worsham_Figure1.jpg' | absolute_url }}" class="img-fluid" alt="Figure 1: The Build Something mini-manifesto." />
 
 Next, workshop participants reflected on and shared their ideas on learner-centeredness and design thinking, collaborating in a variety of ways to describe and define these concepts.
 
-<img src="{{ '/assets/img/figures/cook-worsham_Figure2.jpg' | absolute_url }}" class="figure" alt="Figure 2: Participant word cloud." />
+<img src="{{ '/assets/img/figures/cook-worsham_Figure2.jpg' | absolute_url }}" class="img-fluid" alt="Figure 2: Participant word cloud." />
 
 ## Approaches for Defining Context, Learning Challenges, and Breakthroughs
 
@@ -57,7 +57,7 @@ As a part of our larger goal for the workshop to build confidence and break down
 ### Four Paths Prototyping
 One of the most important concepts in design thinking is intentionally leveraging both divergent thinking (coming up with a variety of different ideas and possibilities) and convergent thinking (focusing and narrowing possibilities to select an initial approach). In the four paths prototyping activity, participants rapidly explored four different ways to approach an instructional challenge. This divergent process helps designers work past their initial assumptions and explore a wider variety of pathways and possibilities. In order to help participants overcome initial fears about the drawing aspect of four-paths prototyping, the presenters shared some of our own prototypes, demonstrating that advanced (or even basic) artistic skills are not required for this activity.
 
-<img src="{{ '/assets/img/figures/cook-worsham_Figure3.jpg' | absolute_url }}" class="figure" alt="Figure 3: 4 paths prototype." />
+<img src="{{ '/assets/img/figures/cook-worsham_Figure3.jpg' | absolute_url }}" class="img-fluid" alt="Figure 3: 4 paths prototype." />
 
 A key aspect of the four paths activity is that it is very fast. Participants were given five minutes to complete the activity. At first, completing the task in this time frame seems impossible, but as in the previous design thinking activities, the time limit helps foster rapid idea generation, reduce self-critique, and encourage fearless exploration. 
 
@@ -65,7 +65,7 @@ A key aspect of the four paths activity is that it is very fast. Participants we
 
 Participants were then asked to select one of their four paths ideas to flesh out during the rest of the workshop. Depending on the modality of the learning object, we provided storyboarding and wireframing templates for videos, online tutorials, and workshops, or participants could opt to just use blank paper to start sketching out a section of their prototype. Once again, we limited the amount of time for each iteration of the planning, giving participants 20 minutes for the first sketch and 15 minutes for a second draft, with time for collaborative and structured feedback in between. Finally, participants were given seven minutes to draft a plan for completing their project when they returned to their home campus.
 
-<img src="{{ '/assets/img/figures/cook-worsham_Figure4.jpg' | absolute_url }}" class="figure" alt="Figure 4: Examples of participant rapid-prototyping." />
+<img src="{{ '/assets/img/figures/cook-worsham_Figure4.jpg' | absolute_url }}" class="img-fluid" alt="Figure 4: Examples of participant rapid-prototyping." />
 
 ## Feedback Gathering Techniques
     

@@ -1,0 +1,143 @@
+---
+layout: default
+---
+<!-- full screen opener -->
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+        <div class="col-12 col-md-10 col-lg-8 text-center mx-auto p-4">
+        <div class="bs-component">
+            <div style="height: 82px;"></div>
+              <div class="jumbotron bg-white p-3">
+                  {% if site.profile %}
+                    <img class="rounded-circle img-fluid w-25 border border-primary" src="{{ site.profile }}" alt="{% if site.profile-alt %}{{ site.profile-alt }}{% else %}{{ site.title }} profile image{% endif %}">
+            {% endif %} 
+                <h1 class="display-4" >{{ site.title }}</h1>
+                <p>{{ site.description }}</p>
+                <hr class="my-4">
+                <p>
+                  <a class="btn btn-primary btn-lg" href="{{'/about' | relative_url }}" role="button">About</a>
+                    <a class="btn btn-primary btn-lg" href="{{'/blog' | relative_url }}" role="button">📓  Notes</a>
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+
+
+<!-- replace below w/ this one: -->
+<div class="container mt-3">
+    <!-- <h2 class="my-4"><a href="{{ "/presentations" | absolute_url }}">¯\_(ツ)_/¯ Presentations <small> <i class="fas fa-angle-double-right fa-xs"></i> </small></a></h2>-->
+    <h2 class="my-2">Recent <a href="{{ "/presentations" | absolute_url }}">Presentations</a>, Writing, and <a href="{{ "/blog" | absolute_url }}">Notes</a>:</h2>
+      <!-- Project One -->
+      {% assign somepresentations = site.presentations | reverse %}
+      {% for presentation in somepresentations limit:2 %}
+      <div class="row">
+        {% if presentation.feature and presentation.feature-alt %}
+        <div class="col-12 col-md-4">
+          <a href="{{ presentation.url | absolute_url }}">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}">
+          </a>
+        </div>
+          {% endif %}
+        <div class="col-12 col-md-8">
+            <p><small class="text-muted"><span class="date">{% if presentation.hidedayindate %}{{ presentation.date | date: '%B, %Y' | append: ". " }}{% else %}{{ presentation.date | date: '%B %d, %Y' | append: ". "}}{% endif %}</span></small></p>
+          <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>
+          <p>{{ presentation.abstract | strip_html | truncatewords: 20 }}</p>
+          <a class="btn btn-primary" href="{{ presentation.url | absolute_url }}">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      {% endfor %}
+</div>
+<!-- -->
+<div class="container mt-3">
+<div class="row">
+    {% for publication in site.publications reversed %}
+    {% if publication.feature and presentation.feature-alt %}
+        <div class="col-12 col-md-4">
+            <a href="{{ publication.url | absolute_url }}">
+            <img class="img-fluid rounded mb-3 mb-md-0 mx-auto d-block" style="max-height: 300px;" src="{{ publication.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ publication.feature-alt }}">
+          </a>
+        </div>
+    {% endif %}
+    <div class="col-12 col-md-8">
+        <p><small class="text-muted"><span class="date">{% if publication.date %}{{ publication.date | date: '%B %d, %Y' | append: ". "}}{% endif %}</span></small></p>
+        <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} <!--{% if publication.doi %} <a href="{{ publication.doi }}" class="btn zoombtn"><i class="fa fa-link" aria-hidden="true"></i> Permalink/DOI</a> {% endif %}--> </p>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+</div>
+ <!--Most recent writing-->
+                <h2><i class="fas fa-book" aria-hidden="true"></i> Writing</h2>
+                {% for publication in site.publications reversed %}
+                        <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} <!--{% if publication.doi %} <a href="{{ publication.doi }}" class="btn zoombtn"><i class="fa fa-link" aria-hidden="true"></i> Permalink/DOI</a> {% endif %}--> </p>
+                {% endfor %}
+
+
+<div class="container mt-3">
+    <div class="col mx-auto"><!-- content column -->
+        <!-- 1 up recent features -->
+        <!-- *** -->
+        <!-- 2 recent presentations -->
+        <h2 class="my-4"><a href="{{ "/presentations" | absolute_url }}">¯\_(ツ)_/¯ Presentations <small> <i class="fas fa-angle-double-right fa-xs"></i> </small></a></h2>
+        <div class="row">
+            {% assign somepresentations = site.presentations | reverse %}
+            {% for presentation in somepresentations limit:3 %}
+            <div class="col-12 col-md-6 mb-4">
+    <div class="card h-100">
+        <p class="card-header"><span class="date">{% if presentation.hidedayindate %}{{ presentation.date | date: '%B, %Y' | append: ". " }}
+                        {% else %}{{ presentation.date | date: '%B %d, %Y' | append: ". "}}
+                        {% endif %}</span></p> {% if presentation.feature and presentation.feature-alt %}
+        <a href="{{ presentation.url | absolute_url }}"><img class="card-img-top img-fluid" style="width: 100%; height: 20vw; object-fit: cover; border-radius: 0;" src="{{ presentation.feature | prepend: site.feature-dir | absolute_url}}" alt="{{ presentation.feature-alt }}"></a>
+        <!-- todo:: why site.feature-dir -->{% endif %}
+        <div class="card-body">
+            <h4 class="card-title">
+            <a href="{{ post.url | absolute_url }}">{{ presentation.title }}</a>
+          </h4>
+            {% if presentation.meetingname %}<p class="card-text">at {{ presentation.meetingname}}</p>{% endif %}
+            <!--<p class="card-text">{{ presentation.abstract | strip_html }}</p>-->
+            <!--<p class="card-text">{% if presentation.presenters %} {{ presentation.presenters | append: "."}} {% endif %} </p>-->
+            <p class="card-text"> {% if presentation.slideurl %} {% if presentation.slideurl contains 'http' %} <a href="{{ presentation.slideurl }}" class="btn btn-primary icon fa-picture-o">Slides</a> {% else %} <a href="{{ presentation.slideurl | absolute_url }}" class="button icon fa-picture-o">Slides</a> {% endif %} {% endif %} {% if presentation.handouturl %} {% if presentation.handouturl contains 'http' %} <a href="{{ presentation.handouturl }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a> {% else%} <a href="{{ presentation.handouturl  | absolute_url }}" class="button"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a> {% endif %} {% endif %} {% if presentation.meetingurl %} <a href="{{ presentation.meetingurl }}" class="button"><i class="fa fa-calendar" aria-hidden="true"></i> Event Page</a> {% endif %} <a href="{{ presentation.url | absolute_url }}" class="button">More information ></a></p>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+<!-- /presentations -->
+        
+            
+            <!-- 2 recent notes -->
+        <h2 class="my-4">Notes <small><a href="{{ "/blog" | absolute_url }}"> >> </a></small></h2>
+        <div class="row">
+            {% for post in site.posts limit:2 %}
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100">
+                    <p class="card-header">Note from <span class="date">{{ post.date | date_to_string }}</span></p>
+                    <a href="{{ post.url | absolute_url }}"><img class="card-img-top" src="{{ post.image | absolute_url }}" alt="{{ post.title }}"></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+            <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+          </h4>
+                        <p class="card-text">{{ post.description | strip_html }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- /notes -->
+        </div>
+    </div><!-- /content column -->
+</div><!-- container -->
+
+
+    
+    <hr><hr><hr>
+    
+               
+
+

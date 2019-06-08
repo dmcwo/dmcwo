@@ -24,16 +24,16 @@
                 {% endif %}
                              {% if presentation.slideurl %}
                                 {% if presentation.slideurl contains 'http' %}
-                                    <a style="text-decoration: none;" href="{{ presentation.slideurl }}"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                    <a style="text-decoration: none;" href="{{ presentation.slideurl }}"><i class="fas fa-images" aria-hidden="true"></i> Slides</a>
                                 {% else %}
-                                    <a style="text-decoration: none;" href="{{ presentation.slideurl | absolute_url }}"><i class="fa fa-picture-o" aria-hidden="true"></i> Slides</a>
+                                    <a style="text-decoration: none;" href="{{ presentation.slideurl | absolute_url }}"><i class="fas fa-images" aria-hidden="true"></i> Slides</a>
                                 {% endif %}
                              {% endif %}
                              {% if presentation.handouturl %}
                                 {% if presentation.handouturl contains 'http' %}
-                                    <a style="text-decoration: none;" href="{{ presentation.handouturl }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                    <a style="text-decoration: none;" href="{{ presentation.handouturl }}"><i class="fas fa-file-invoice" aria-hidden="true"></i> Handout</a>
                                 {% else %}
-                                    <a style="text-decoration: none;" href="{{ presentation.handouturl | absolute_url }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Handout</a>
+                                    <a style="text-decoration: none;" href="{{ presentation.handouturl | absolute_url }}"><i class="fas fa-file-invoice" aria-hidden="true"></i> Handout</a>
                                 {% endif %}
                              {% endif %}
                              {% if presentation.meetingurl %}
