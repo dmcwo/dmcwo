@@ -19,15 +19,18 @@
         <li class="nav-item">
           <a class="nav-link {% if page.url contains '/about/' %} active {% endif %}" href="{{'/about' | relative_url }}">About</a>
         </li>
-        <li class="nav-item">
+         <li>
+              <a class="nav-link" href="{{'/presentations' | relative_url }}">Presentations</a>
+          </li>
+          <li>
+              <a class="nav-link" href="{{'/publications' | relative_url }}">Writing</a>
+          </li>
+          <li class="nav-item">
           <a class="nav-link" href="{{'/blog' | relative_url }}">Notes</a>
         </li>
-          <li>
-              <a class="nav-link" href="{{'/elements' | relative_url }}">Elements</a>
-          </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link" href="{{'/contact' | relative_url }}">Contact</a>
-        </li>
+        </li>-->
      </ul>
     </div>
   </div>

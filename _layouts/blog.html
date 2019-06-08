@@ -19,7 +19,7 @@ description: A collection of notes
 <!-- Post List -->
 <hr>
 {% for post in site.posts %}
-      <div class="row">
+      <div class="row align-items-center">
           <div class="col col-md-auto">
               <p><small class="text-muted"><span class="date">{% if post.hidedayindate %}{{ post.date | date: '%B, %Y' | append: ". " }}{% else %}{{ post.date | date: '%B %d, %Y'  }}{% endif %}</span></small></p>
           </div>
@@ -31,7 +31,7 @@ description: A collection of notes
           </div>
           {% endif %}
           <div class="col col-md-auto">
-              <h3><small><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></small></h3>
+              <h3 style="font-size: .9em;"><a href="{{ post.url | absolute_url }}" style="text-decoration: none;">{{ post.title }}</a></h3>
           </div>
     </div>
     <hr>

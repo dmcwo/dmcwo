@@ -9,8 +9,13 @@ sitemap:
 ---
 ## Hi there! I'm [Doug Worsham](http://twitter.com/dmcwo)
 
-This site is an experimental online notebook for jotting down ideas, tinkering with web design, and sharing notes and handouts from [conference presentations]({{ '/presentations' | absolute_url }}). I try to write here about learning, libraries, knowledge building communities, instructional design, the creative process, and the diverse practices of researchers and writers.
+and this is my experimental online notebook for jotting down ideas, tinkering with web design, playing with typography, and sharing notes and handouts from [conference presentations]({{ '/presentations' | absolute_url }}). I try to write here about learning, libraries, knowledge building communities, instructional design, the creative process, and the diverse practices of researchers and writers.
 
-<ul class="actions">
-	<li><a href="{{ "/about/cv" | absolute_url }}" class="button">My CV</a></li>
-</ul>
+<div class="mx-auto">
+<center>
+<a class="btn btn-primary btn-sm" href="{{'/about/cv' | relative_url }}" role="button">My CV</a>
+<a class="btn btn-primary btn-sm" href="{{'/presentations' | relative_url }}" role="button">¯\_(ツ)_/¯ Presentations</a>
+<a class="btn btn-primary btn-sm" href="{{'/publications' | relative_url }}" role="button"><i class="fas fa-book" aria-hidden="true"></i> Writing</a>
+<a class="btn btn-primary btn-sm" href="{{'/blog' | relative_url }}" role="button">📓 Notes</a>
+</center>
+</div>
