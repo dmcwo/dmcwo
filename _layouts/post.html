@@ -1,54 +1,57 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-    {% include head.html %}
-	</head>
-	<body class="is-loading">
+---
+layout: default
+---
+{% if page.feature %}
+<div class="py-5 bg-image-full" style="background-image: url('{{ page.feature | prepend: site.feature-dir | absolute_url}}'); background-color: dimgray;">
+    {% endif %}
+<header class="mb-4" style="margin-top: 6em;">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+      <div class="{% if page.wide %}col-xl-10 col-lg-11{% else %}col-lg-8 col-md-10{% endif %} mx-auto">
+        <div class="page-heading">
+    <div class="card border-primary">
+        <p class="card-header"> {% if page.hidedayindate %}{{ page.date | date: '%B, %Y' }}{% else %}{{ page.date | date: '%B %d, %Y' }}{% endif %}</p>
+        <div class="card-body">
+        <h1>{{ page.title}}{% if page.subtitle %}<small> - {{ page.subtitle }}</small>{% endif %}</h1>
+        </div>
+        <!--<div class="card-footer text-muted"><small><span class="float-left">Posted in: {{ page.categories }}</span><span class="float-right"> include read_time.html content=page.content </span></small></div>-->
+    </div>
+</div>
+          </div>
+      </div>
+    </div>
+</header>
+</div>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <div class="container mt-5">
+      <div class="row">
+          <div class="{% if page.wide %}col-xl-10 col-lg-11{% else %}col-lg-8 col-md-10{% endif %} mx-auto">
+{{content}}
+          </div>
+      </div>
+</div>
 
-				<!-- Header -->
-        <header id="header">
-          <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-        </header>
+<!-- prev/next -->
 
-				<!-- Nav -->
-            {% include navbar.html %}
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        <div class="clearfix">
+          {% if page.previous.url %}
+          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+              Note</span></a>
+          {% endif %}
+          {% if page.next.url %}
+          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}"
+            data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+              Note</span> &rarr;</a>
+          {% endif %}
 
+        </div>
 
-				<!-- Main -->
-				<div id="main">
-          <section class="post">
-    				<header class="major">
-      				<span class="date">{{page.date | date_to_string}}</span>
-      				<h1>{{page.title}}</h1>
-      				<!-- this repeats the first few lines if you don't specify excerpt -->
-                    <!--<p>{{page.excerpt}}</p>-->
-      			</header>
-                {% if page.feature %}
-      			<div class="image main"><img src="{{page.feature}}" alt="{{ page.featurealt }}"></div>
-                {% endif %}
-      			<p>{{content}}</p>
-      		</section>
-                </div>
-
-
-
-				<!-- Footer -->
-        {% include footer.html %}
-
-			</div>
-
-      <!-- Scripts -->
-  		{% include scripts.html %}
-			{% include tracking.html %}
-
-	</body>
-</html>
+      </div>
+    </div>
+  </div>

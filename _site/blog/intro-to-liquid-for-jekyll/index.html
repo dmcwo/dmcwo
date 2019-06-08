@@ -1,13 +1,8 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+
 <html>
-	<head>
-    <meta charset="utf-8" />
+
+  <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <title>An introduction to liquid for jekyll site creators - Part 1</title>
 <meta name="description" content="">
@@ -40,19 +35,10 @@
 <noscript>
     <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
 </noscript>
-	</head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Header -->
-        <header id="header">
-          <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a>
-        </header>
-
-				<!-- Nav -->
-            <!-- Navigation -->
+  <body class="d-flex flex-column">
+      
+     <!-- Navigation -->
 <!-- https://startbootstrap.com/snippets/navbar-logo/ -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
   <div class="container">
@@ -109,18 +95,31 @@
 </nav>
 -->
 
+    
+<header class="mb-4" style="margin-top: 6em;">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+    <div class="card border-primary">
+        <p class="card-header"> May 19, 2017</p>
+        <div class="card-body">
+        <h1>An introduction to liquid for jekyll site creators - Part 1</h1>
+        </div>
+        <!--<div class="card-footer text-muted"><small><span class="float-left">Posted in: </span><span class="float-right"> include read_time.html content=page.content </span></small></div>-->
+    </div>
+</div>
+          </div>
+      </div>
+    </div>
+</header>
+</div>
 
-				<!-- Main -->
-				<div id="main">
-          <section class="post">
-    				<header class="major">
-      				<span class="date">19 May 2017</span>
-      				<h1>An introduction to liquid for jekyll site creators - Part 1</h1>
-      				<!-- this repeats the first few lines if you don't specify excerpt -->
-                    <!--<p>I suppose it is a good thing that you can get quite far with jekyll site creation without really knowing what you are doing.</p>-->
-      			</header>
-                
-      			<p><p>I suppose it is a good thing that you can get quite far with <a href="https://jekyllrb.com">jekyll</a> site creation without really knowing what you are doing. I’ve been playing around with jekyll for some time, and using it for <a href="http://uclalibrary.github.io/research-tips">some projects at work</a> without, I’ve realized recently, a particularly clear understanding of quite a few foundational concepts.</p>
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+<p>I suppose it is a good thing that you can get quite far with <a href="https://jekyllrb.com">jekyll</a> site creation without really knowing what you are doing. I’ve been playing around with jekyll for some time, and using it for <a href="http://uclalibrary.github.io/research-tips">some projects at work</a> without, I’ve realized recently, a particularly clear understanding of quite a few foundational concepts.</p>
 
 <p>One rather glaring example: I had seen mention of <a href="https://shopify.github.io/liquid/">Liquid</a>, but didn’t understand that I was using it every time I created a layout or a list of posts.</p>
 
@@ -156,7 +155,7 @@
 
 <p><code class="highlighter-rouge"> {{ site.title }} </code>: dmcwo’s notebook</p>
 
-<p><code class="highlighter-rouge"> {{site.time}} </code>: 2019-06-07 21:26:45 -0700</p>
+<p><code class="highlighter-rouge"> {{site.time}} </code>: 2019-06-07 21:49:14 -0700</p>
 
 <p><code class="highlighter-rouge"> {{ page.title }} </code>: An introduction to liquid for jekyll site creators - Part 1</p>
 
@@ -183,14 +182,37 @@
     </li>
   </ol>
 </div>
-</p>
-      		</section>
-                </div>
 
+          </div>
+      </div>
+</div>
 
+<!-- prev/next -->
 
-				<!-- Footer -->
-        <div id="sticky-footer-content">  
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        <div class="clearfix">
+          
+          <a class="btn btn-primary float-left" href="/dmcwo/blog/share-your-research-tips/"
+            data-toggle="tooltip" data-placement="top" title="Sharing Research Tips (like YouTube videos)">&larr; Previous<span class="d-none d-md-inline">
+              Note</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/dmcwo/blog/transparency-matters/"
+            data-toggle="tooltip" data-placement="top" title="Transparency in Assignment Design">Next<span class="d-none d-md-inline">
+              Note</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+      
+      <div id="sticky-footer-content">  
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
               <div class="btn-group mx-auto" role="group" aria-label="Footer Buttons">
@@ -202,11 +224,8 @@
     </div>
   </footer>
 </div>
-
-			</div>
-
-      <!-- Scripts -->
-  		<script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+      
+    <script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
 <script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/dmcwo/assets/scripts.js"></script>
 
@@ -221,8 +240,7 @@
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
 -->
-			
 
+  </body>
 
-	</body>
 </html>

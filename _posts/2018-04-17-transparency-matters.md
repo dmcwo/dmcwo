@@ -9,8 +9,8 @@ One of my favorite concurrent sessions at CARL 2018 was [Maya Hobscheid’s “F
 
 To get a sense of what this was all about, compare these two writing prompts:
 
-* [Assignment Prompt 1](/assets/pdfs/less-transparent.pdf)
-* [Assignment Prompt 2](/assets/pdfs/more-transparent.pdf)
+* [Assignment Prompt 1](/dmcwo/assets/pdfs/less-transparent.pdf)
+* [Assignment Prompt 2](/dmcwo/assets/pdfs/more-transparent.pdf)
 
 What’s different? The second writing prompt - created during an instructor development workshop - breaks the task down into two assignments, and also clearly outlines the purpose, task, and criteria of the assignment. While there is still room for improvement, the second prompt clarifies expectations and begins to introduce a process for completing the assignment. Much better!
 

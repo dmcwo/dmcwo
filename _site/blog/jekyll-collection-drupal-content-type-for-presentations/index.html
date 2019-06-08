@@ -1,13 +1,8 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+
 <html>
-	<head>
-    <meta charset="utf-8" />
+
+  <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <title>Creating a Drupal-like content type in Jekyll for Presentations</title>
 <meta name="description" content="">
@@ -40,19 +35,10 @@
 <noscript>
     <link rel="stylesheet" href="http://localhost:4000/dmcwo/%20/assets/css/noscript.css" />
 </noscript>
-	</head>
-	<body class="is-loading">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Header -->
-        <header id="header">
-          <a href="http://localhost:4000/dmcwo/" class="logo">dmcwo's notebook</a>
-        </header>
-
-				<!-- Nav -->
-            <!-- Navigation -->
+  <body class="d-flex flex-column">
+      
+     <!-- Navigation -->
 <!-- https://startbootstrap.com/snippets/navbar-logo/ -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary static-top fixed-top">
   <div class="container">
@@ -109,18 +95,31 @@
 </nav>
 -->
 
+    
+<header class="mb-4" style="margin-top: 6em;">
+  <div class="overlay"></div>
+  <div class="container">
+      <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="page-heading">
+    <div class="card border-primary">
+        <p class="card-header"> June 25, 2016</p>
+        <div class="card-body">
+        <h1>Creating a Drupal-like content type in Jekyll for Presentations</h1>
+        </div>
+        <!--<div class="card-footer text-muted"><small><span class="float-left">Posted in: </span><span class="float-right"> include read_time.html content=page.content </span></small></div>-->
+    </div>
+</div>
+          </div>
+      </div>
+    </div>
+</header>
+</div>
 
-				<!-- Main -->
-				<div id="main">
-          <section class="post">
-    				<header class="major">
-      				<span class="date">25 Jun 2016</span>
-      				<h1>Creating a Drupal-like content type in Jekyll for Presentations</h1>
-      				<!-- this repeats the first few lines if you don't specify excerpt -->
-                    <!--<p>I'll probably always be a big fan of Drupal.... But for a small, personal site like this one, it feels like a bit much.</p>-->
-      			</header>
-                
-      			<p><p>I’ll probably always be a big fan of <a href="http://drupal.org">Drupal</a>. I absolutely loved working with Drupal to create platforms for communities to build and share knowledge together. But for a small, personal site like this one, it feels like a bit much. As <a href="https://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/">others have said</a>, running a server and a database, and keeping up with all the associated updates and patches, begins to feel like overhead, and for me, ultimately ends up becoming an excuse to not actually write anything! That said, running something in a hosted WordPress environment doesn’t give adequate opportunities to tinker with things under the hood. So lately, I’ve felt like <a href="jekyllrb.com">Jekyll</a> comes to the rescue by providing just the right balance of tinkering-time and a focus on content. As if I had any lingering doubts, I recently learned that <a href="http://jekyllrb.com/docs/collections/">Jekyll’s collections</a> function quite a bit like Drupal’s content types + views framework. In other words, <em>you can make Drupal-like content types in Jekyll</em>. Brilliant.</p>
+  <div class="container mt-5">
+      <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+<p>I’ll probably always be a big fan of <a href="http://drupal.org">Drupal</a>. I absolutely loved working with Drupal to create platforms for communities to build and share knowledge together. But for a small, personal site like this one, it feels like a bit much. As <a href="https://www.sitepoint.com/wordpress-vs-jekyll-might-want-make-switch/">others have said</a>, running a server and a database, and keeping up with all the associated updates and patches, begins to feel like overhead, and for me, ultimately ends up becoming an excuse to not actually write anything! That said, running something in a hosted WordPress environment doesn’t give adequate opportunities to tinker with things under the hood. So lately, I’ve felt like <a href="jekyllrb.com">Jekyll</a> comes to the rescue by providing just the right balance of tinkering-time and a focus on content. As if I had any lingering doubts, I recently learned that <a href="http://jekyllrb.com/docs/collections/">Jekyll’s collections</a> function quite a bit like Drupal’s content types + views framework. In other words, <em>you can make Drupal-like content types in Jekyll</em>. Brilliant.</p>
 
 <p>To get started learning how this works, I read through <a href="http://ben.balter.com/2015/02/20/jekyll-collections/">Ben Balter’s splendid tutorial</a> -  essential reading to get your footing with jekyll collections.</p>
 
@@ -192,14 +191,37 @@ collections:
   <li>Goes over some <a href="https://github.com/jekyll/jekyll/issues/2515">front matter sorting options</a></li>
 </ul>
 
-</p>
-      		</section>
-                </div>
 
+          </div>
+      </div>
+</div>
 
+<!-- prev/next -->
 
-				<!-- Footer -->
-        <div id="sticky-footer-content">  
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <hr>
+        <div class="clearfix">
+          
+          <a class="btn btn-primary float-left" href="/dmcwo/blog/liw-notes-critical-foundations/"
+            data-toggle="tooltip" data-placement="top" title="FYE, critical librarianship, and healthy discontent at LIW2016">&larr; Previous<span class="d-none d-md-inline">
+              Note</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/dmcwo/blog/reviving-old-laptops/"
+            data-toggle="tooltip" data-placement="top" title="Reviving old laptops w/ CloudReady">Next<span class="d-none d-md-inline">
+              Note</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+      
+      <div id="sticky-footer-content">  
 <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
               <div class="btn-group mx-auto" role="group" aria-label="Footer Buttons">
@@ -211,11 +233,8 @@ collections:
     </div>
   </footer>
 </div>
-
-			</div>
-
-      <!-- Scripts -->
-  		<script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
+      
+    <script src="/dmcwo/assets/vendor/jquery/jquery.min.js"></script>
 <script src="/dmcwo/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="/dmcwo/assets/scripts.js"></script>
 
@@ -230,8 +249,7 @@ collections:
 <script src="http://localhost:4000/dmcwo/assets/js/util.js"></script>
 <script src="http://localhost:4000/dmcwo/assets/js/main.js"></script>
 -->
-			
 
+  </body>
 
-	</body>
 </html>
