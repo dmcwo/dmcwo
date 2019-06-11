@@ -6,6 +6,7 @@ locale:             en_US
 baseurl: "/dmcwo" # the subpath of your site, e.g. /blog
 url: "https://dmcwo.github.io" # the base hostname & protocol for your site
 feature-dir: "/assets/img/features/"
+future: true
 
 defaults:
 - scope:
