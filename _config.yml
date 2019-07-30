@@ -21,6 +21,7 @@ defaults:
 collections:
     presentations:
         output: true
+        future: true
         permalink: /presentations/:path/
     publications:
         output: true
