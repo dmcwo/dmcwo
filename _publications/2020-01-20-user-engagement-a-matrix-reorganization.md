@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "User Engagement - A matrix reorganization."
-date: 01-01-2020
+date: 2020-01-20
 category: book chapter
 cover: 
 authors: "Worsham, D., Benedetti, A., Consales, J., Horne, A., Mody, N., Ogawa, R., & Vest, M."

@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "The WI+RE Way: a manifesto and a process for learner-led design."
-date: 01-31-2020
+date: 2020-01-30
 category: journal article
 cover: 
 authors: "Harper, Taylor., Mody, Nisha, Ravaei, Kian, Romero, Renee, & Worsham, Doug"
