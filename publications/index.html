@@ -5,7 +5,7 @@ excerpt: "A List of Publications and Writing"
 ---
 <h2>Writing</h2>
 
-{% assign groups = site.publications | group_by: "category" | sort: "name" %}
+{% assign groups = site.publications | group_by: "category" | sort: "category" %}
 
 {% for group in groups %}
 <h3 class="mt-4">{{ group.name | capitalize | append:'s' }}</h3>
@@ -17,7 +17,7 @@ excerpt: "A List of Publications and Writing"
         </div>
         {% endif %}
         <div class="col-12 col-md-10">
-             <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ site.url }}{{ publication.url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} </p>
+             <p> {% if publication.authors-apa %} {{ publication.authors-apa }} {% elsif publication.authors %} {{ publication.authors | append: "."}} {% endif %} {% if publication.date %} {{ publication.date | date: '%Y' | prepend: "(" | append: "). " }} {% endif %} {% if publication.doi %} <a href="{{ publication.doi }}" target="_blank">{{ publication.title }}</a>. {% else %} <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>. {% endif %} {% if publication.pubname %} {{ publication.pubname | append: ". " }} {% endif %} {% if publication.volume %} {{ publication.volume | append: ". " }} {% endif %} </p>
             <p>{% if publication.doi %} <a href="{{ publication.doi }}" class="btn"><i class="fa fa-link" aria-hidden="true"></i> Permalink/DOI</a> {% endif %} </p>
         </div>
     </div> 

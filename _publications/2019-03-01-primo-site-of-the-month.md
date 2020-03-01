@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "Wheel of Sources - PRIMO Site of the Month Interview for March 2019"
-date: 03-01-2019
+date: 2019-03-01
 category: interview
 cover: /assets/img/covers/color_Primo.jpg
 authors: "Kian Ravaei, Emilia Marcyk, and Doug Worsham"

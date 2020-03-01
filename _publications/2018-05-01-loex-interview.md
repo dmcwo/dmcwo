@@ -1,7 +1,7 @@
 ---
 layout: publication
 title: "The Quarterly Interview: Doug Worsham"
-date: 05-01-2018
+date: 2018-05-01
 category: interview
 cover: /assets/img/covers/loex_logo.png
 authors: "Doug Worsham"

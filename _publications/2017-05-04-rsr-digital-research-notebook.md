@@ -1,8 +1,8 @@
 ---
 layout: publication
 title: "Digital Research Notebook: A Simple Tool for Reflective Learning"
-date: 05-04-2017
-category: journal article
+date: 2017-05-04
+category: article
 cover: /assets/img/covers/Digital_research_notebook.jpg
 authors: "Julia Glassman and Doug Worsham"
 authors-apa: "Glassman, J. and Worsham, D."
