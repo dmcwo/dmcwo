@@ -3,7 +3,7 @@ layout: publication
 title: "Writing a Literature Review - May 2020 Site of the Month Interview"
 date: 2020-05-08
 category: interview
-cover: 
+cover: /assets/img/covers/color_Primo.jpg
 authors: "Ravaei, Kian, Taylor Harper, Doug Worsham, and Kimberly Miller"
 authors-apa: "Ravaei, K., Harper, T., Worsham, D., and Miller, K."
 abstract: |
