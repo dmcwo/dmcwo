@@ -16,6 +16,7 @@ permalink: about/cv/
 
 ### Professional Training
 
+* Crucial Conversations. Los Angeles, CA. August 2019.
 * Library Management Skills Institute II: The Organization. Association of Research Libraries. October, 2018.
 * Instructional Design Essentials e-Course. American Library Association. 2015.
 * Assessment Immersion. Association of College & Research Libraries. November 2014.
@@ -84,6 +85,7 @@ permalink: about/cv/
 
 * Glassman, J. and Worsham, D. (2017). [Digital Research Notebook: A Simple Tool for Reflective Learning](http://dx.doi.org/10.1108/RSR-10-2016-0063). Reference Services Review. 45. Selected as one of the [Top Twenty Articles of 2017](http://www.ala.org/rt/sites/ala.org.rt/files/content/archive/2018jun.pdf) by the American Library Association - Library Instruction Roundtable.
 * Glassman, J., Lee, S., Salomon, D., Worsham, D. (2017). [Community Collections: Nurturing Student Curators](http://www.worldcat.org/oclc/971333311). Students lead the library : the importance of student contributions to the academic library.
+* Tranfield, M., Worsham, D., & Mody, N. (2020). When you only have a week: Rapid-response, grassroots public services for access, wellness, and student success. College & Research Libraries News, 81(7), 326. doi:https://doi.org/10.5860/crln.81.7.326
 
 ### Blog posts and writing for the web
 
@@ -140,6 +142,9 @@ permalink: about/cv/
 * CIO’s Strategic Plan Work Team. 2009. Co-authored 3 Strategic Plan Charters: Gauge instructional impact, Establish an innovation incubator, Offer a suite of instructional technologies.
 * Provost’s Technology Enhanced Learning (TEL) Shaping Committee. 2007-2008.
 * Engage Technology Enhanced Collaborative Group Work Award. 2008-2009, Support Team.
+
+## Grants
+* Center for the Advancement of Teaching - Instructional Improvement Program. Major Grant: Learning Assistants and Learner-Led Design. Co-authored with Shanna Shaked and Renee Romero.  
 
 ## UCLA Credit Courses Taught
 
