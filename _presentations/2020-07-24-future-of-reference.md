@@ -17,7 +17,9 @@ banner:
 banner-alt: 
 permalink: presentations/future-of-reference-focus-on-function
 ---
-
+<div>
+    <a href="{{ '/assets/audio/future-of-reference-audio.mp3' | absolute_url }}"><i class="fas fa-headphones-alt" aria-hidden="true"></i> Audio version of poster (mp3).</a>
+</div>
 <h2>Description:</h2>
 <p>The UCLA Sceince Libraries provide research assistance services through a tiered-support model. Access services staff attend in-person train-the trainer sessions, enabling them to answer basic reference questions at library service points. For patrons who need additional help, staff can refer to email and 24/7 chat, and help patrons schedule consultations. Consultations are provided by our graduate students (for general inquiries across scientific disciplines) and library liaisons (for advanced research support). Our graduate students were hired through the UCLA MLIS program and trained using online modules and shadowing librarians. Patrons can schedule appointments online with either graduate students or librarians. Graduate students are typically available for same-day or next-day appointments.</p>
 
