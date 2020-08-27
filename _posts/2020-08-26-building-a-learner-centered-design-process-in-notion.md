@@ -6,7 +6,7 @@ excerpt:
 feature: /assets/img/features/notion-lcdp-project-overview-page-feature
 tags: [notion, design process, learner-centered design]
 ---
-At the moment, we use the free version of Asana for the design process at [WI+RE](https://uclalibrary.github.io/research-tips/), as well as our Library's organizational confluence page, and sometimes google docs for our tools and styles documentation, slack for in-the-moment communication, and occaisionally also ....
+At the moment, we use the free version of Asana for the design process at [WI+RE](https://uclalibrary.github.io/research-tips/), as well as our Library's organizational confluence site, and sometimes google docs for our tools and styles documentation, slack for in-the-moment communication, and occaisionally also ....
 
 It can be a lot of different platforms to manage and the work has been spreading out across various digital spaces over the years. Recently, I got curious about whether or not <a href="https://www.notion.so/" target="_blank">Notion</a> might be a good option to bring our learner-centered design process all together in one place.
 
