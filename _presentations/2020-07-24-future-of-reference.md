@@ -17,11 +17,11 @@ banner:
 banner-alt: 
 permalink: presentations/future-of-reference-focus-on-function
 ---
-<div>
-    <a href="{{ '/assets/audio/future-of-reference-audio.mp3' | absolute_url }}"><i class="fas fa-headphones-alt" aria-hidden="true"></i> Audio version of poster (mp3).</a>
+<div class="my-5">
+    <a href="{{ '/assets/audio/future-of-reference-audio.mp3' | absolute_url }}"><i class="fas fa-headphones-alt" aria-hidden="true"></i> Audio version of poster (mp3)</a> - song by <a href="https://soundcloud.com/user-167495781-421446768/" target="_blank">sebywo</a>.
 </div>
 <h2>Description:</h2>
-<p>The UCLA Sceince Libraries provide research assistance services through a tiered-support model. Access services staff attend in-person train-the trainer sessions, enabling them to answer basic reference questions at library service points. For patrons who need additional help, staff can refer to email and 24/7 chat, and help patrons schedule consultations. Consultations are provided by our graduate students (for general inquiries across scientific disciplines) and library liaisons (for advanced research support). Our graduate students were hired through the UCLA MLIS program and trained using online modules and shadowing librarians. Patrons can schedule appointments online with either graduate students or librarians. Graduate students are typically available for same-day or next-day appointments.</p>
+<p>The UCLA Science Libraries provide research assistance services through a tiered-support model. Access services staff attend in-person train-the trainer sessions, enabling them to answer basic reference questions at library service points. For patrons who need additional help, staff can refer to email and 24/7 chat, and help patrons schedule consultations. Consultations are provided by our graduate students (for general inquiries across scientific disciplines) and library liaisons (for advanced research support). Our graduate students were hired through the UCLA MLIS program and trained using online modules and shadowing librarians. Patrons can schedule appointments online with either graduate students or librarians. Graduate students are typically available for same-day or next-day appointments.</p>
 
 <h2>Conclusion:</h2>
 <p>As we plan for the next academic year, we will assess the success of the service from a patron and student perspective. We will also address some of our ongoing challenges: graduate student scheduling and turnover, access services coordination, and promotion and outreach. We intend to expand this service model by hiring more graduate students and implementing it in multiple library locations.</p>
