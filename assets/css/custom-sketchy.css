@@ -1,6 +1,7 @@
 /* font experiments */
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;1,500&family=Open+Sans&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Itim&display=swap'); */
 
 :root {
@@ -31,6 +32,16 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Fredericka the Great", cursive;
   font-weight: 400;
 }
+
+#cv h1, #cv h2, #cv h3, #cv h4, #cv h5, #cv h6 {
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+#cv body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 
 /* leads and blockquotes border-radius: 25px 25px 55px 5px/5px 55px 25px 25px; */
 .lead {
