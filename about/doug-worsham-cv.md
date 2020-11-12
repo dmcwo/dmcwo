@@ -3,7 +3,7 @@ layout: cv
 title: Doug Worsham's Curriculum Vitae
 permalink: about/cv/
 ---
-<!-- todo: add anchors. Side-TOC? maybe a special layout for cv? special fonts for this page? embedded pdf instead? -->
+<!-- todo: add anchors. Side-TOC? maybe a special layout for cv?  embedded pdf instead? link fixes? -->
 
 # Doug Worsham's CV
 
@@ -92,18 +92,17 @@ permalink: about/cv/
 * Digital Humanities 199/299: Directed Research & Special Projects in Digital Humanities – Mapping Cultural Los Angeles. Co-taught with Kelly Miller. Spring 2013. In this Digital Humanities capstone course, students worked collaboratively to create a prototype for the interactive online web presence for the Lyrical Map of the Concept of Los Angeles and present their work and learning at the Digital Humanities Capstone Showcase.
 
 ### Educational Website Development
-* Worsham, D., et. al., WI+RE - Writing Instruction + Research Education. (v2.1, 2020). Website: https://uclalibrary.github.io/research-tips/. Code: https://github.com/uclalibrary/research-tips.
-* Moberg-Parker, J., Ravaei, K., Worsham, D., & Yan, X. CREATES - An Innovative Method for Understanding Scientific Articles. (v1.0, 2020). Website: https://uclalibrary.github.io/creates/. Code: https://github.com/uclalibrary/creates.
-* Worsham, D., & Roux, S. (v1.0, 2019). Foundations in Learner-Centered Design. Website: https://uclalibrary.github.io/foundations. Code: https://github.com/uclalibrary/foundations.
+* Worsham, D., et. al., WI+RE - Writing Instruction + Research Education. (v2.1, 2020). [Website](https://uclalibrary.github.io/research-tips/). [Code](https://github.com/uclalibrary/research-tips).
+* Moberg-Parker, J., Ravaei, K., Worsham, D., & Yan, X. CREATES - An Innovative Method for Understanding Scientific Articles. (v1.0, 2020). [Website](https://uclalibrary.github.io/creates/). [Code](https://github.com/uclalibrary/creates).
+* Worsham, D., & Roux, S. (v1.0, 2019). Foundations in Learner-Centered Design. [Website](https://uclalibrary.github.io/foundations). [Code](https://github.com/uclalibrary/foundations).
 
 
-<!--- todo:: format links --->
 ### Selected Open Educational Resources Development
-* Rapid-response media production projects for the transition to remote learning: Remote Access Video Series (https://uclalibrary.github.io/research-tips/get-configured/) and Remote eBook Roadmap (https://uclalibrary.github.io/research-tips/ebook-access/).
-* Academic Advising / Counseling Research Guide (https://guides.library.ucla.edu/advising-research/). Created through a participatory design process with UCLA Academic Advisors and Counselors.
-* Cornerstone Research Workshops Online - Project Lead for design and development of 8 online research and writing skills workshops (https://uclalibrary.github.io/research-tips/workshops/).
-* Start with Your Questions / Mapping Your Research Ideas (https://uclalibrary.github.io/research-tips/questions/).
-* Language Learning Podcast Production. Producer for 5 podcast series including Cartoneras (https://researchguides.library.wisc.edu/cartoneras/cartonerasocialmedia) and Personalidades de la Cultura Hispánica.
+* Rapid-response media production projects for the transition to remote learning: [Remote Access Video Series](https://uclalibrary.github.io/research-tips/get-configured/) and [Remote eBook Roadmap](https://uclalibrary.github.io/research-tips/ebook-access/).
+* [Academic Advising / Counseling Research Guide](https://guides.library.ucla.edu/advising-research/). Created through a participatory design process with UCLA Academic Advisors and Counselors.
+* [Cornerstone Research Workshops Online](https://uclalibrary.github.io/research-tips/workshops/) - Project Lead for design and development of 8 online research and writing skills workshops.
+* [Start with Your Questions / Mapping Your Research Ideas](https://uclalibrary.github.io/research-tips/questions/).
+* Language Learning Podcast Production. Producer for 5 podcast series including [Cartoneras](https://researchguides.library.wisc.edu/cartoneras/cartonerasocialmedia) and Personalidades de la Cultura Hispánica.
 
 <!--- notes on podcast production --->
 <!--- 
@@ -130,6 +129,7 @@ permalink: about/cv/
 * Digital Building Blocks for 21st Century Undergraduate Researchers and Writers. UCLA Instructional Improvement Program Grant. Funded for FY 2016-2017.
 * Scaffolding Assignments and Quantifying Successful Academic Strategies. CCLE Instructional Development Program Grant. Funded for FY 2016-2017.
 
+<!--- todo:: links --->
 ## Publications
 
 * Worsham, D., Hoffner, C., Shaked, S. (Forthcoming). Creating a STEM Collaborative Learning Center: A Case Study. Journal of Learning Spaces.
