@@ -8,9 +8,9 @@ authors: "Harper, Taylor., Mody, Nisha, Ravaei, Kian, Romero, Renee, & Worsham, 
 authors-apa: "Harper, T., Mody, N., Ravaei, K., Romero, R., & Worsham, D."
 abstract:    
 pubname: "Journal of New Librarianship"
-doi: https://www.newlibs.org/article/11757-the-wi-re-way-a-manifesto-and-a-process-for-learner-led-design
+doi: https://doi.org/10.33011/newlibs/9/23
 apa: |
-    Harper, T., Mody, N., Ravaei, K., Romero, R., & Worsham, D. (2020). The WI+RE Way: A manifesto and a process for learner-led design. Journal of New Librarianship, 5(1). https://www.newlibs.org/article/11757-the-wi-re-way-a-manifesto-and-a-process-for-learner-led-design
+    Harper, T., Mody, N., Ravaei, K., Romero, R., & Worsham, D. (2020). The WI+RE Way: A manifesto and a process for learner-led design. Journal of New Librarianship, 5(1). https://doi.org/10.33011/newlibs/9/23
 
 ---
 

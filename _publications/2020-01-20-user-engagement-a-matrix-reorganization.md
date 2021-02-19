@@ -1,6 +1,6 @@
 ---
 layout: publication
-title: "User Engagement - A matrix reorganization."
+title: "User Engagement - A matrix reorganization"
 date: 2020-01-20
 category: book chapter
 cover: /assets/img/covers/boffcardwell300.jpg

@@ -9,11 +9,12 @@ excerpt: "A List of Publications and Writing"
 
 {% for group in groups %}
 <h3 class="mt-4">{{ group.name | capitalize | append:'s' }}</h3>
-    {% for publication in group.items %}
+    {% assign itemsingroup = group.items | reverse %}
+    {% for publication in itemsingroup %}
     <div class="row">
         {% if publication.cover %}
         <div class="d-none d-md-block col-md-2">
-            {% if publication.doi %}<a href="{{ publication.doi }}">{% endif %}<img src="{{ publication.cover | absolute_url }}" alt="{{ publication.title | append:' cover page' }}" class="img-fluid border shadow" style="background-color: black">{% if publication.doi %}</a>{% endif %}
+            {% if publication.doi %}<a href="{{ publication.doi }}">{% endif %}<img src="{{ publication.cover | absolute_url }}" alt="{{ publication.title | append:' cover page' }}" class="img-fluid border shadow" style="background-color: black; border: 1px solid #555;">{% if publication.doi %}</a>{% endif %}
         </div>
         {% endif %}
         <div class="col-12 col-md-10">
