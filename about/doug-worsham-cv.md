@@ -17,6 +17,7 @@ permalink: about/cv/
 
 <!--- todo:: links to certificates ---> 
 
+* UX Strategy Online Master Class With Jaime Levy (6-week course). May 25 - June 29, 2021.
 * Introduction to Systematic Review and Meta-Analysis (6-week course). Johns Hopkins University on Coursera. Completed 9/15/2020.
 * Introduction to Typography (4-week course). California Institute of the Arts on Coursera. [Completed 4/1/2019](https://www.coursera.org/account/accomplishments/verify/66YCGSJKV44V).
 * Crucial Conversations. Los Angeles, CA. August 2019.
