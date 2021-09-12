@@ -38,9 +38,13 @@ permalink: about/cv/
 
 ## Professional Experience
 
+### UC San Diego Library
+
+#### Digital Experience Manager (2021-present)
+
 ### UCLA Library
 
-#### Librarian (2012-present)
+#### Librarian (2012-2021)
 <!--- Team Lead for Teaching & Learning. 2017-present. Interim Dir. Teaching & Learning Services. 2016-2017. Teaching & Learning Services Coordinator. 2012-2016.--->
 
 * Lead enterprise-wide projects to improve instructional services, assessment tools, and the library user experience for all learners and researchers at UCLA.
