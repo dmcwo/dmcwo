@@ -16,6 +16,6 @@ and this is my experimental online notebook for jotting down ideas, tinkering wi
 <a class="btn btn-primary btn-sm" href="{{'/about/cv' | relative_url }}" role="button">My CV</a>
 <a class="btn btn-primary btn-sm" href="{{'/presentations' | relative_url }}" role="button">¯\_(ツ)_/¯ Presentations</a>
 <a class="btn btn-primary btn-sm" href="{{'/publications' | relative_url }}" role="button"><i class="fas fa-book" aria-hidden="true"></i> Writing</a>
-<a class="btn btn-primary btn-sm" href="{{'/blog' | relative_url }}" role="button">📓 Notes</a>
+<!--<a class="btn btn-primary btn-sm" href="{{'/blog' | relative_url }}" role="button">📓 Notes</a>-->
 </center>
 </div>
