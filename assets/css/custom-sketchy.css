@@ -1,44 +1,45 @@
 /* font experiments */
 @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;1,500&family=Open+Sans&display=swap');
 /* @import url('https://fonts.googleapis.com/css?family=Itim&display=swap'); */
 
 :root {
-  --font-family-sans-serif: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-sans-serif: "Atkinson Hyperlegible", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
   height: 100%;
-  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
 .tooltip {
-  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .popover {
-  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 button, input, optgroup, select, textarea {
-  font-family: "Noto Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Atkinson Hyperlegible", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Fredericka the Great", cursive;
+  font-family: "Atkinson Hyperlegible", cursive;
   font-weight: 400;
 }
 
 #cv h1, #cv h2, #cv h3, #cv h4, #cv h5, #cv h6 {
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 #cv body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Atkinson Hyperlegible','Open Sans', sans-serif;
 }
 
 
