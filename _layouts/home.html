@@ -25,7 +25,7 @@ layout: default
                   {% assign somepresentations = site.presentations | reverse %}
                   {% assign somepublications = site.publications | reverse %}
                   <!-- todo:: figure out "and" here:  assign somepresandpubs = somepresentations and somepublications  -->
-                  <p><small>Latest: {% for item in somepresentations limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in somepublications limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in site.posts limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}{% endfor %}</a></small></p>
+                  <p><small>Latest: {% for item in somepresentations limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in somepublications limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | <!-- removing posts for now {% for item in site.posts limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}{% endfor %} </a> --> </small></p>
               </div>
             </div>
         </div>
