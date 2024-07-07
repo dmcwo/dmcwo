@@ -10,7 +10,7 @@ description: A list of presentations
             <h2><center>¯\_(ツ)_/¯ Presentations</center></h2>
         </div>
         <div class="col-12 col-md-8 mt-3">
-            <p><small class="text-muted">{% assign counter = 1 %}{% for item in site.presentations %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} presentations at places like {% assign mnlist = site.presentations | map: 'meetingshortname' | join: ',' | join: ',' | split: ',' | uniq | sort | shift %} <!-- I have no idea how this works, but found it here https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll -->
+            <p><small class="text-muted">{% assign counter = 1 %}{% for item in site.presentations %}{% unless item.published == false %}{% assign counter=counter | plus:1 %}{% endunless %}{% endfor %}{{ counter }} presentations at {% assign mnlist = site.presentations | map: 'meetingshortname' | join: ',' | join: ',' | split: ',' | uniq | sort | shift %} <!-- I have no idea how this works, but found it here https://stackoverflow.com/questions/34242743/distinct-list-of-tags-in-jekyll -->
                             {{ mnlist | join: ", "}}.</small></p>
         </div>
     </div>
