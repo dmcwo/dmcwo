@@ -30,7 +30,7 @@ button, input, optgroup, select, textarea {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Atkinson Hyperlegible", cursive;
+  font-family: "Atkinson Hyperlegible";
   font-weight: 400;
 }
 
