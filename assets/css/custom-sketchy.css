@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Atkinson Hyperlegible";
   font-weight: 400;
+  text-transform: none;
 }
 
 #cv h1, #cv h2, #cv h3, #cv h4, #cv h5, #cv h6 {
@@ -64,7 +65,7 @@ h1, h2, h3, h4, h5, h6,
   border-style: solid;
   border-color: #eee;
   border-width: thin;
-  border-radius: 5px 35px 25px 25px/25px 25px 45px 5px;
+  border-radius: 5px 5px 5px 5px/5px 5px 5px 5px;
   padding: 1.5em 1.5em 1.5em;
   margin: 1.5em 0;
   position: relative;
