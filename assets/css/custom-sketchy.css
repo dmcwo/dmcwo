@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6,
 
 
 
-/* leads and blockquotes border-radius: 25px 25px 55px 5px/5px 55px 25px 25px; */
+/* old leads and blockquotes border-radius: 25px 25px 55px 5px/5px 55px 25px 25px; */
 .lead {
   font-size: 1.5rem;
   font-weight: 200;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6,
   border-style: solid;
   border-color: #eee;
   border-width: thin;
-  border-radius: 5px 55px 25px 25px/25px 25px 55px 5px;
+  border-radius: 5px 5px 5px 5px/5px 5px 5px 5px;
 }
 
 .blockquote {
