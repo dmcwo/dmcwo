@@ -33,7 +33,6 @@ description: A list of presentations
             <p><small class="text-muted"><span class="date">{% if presentation.hidedayindate %}{{ presentation.date | date: '%B, %Y' | append: ". " }}{% else %}{{ presentation.date | date: '%B %d, %Y'  }}{% endif %}{% if presentation.meetingname or presentation.meetingshortname %} at {% if presentation.meetingshortname %}{{ presentation.meetingshortname }}. {% else %}{{ presentation.meetingname }}{% endif %}{% endif %}</span></small></p>
           <h3><a href="{{ presentation.url | absolute_url }}">{{ presentation.title }}</a></h3>
           <p>{{ presentation.abstract | strip_html | truncatewords: 20 }}</p>
-          <a class="btn btn-primary" href="{{ presentation.url | absolute_url }}">Learn more <i class="fas fa-angle-double-right fa-xs"></i></a>
         </div>
       </div>
       <!-- /.row -->
