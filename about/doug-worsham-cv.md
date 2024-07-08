@@ -17,6 +17,7 @@ permalink: about/cv/
 
 <!--- todo:: links to certificates ---> 
 
+* Advanced Figma Academy Certification. [Completed 12/11/2023](https://www.dive.club/certificate/doug-worsham).
 * Equity Meets Design Live Cohort (5-week course). Equity Meets Design. November, 2021.
 * Inclusive Manager’s Toolkit (10-week course). DeEtta Jones and Associates. November 2021.
 * UX Strategy Online Master Class With Jaime Levy (6-week course). May 25 - June 29, 2021.
