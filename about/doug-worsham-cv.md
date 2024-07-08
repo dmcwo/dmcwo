@@ -41,6 +41,10 @@ permalink: about/cv/
 ### UC San Diego Library
 
 #### Digital Experience Manager (2021-present)
+* Center diverse voices at every stage of a highly engaged and evolving design process. Build infrastructure and create processes for inclusive and equitable design.
+* Lead projects and initiatives through highly transparent collaboration, partnership, and teamwork in order to continually improve the holistic user experience for all users across the Library's digital services and platforms, including the Library Public Website, UC Library Search, the LibApps suite, and emerging platforms for digital research and scholarship.
+* Supervise the Digital Experience Team, including the Web Manager, Content Strategist, Lead for Inclusive Design, Integrated Library System (ILS) Manager, and 7 student employee design assistants.
+Direct and organize agile project teams to p
 
 ### UCLA Library
 
