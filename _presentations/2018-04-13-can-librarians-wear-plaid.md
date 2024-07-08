@@ -11,7 +11,7 @@ abstract: "In 2016-2017, most public services units in UCLA Library were merged 
 slideurl: 
 handouturl: /assets/posters/2018-04-CARL-Can-Librarians-Wear-Plaid-Poster.pdf
 feature: /2018-04-CARL-Can-Librarians-Wear-Plaid-Poster.png
-feature-alt: "Image of poster: Can Librarians Wear Plaid - Early insights into forming a matrix organization"
+feature-alt: "Poster presentation: Can Librarians Wear Plaid - Early insights into forming a matrix organization"
 permalink: presentations/can-librarians-wear-plaid
 ---
 <div class="imagebox">
