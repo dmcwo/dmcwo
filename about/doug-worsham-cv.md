@@ -17,6 +17,8 @@ permalink: about/cv/
 
 <!--- todo:: links to certificates ---> 
 
+* Equity Meets Design Live Cohort (5-week course). Equity Meets Design. November, 2021.
+* Inclusive Manager’s Toolkit (10-week course). DeEtta Jones and Associates. November 2021.
 * UX Strategy Online Master Class With Jaime Levy (6-week course). May 25 - June 29, 2021.
 * Introduction to Systematic Review and Meta-Analysis (6-week course). Johns Hopkins University on Coursera. Completed 9/15/2020.
 * Introduction to Typography (4-week course). California Institute of the Arts on Coursera. [Completed 4/1/2019](https://www.coursera.org/account/accomplishments/verify/66YCGSJKV44V).
