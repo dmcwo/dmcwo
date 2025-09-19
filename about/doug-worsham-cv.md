@@ -144,7 +144,7 @@ Direct and organize agile project teams to p
 <!--- todo:: links --->
 ## Publications
 
-* Worsham, D., Hoffner, C., Shaked, S. (Forthcoming). Creating a STEM Collaborative Learning Center: A Case Study. Journal of Learning Spaces.
+* Worsham, D., Hoffner, C., Shaked, S. (2021). Creating a STEM Collaborative Learning Center: A Case Study. Journal of Learning Spaces.
 * Tranfield, M., Worsham, D., & Mody, N. (2020). When you only have a week: Rapid-response, grassroots public services for access, wellness, and student success. College & Research Libraries News, 81(7), 326. doi:https://doi.org/10.5860/crln.81.7.326
 * Pierre, J., Harper, T., Meyer, C., Ravaei, K., & Worsham, D. (2020). More Than an Internship: A Student-led Learning Community for Instructional Design. In Engaging Students Through Campus Libraries: High Impact Learning Models. Libraries Unlimited.
 * Worsham, D., Benedetti, A., Consales, J., Horne, A., Mody, N., Ogawa, R., & Vest, M. (2020). User Engagement—A matrix reorganization. In Leading change in academic libraries (pp. 75–85). Association of College & Research Libraries,. https://escholarship.org/uc/item/8wj331d3
@@ -160,65 +160,6 @@ Direct and organize agile project teams to p
 ## Conference Presentations 
 
 {% include presentation-list-cv.html %}
-
-## Selected Projects, Communities, Committees, and Leadership
-
-### Association of College and Research Libraries (ACRL)
-
-* Undergraduate Librarian’s Discussion Group. Convener. 2014-2016.
-
-### UCLA <!--- todo:: need dates in this section --->
-* Cross-Campus Teaching Innovations Working Group(CTIG). Member. March 2017-present.
-* Campus Steering Committee for Online Teaching & Learning. Member. 2015-present.
-* Undergraduate Research Week Planning Committee. Member. March 2015-December 2019.
-* WASC Accreditation: Instructional Development, Faculty Development, and Course Evaluation Group. Member. 2019.
-* Dean of Life Sciences Ad hoc advisory committee on the Life Science Core Media Studio. June-July, 2018.
-* Undergraduate Research Week Faculty Mentorship Award for Humanities, Arts, and Social Sciences. Review Committee Member. April-May 2018, 2019, 2020.
-* Office of Residential Life Academic Development Committee. Member. 2012-2016.
-* Dean of the Humanities Writing Committee. Member. November 2014-November 2015.
-* Associate Vice Provost’s Instructional Media Lab Task Force. Member. November 2014 – February 2015.
-* Hiring Committee. Director, Undergraduate Research Center, Humanities, Arts, and Social Sciences. Summer 2013.
-
-### UCLA Library
-* LibApps Management Team. Co-lead. August 2019-present.
-* User Engagement - Research Functional Team. Member. August 2019-present.
-* WI+RE - Writing Instruction + Research Education. Co-founder and Co-Lead. 2015-present.
-* Regional Medical Library Hiring Committee for the Community Engagement Librarian. Member. June 2020-August 2020.
-* Stats 2019/2020 Project (Migrate to LibInsights for Public Services Statistics). Member. May 2019-July 2020.
-* CCLE (Moodle)/LibApps Integration Task Force. Co-lead. January 2019-August 2019.
-* User Engagement. Team Lead for Teaching & Learning. 2017-2019.
-* Collaborative Learning Center in the Sciences (STEM-CLC) Pilot. Co-lead. July 2017-July 2019. 
-* Defining Core Competencies Project Team. Co-lead and Co-author of The Core Competencies - Research and Information Literacy at UCLA. 2018-2019.
-* Undergraduate Research Week Poster Printing Award Program. Founder and Lead. 2016-2019.
-* Evidence of Engagement and Learning (Digital Badge Award System) Project Team. Member. March 2015-March 2018.
-* Teaching & Learning Services. Interim Director. 2015-2017.
-* Hiring Committee. Health and Life Sciences Librarian. Member. November, 2016.
-* User Engagement Planning and Reorganization Work Group. Member. June 2016 - June 2017.
-* Hiring Committee. Lead for Emerging Literacies. Hiring Manager. March 2016-July 2016.
-* Strategic Planning - Teaching & Learning Working Group. Lead. June 2015 - March 2016.
-* Strategic Planning Steering Committee. Member. May 2015 - March 2016.
-* Teaching & Learning Services Leadership Group. Chair. May 2014-August 2016.
-* Library - CCLE (Common Collaborative Learning Environment) Bridge Team. Member. October 2013 – March 2015.
-* UCLA Library Common Content Team. Co-chair. May 2014 - September 2014.
-* UCLA Library First Year Experience Team. Co-chair and Founder. June 2013 - March 2016.
-* TLS Online Learning Working Group. Lead and Founder. May 2013 – March 2016.
-* Stressbusters Team. Chair. Spring 2013-Spring 2014.
-* Evaluation to Value Team. Co-chair. February 2013-April 2016.
-* Hiring Committee. CLICC/DIIT Programmer/Analyst. Member. October, 2012 - February 2013.
-* Public Services Council. September 2012 – August 2017.
-
-### University of Wisconsin - Madison 
-* ComETS (Community of Education Technology Support at UW-Madison) Steering Committee. Chair (2011-2012). Member (2009-2011).
-* UW Madison Drupal Users Group. Lead Community Organizer. 2009 – 2012.
-* Retirement Issues Committee. Member and Website Design Co-Chair. Fall 2006 – Spring 2011.
-* Personal Publishing: e-Learning Roadmap Proposal Team. Co-author. Fall 2009-Spring 2010.
-* Engage Digital Media Assignments Award. Shaping Committee, Technology Team, Support Team Member. 2009-2010.
-* CIO’s Strategic Plan Work Team. Co-author of 3 Strategic Plan Charters: Gauge instructional impact, Establish an innovation incubator, Offer a suite of instructional technologies. 2009.
-* Provost’s Technology Enhanced Learning (TEL) Shaping Committee. Member. 2007-2008.
-* Engage Technology Enhanced Collaborative Group Work Award. Support Team. 2008-2009.
-
-## Grants
-* Center for the Advancement of Teaching - Instructional Improvement Program. Major Grant: Learning Assistants and Learner-Led Design. Co-authored with Shanna Shaked and Renee Romero.  
 
 
 ## Online Learning and Multimedia
