@@ -1,37 +1,89 @@
 ---
 layout: default
 ---
-<!-- full screen opener -->
-<header class="masthead">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center mx-auto p-4">
-        <div class="bs-component">
-            <div style="height: 82px;"></div>
-              <div class="jumbotron bg-white p-3">
-                  {% if site.profile %}
-                    <img class="rounded-circle img-fluid w-25 border border-primary" src="{{ site.profile }}" alt="{% if site.profile-alt %}{{ site.profile-alt }}{% else %}{{ site.title }} profile image{% endif %}">
-            {% endif %} 
-                <h1 class="display-4" >{{ site.title }}</h1>
-                <p>{{ site.description }}</p>
-                <hr class="my-4">
-                <p>
-                    <!-- todo:: use <div class="btn-group-vertical btn-block" data-toggle="buttons"> on xs and sm only -->
-                  <a class="btn btn-primary btn-sm" href="{{'/about' | relative_url }}" role="button">About</a>
-                    <a class="btn btn-primary btn-sm" href="{{'/presentations' | relative_url }}" role="button">¯\_(ツ)_/¯ Presentations</a>
-                    <a class="btn btn-primary btn-sm" href="{{'/publications' | relative_url }}" role="button"><i class="fas fa-book" aria-hidden="true"></i> Writing</a>
-                    <!-- <a class="btn btn-primary btn-sm" href="{{'/blog' | relative_url }}" role="button">📓 Notes</a> -->
-                </p>
-                  {% assign somepresentations = site.presentations | reverse %}
-                  {% assign somepublications = site.publications | reverse %}
-                  <!-- todo:: figure out "and" here:  assign somepresandpubs = somepresentations and somepublications  -->
-                  <p><small>Latest: {% for item in somepresentations limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | {% for item in somepublications limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}</a>{% endfor %} | <!-- removing posts for now {% for item in site.posts limit: 1 %}<a href="{{ item.url | absolute_url }}">{{ item.title }}{% endfor %} </a> --> </small></p>
-              </div>
-            </div>
-        </div>
-    </div>
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">{{ site.author.name }}</h1>
+    <p class="page-description">{{ site.author.bio }}</p>
+  </header>
+
+  <div class="prose">
+    {{ content }}
   </div>
-</header>
-               
+
+  <nav class="home-nav" aria-label="Quick links">
+    <div class="cluster" style="--cluster-gap: 0.75rem; margin-top: 2rem;">
+      {% comment %}<a href="{{ '/about/' | relative_url }}" class="btn">About</a>{% endcomment %}
+      <a href="{{ '/presentations/' | relative_url }}" class="btn">Presentations</a>
+      <a href="{{ '/publications/' | relative_url }}" class="btn">Publications</a>
+      <a href="{{ '/projects/' | relative_url }}" class="btn">Projects</a>
+      <a href="{{ '/Notes/' | relative_url }}" class="btn">Notes</a>
+    </div>
+  </nav>
+
+  {% assign featured_presentations = site.presentations | where: "featured", true | sort: "sort_date" | reverse %}
+  {% assign featured_publications = site.publications | where: "featured", true | sort: "sort_date" | reverse %}
+  {% assign featured_projects = site.projects | where: "featured", true | sort: "sort_date" | reverse %}
+
+  {% if featured_projects.size > 0 %}
+  <section class="section" aria-label="Featured projects">
+    <div style="margin-top: 3rem;">
+      <h2>Featured Projects</h2>
+      <div class="project-tiles">
+        {% for project in featured_projects %}
+        <article class="project-tile">
+          <div class="project-tile__body">
+            <p class="project-tile__category">{{ project.category | replace: '-', ' ' }}</p>
+            <h3 class="project-tile__title">
+              <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+            </h3>
+            {% if project.subtitle %}
+            <p class="project-tile__subtitle">{{ project.subtitle }}</p>
+            {% endif %}
+            {% if project.institution %}
+            <p class="project-tile__institution">{{ project.institution }}</p>
+            {% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if featured_presentations.size > 0 or featured_publications.size > 0 %}
+  <section class="section" aria-label="Featured work">
+    {% if featured_presentations.size > 0 %}
+    <div style="margin-top: 3rem;">
+      <h2>Featured Presentations</h2>
+      <ul class="flow" style="--flow-space: 0.75rem; margin-top: 1rem;">
+        {% for item in featured_presentations %}
+        <li>
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          <span class="text-muted text-small">
+            — {{ item.meeting_short_name | default: item.meeting_name }}, {{ item.date | date: "%Y" }}
+          </span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+
+    {% if featured_publications.size > 0 %}
+    <div style="margin-top: 3rem;">
+      <h2>Featured Publications</h2>
+      <ul class="flow" style="--flow-space: 0.75rem; margin-top: 1rem;">
+        {% for item in featured_publications %}
+        <li>
+          <a href="{{ '/publications/' | relative_url }}">{{ item.title }}</a>
+          <span class="text-muted text-small">— {{ item.year }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
 
 
+</div>

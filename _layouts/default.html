@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-  {% include head.html %}
-
-  <body class="d-flex flex-column">
-      
-     {% unless page.url == '/' %}{% include navbar.html %}{% endunless %}
-
-    {{ content }}
-      
-      {% if page.url =='/' %}{% include footer-sticky.html %}{% else %}{% include footer.html %}{% endif %}
-      
-    {% include scripts.html %}
-
-  </body>
-
+<html lang="en" data-theme="mocha">
+{% include head.html %}
+<body>
+  <div class="page-wrapper">
+    {% include skip-link.html %}
+    {% include header.html %}
+    <main id="main-content" class="page-main">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </div>
+</body>
 </html>

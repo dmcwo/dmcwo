@@ -1,0 +1,94 @@
+---
+layout: default
+---
+<div class="container container--narrow">
+  <article class="collection-detail">
+    <header class="collection-detail__header">
+      <h1 class="collection-detail__title">{{ page.title }}{% if page.subtitle %}: {{ page.subtitle }}{% endif %}</h1>
+      <div class="collection-detail__meta">
+        {% if page.institution %}<p>{{ page.institution }}</p>{% endif %}
+        {% if page.collaborators and page.collaborators != "" %}<p>{{ page.collaborators }}</p>{% endif %}
+        {% if page.start_date and page.end_date %}
+          <p class="cv-entry__date">{{ page.start_date | date: "%Y" }}–{{ page.end_date | date: "%Y" }}</p>
+        {% elsif page.start_date %}
+          <p class="cv-entry__date">{{ page.start_date | date: "%Y" }}–present</p>
+        {% elsif page.date %}
+          <p class="cv-entry__date">{{ page.date | date: "%B %Y" }}</p>
+        {% endif %}
+      </div>
+
+      {% assign has_project_url = page.project_url | strip %}
+      {% if has_project_url != "" %}
+      <ul class="cv-actions" style="margin-top: 1.5rem;" aria-label="Project links">
+        <li>
+          <a href="{{ page.project_url }}" class="cv-action-link">
+            {% include icon.html name="external-link" size="18" aria-hidden="true" %}
+            <span>View Project</span>
+            <span class="visually-hidden">: {{ page.title }}</span>
+          </a>
+        </li>
+      </ul>
+      {% endif %}
+    </header>
+
+    {% assign has_featured = page.featured_image | strip %}
+    {% if has_featured != "" %}
+    <div class="collection-detail__feature-image">
+      <img src="{{ page.featured_image | relative_url }}" alt="{{ page.featured_image_alt | default: page.title }}" />
+    </div>
+    {% endif %}
+
+    {% if page.abstract or page.role or page.skill_themes %}
+      <div class="collection-detail__abstract">
+      {% if page.abstract %}
+          <strong>Summary:</strong> {{ page.abstract }}
+      {% endif %}
+      {% if page.role %}
+      <p class="project-role"><strong>My role:</strong> {{ page.role }}</p>
+      {% endif %}
+      {% if page.skill_themes %}
+      <p class="cv-entry__skill-themes"><span class="cv-entry__skill-themes-label">Core capabilities:</span> {{ page.skill_themes | join: ", " }}</p>
+      {% endif %}
+      </div>
+    {% endif %}
+
+    {% if page.tags %}
+    <div class="collection-detail__meta" style="margin-top: 1rem;">
+      <p><strong>Tags:</strong> {{ page.tags | join: ", " }}</p>
+    </div>
+    {% endif %}
+
+    {% if content != "" %}
+    <div class="collection-detail__body prose">
+      {{ content }}
+    </div>
+    {% endif %}
+
+    {% assign sorted = site.projects | sort: "sort_date" | reverse %}
+    {% assign current_index = nil %}
+    {% for item in sorted %}
+      {% if item.url == page.url %}
+        {% assign current_index = forloop.index0 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if current_index %}
+    {% assign prev_index = current_index | minus: 1 %}
+    {% assign next_index = current_index | plus: 1 %}
+    <nav class="pager" aria-label="Previous and next projects">
+      {% if prev_index >= 0 %}
+      <a href="{{ sorted[prev_index].url | relative_url }}" class="pager__link">
+        <span class="pager__label">&larr; Newer</span>
+        {{ sorted[prev_index].title }}
+      </a>
+      {% endif %}
+      {% if next_index < sorted.size %}
+      <a href="{{ sorted[next_index].url | relative_url }}" class="pager__link pager__link--next">
+        <span class="pager__label">Older &rarr;</span>
+        {{ sorted[next_index].title }}
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </article>
+</div>

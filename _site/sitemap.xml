@@ -1,281 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-    <url>
-      <loc>http://localhost:4000/blog/json-cv/</loc>
-      
-        <lastmod>2018-06-01T20:55:50-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/transparency-matters/</loc>
-      
-        <lastmod>2018-04-17T19:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/intro-to-liquid-for-jekyll/</loc>
-      
-        <lastmod>2017-05-19T19:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/share-your-research-tips/</loc>
-      
-        <lastmod>2017-01-13T18:12:29-08:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/reviving-old-laptops/</loc>
-      
-        <lastmod>2016-10-22T21:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/jekyll-collection-drupal-content-type-for-presentations/</loc>
-      
-        <lastmod>2016-06-25T19:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/liw-notes-critical-foundations/</loc>
-      
-        <lastmod>2016-06-15T17:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/liw-thresholds-maybe-concepts-yes/</loc>
-      
-        <lastmod>2016-06-15T17:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/liw-learning-spaces/</loc>
-      
-        <lastmod>2016-06-14T17:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/coding-presentations/</loc>
-      
-        <lastmod>2016-06-02T19:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/footnotes-in-markdown/</loc>
-      
-        <lastmod>2016-05-28T08:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/notebooks/</loc>
-      
-        <lastmod>2016-05-26T21:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/a-post-about-pages/</loc>
-      
-        <lastmod>2016-05-21T09:20:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/text-is-the-best/</loc>
-      
-        <lastmod>2016-05-20T21:12:29-07:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-  
-    <url>
-      <loc>http://localhost:4000/blog/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>1.0</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/about/cv/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/elements/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.7</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/jsoncv/example-cv/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>1.0</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/publications/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/presentations/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>monthly</changefreq>
-      
-       <priority>1.0</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/about/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>yearly</changefreq>
-      
-       <priority>0.7</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/drafts/lots-of-trial-and-error/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/sitemap.xml</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/test/</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/robots.txt</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/feed.xml</loc>
-       <lastmod>2017-11-10T00:20:35+00:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>0.5</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/page2/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>1.0</priority>
-      
-     </url>
-  
-    <url>
-      <loc>http://localhost:4000/blog/page3/</loc>
-       <lastmod>2017-11-02T00:00:00-07:00</lastmod>
-      
-       <changefreq>weekly</changefreq>
-      
-       <priority>1.0</priority>
-      
-     </url>
-  
+<url>
+<loc>http://localhost:4000/dmcwo/notes/internsive-problem-definition/</loc>
+<lastmod>2026-02-07T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/co-evolution-in-expert-practice/</loc>
+<lastmod>2026-02-13T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-05-26-notebooks/</loc>
+<lastmod>2016-05-26T21:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-06-02-coding-presentations/</loc>
+<lastmod>2016-06-02T19:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-06-16-liw-learning-spaces/</loc>
+<lastmod>2016-06-14T17:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-06-15-liw-thresholds-maybe-concepts-yes/</loc>
+<lastmod>2016-06-15T17:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-06-25-jekyll-collection-drupal-content-type-for-presentations/</loc>
+<lastmod>2016-06-25T19:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2016-10-22-reviving-old-laptops/</loc>
+<lastmod>2016-10-22T21:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2017-01-13-share-your-research-tips/</loc>
+<lastmod>2017-01-13T18:12:29-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2017-05-18-intro-to-liquid-for-jekyll/</loc>
+<lastmod>2017-05-19T19:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2018-04-17-transparency-matters/</loc>
+<lastmod>2018-04-17T19:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/2019-06-09-visiting-baskerville/</loc>
+<lastmod>2019-06-09T19:12:29-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/sfsu-matesol-unrehearsed-communication/</loc>
+<lastmod>2002-05-03T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tesol-instant-documentaries/</loc>
+<lastmod>2004-04-02T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tesol-feedback-on-student-presentations/</loc>
+<lastmod>2005-04-01T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tesol-lessonbuilder/</loc>
+<lastmod>2005-04-01T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-collaborative-learning-lab/</loc>
+<lastmod>2005-05-01T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-improving-class-discussions-online-chats/</loc>
+<lastmod>2005-05-01T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/fleat-making-wikis-work/</loc>
+<lastmod>2005-08-08T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/mwallt-evaluating-professor-podcast/</loc>
+<lastmod>2006-04-21T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/c2es-meet-professor-podcast/</loc>
+<lastmod>2006-06-08T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/cicltg-podcast-polyglots/</loc>
+<lastmod>2006-11-07T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/wiscwiki-conference/</loc>
+<lastmod>2007-04-13T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-ls-lessonshare/</loc>
+<lastmod>2007-05-30T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-social-networking-remix-culture/</loc>
+<lastmod>2007-05-30T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-wikis-foster-collaboration/</loc>
+<lastmod>2007-05-30T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/tls-wisconsin-idea-podcasting/</loc>
+<lastmod>2007-05-30T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/iallt-wikis-audience-authorship-assessment/</loc>
+<lastmod>2007-06-21T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/educause-personal-authoring-technologies/</loc>
+<lastmod>2007-10-23T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/stle-moving-toward-student-centered-learning/</loc>
+<lastmod>2009-02-26T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/educause-creating-custom-learning-environments/</loc>
+<lastmod>2009-11-05T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/eli-collaborative-conundrum/</loc>
+<lastmod>2010-01-20T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/nmc-knowledge-building-for-dh/</loc>
+<lastmod>2011-06-16T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/iallt-collaborative-sites/</loc>
+<lastmod>2011-06-23T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/thatcampsocal-drupal-starter-kit/</loc>
+<lastmod>2012-09-04T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/carl-dig-research-support-beyond-a-desk/</loc>
+<lastmod>2013-12-06T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/carl-dig-leading-the-way/</loc>
+<lastmod>2014-04-05T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/swallt-participatory-design/</loc>
+<lastmod>2014-04-11T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/LOEX-Writing-Thinking-Learning/</loc>
+<lastmod>2014-05-10T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/lj-data-assessment-participatory-design/</loc>
+<lastmod>2014-12-10T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/iallt-participatory-design-and-evaluation/</loc>
+<lastmod>2016-03-17T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/liw-digital-research-notebook/</loc>
+<lastmod>2016-06-10T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/liw-learning-theories/</loc>
+<lastmod>2016-06-10T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/lilac-research-notebook/</loc>
+<lastmod>2017-04-10T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/library-based-curriculum-students-into-scholars/</loc>
+<lastmod>2017-08-21T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/DIY-spaces-in-an-age-of-change/</loc>
+<lastmod>2018-04-13T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/can-librarians-wear-plaid/</loc>
+<lastmod>2018-04-13T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/lets-build-something-instructional-design-workshop/</loc>
+<lastmod>2018-04-13T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/future-of-reference/</loc>
+<lastmod>2020-07-24T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/scenarios-for-success/</loc>
+<lastmod>2021-02-11T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/high-impact-librarianship/</loc>
+<lastmod>2021-04-13T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/Same-But-Different/</loc>
+<lastmod>2021-05-21T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/projects/collaborative-sites/</loc>
+<lastmod>2011-01-01T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/projects/wire-writing-instruction-research-education/</loc>
+<lastmod>2021-05-01T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/projects/wcag-accessibility/</loc>
+<lastmod>2024-07-01T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/publications/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/projects/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/presentations/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/notes/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/dmcwo/styleguide/</loc>
+</url>
 </urlset>
