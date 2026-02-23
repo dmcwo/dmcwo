@@ -1,7 +1,7 @@
 ---
 layout: collection-list
 title: Projects
-description: "Portfolio of design, web, UX, and instructional design projects."
+description: "projects designing teams, services, spaces, websites, and more."
 collection_name: projects
 permalink: /projects/
 ---
