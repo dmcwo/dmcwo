@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mocha">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Guide | Doug Worsham</title>
+  <meta name="description" content="A reference of every HTML element and custom component supported by this theme. Useful for checking how content will render and for testing colour schemes.">
+  <link rel="preload" href="/dmcwo/assets/fonts/atkinson-hyperlegible-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/dmcwo/assets/fonts/atkinson-hyperlegible-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/dmcwo/assets/css/main.css">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Style Guide | Doug Worsham</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Style Guide" />
+<meta name="author" content="Doug Worsham" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A reference of every HTML element and custom component supported by this theme. Useful for checking how content will render and for testing colour schemes." />
+<meta property="og:description" content="A reference of every HTML element and custom component supported by this theme. Useful for checking how content will render and for testing colour schemes." />
+<link rel="canonical" href="http://localhost:4000/dmcwo/styleguide/" />
+<meta property="og:url" content="http://localhost:4000/dmcwo/styleguide/" />
+<meta property="og:site_name" content="Doug Worsham" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Style Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Doug Worsham"},"description":"A reference of every HTML element and custom component supported by this theme. Useful for checking how content will render and for testing colour schemes.","headline":"Style Guide","url":"http://localhost:4000/dmcwo/styleguide/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/dmcwo/feed.xml" title="Doug Worsham" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/dmcwo/" class="site-title">Doug Worsham</a>
+
+    <button
+      class="site-nav__toggle"
+      aria-controls="site-nav"
+      aria-expanded="false"
+      aria-label="Open navigation menu"
+    >
+      <span class="site-nav__toggle-icon site-nav__toggle-icon--menu" aria-hidden="true">
+        <span class="icon icon--menu "
+      aria-hidden="true"
+      
+      style="width: 22px; height: 22px;"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M4 5h16" />
+  <path d="M4 12h16" />
+  <path d="M4 19h16" />
+</svg></span>
+
+      </span>
+      <span class="site-nav__toggle-icon site-nav__toggle-icon--close" aria-hidden="true">
+        <span class="icon icon--x "
+      aria-hidden="true"
+      
+      style="width: 22px; height: 22px;"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M18 6 6 18" />
+  <path d="m6 6 12 12" />
+</svg></span>
+
+      </span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="/dmcwo/" class="site-nav__link">Home</a>
+      
+      <a href="/dmcwo/projects/" class="site-nav__link">Projects</a>
+      <a href="/dmcwo/presentations/" class="site-nav__link">Presentations</a>
+      <a href="/dmcwo/publications/" class="site-nav__link">Publications</a>
+      <a href="/dmcwo/notes/" class="site-nav__link">Notes</a>
+    </nav>
+
+    <div class="theme-switcher">
+  <label for="theme-select" class="theme-switcher__label">Theme</label>
+  <select id="theme-select" class="theme-switcher__select" aria-label="Colour scheme">
+    <option value="mocha">Mocha</option>
+    <option value="cloud">Cloud</option>
+    <option value="deep">Deep Focus</option>
+    <option value="archival">Archival</option>
+    <option value="verdant">Verdant</option>
+  </select>
+</div>
+<script>
+(function() {
+  var sel = document.getElementById('theme-select');
+  var saved = localStorage.getItem('theme');
+  if (saved) {
+    document.documentElement.setAttribute('data-theme', saved);
+    sel.value = saved;
+  }
+  sel.addEventListener('change', function() {
+    document.documentElement.setAttribute('data-theme', this.value);
+    localStorage.setItem('theme', this.value);
+  });
+})();
+</script>
+
+  </div>
+</header>
+
+<script>
+(function () {
+  var btn = document.querySelector('.site-nav__toggle');
+  var nav = document.getElementById('site-nav');
+  if (!btn || !nav) return;
+
+  function openNav() {
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-label', 'Close navigation menu');
+    nav.classList.add('is-open');
+    document.addEventListener('keydown', onKeyDown);
+    document.addEventListener('click', onOutsideClick);
+  }
+
+  function closeNav() {
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Open navigation menu');
+    nav.classList.remove('is-open');
+    document.removeEventListener('keydown', onKeyDown);
+    document.removeEventListener('click', onOutsideClick);
+  }
+
+  function onKeyDown(e) {
+    if (e.key === 'Escape') { closeNav(); btn.focus(); }
+  }
+
+  function onOutsideClick(e) {
+    if (!nav.contains(e.target) && !btn.contains(e.target)) { closeNav(); }
+  }
+
+  btn.addEventListener('click', function () {
+    btn.getAttribute('aria-expanded') === 'true' ? closeNav() : openNav();
+  });
+})();
+</script>
+
+    <main id="main-content" class="page-main">
+      <div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Style Guide</h1>
+    
+    <p class="page-description">A reference of every HTML element and custom component supported by this theme. Useful for checking how content will render and for testing colour schemes.</p>
+    
+  </header>
+
+  <nav class="cv-toc" aria-label="Style guide sections">
+  <p class="cv-toc__title">On this page</p>
+  <ul class="cv-toc__list">
+    <li><a href="#typography" class="cv-toc__link">Typography</a></li>
+    <li><a href="#links" class="cv-toc__link">Links</a></li>
+    <li><a href="#lists" class="cv-toc__link">Lists</a></li>
+    <li><a href="#blockquotes" class="cv-toc__link">Blockquotes</a></li>
+    <li><a href="#callouts" class="cv-toc__link">Callouts</a></li>
+    <li><a href="#icons" class="cv-toc__link">Icons</a></li>
+    <li><a href="#code" class="cv-toc__link">Code</a></li>
+    <li><a href="#tables" class="cv-toc__link">Tables</a></li>
+    <li><a href="#horizontal-rules" class="cv-toc__link">Horizontal Rules</a></li>
+    <li><a href="#images" class="cv-toc__link">Images</a></li>
+    <li><a href="#image-grid" class="cv-toc__link">Image Grid</a></li>
+    <li><a href="#featured-images" class="cv-toc__link">Featured Images</a></li>
+    <li><a href="#project-tiles" class="cv-toc__link">Project Tiles</a></li>
+    <li><a href="#buttons" class="cv-toc__link">Buttons</a></li>
+    <li><a href="#badges-tags" class="cv-toc__link">Badges &amp; Tags</a></li>
+    <li><a href="#cv-components" class="cv-toc__link">CV Components</a></li>
+    <li><a href="#colour-tokens" class="cv-toc__link">Colour Tokens</a></li>
+  </ul>
+</nav>
+
+<div class="prose">
+
+  <h2 id="typography">Typography</h2>
+
+  <h3 id="headings">Headings</h3>
+
+  <h1 id="heading-1">Heading 1</h1>
+  <h2 id="heading-2">Heading 2</h2>
+  <h3 id="heading-3">Heading 3</h3>
+  <h4 id="heading-4">Heading 4</h4>
+  <h5 id="heading-5">Heading 5</h5>
+  <h6 id="heading-6">Heading 6</h6>
+
+  <h3 id="heading-with-muted-secondary-text">Heading with <small class="text-muted">muted secondary text</small></h3>
+
+  <h3 id="body-text">Body text</h3>
+
+  <p>This is a standard paragraph. The theme uses <strong>Atkinson Hyperlegible</strong>, a typeface designed for maximum legibility by the Braille Institute. Body text is set at 1rem (16px) with a line-height of 1.7 for comfortable reading. The maximum prose width is 42rem (~672px) to maintain an optimal line length of roughly 60–75 characters.</p>
+
+  <p>This is a second paragraph showing the vertical rhythm between elements. Notice how <strong>bold text</strong> and <em>italic text</em> and <strong><em>bold italic text</em></strong> each render clearly. The typeface was specifically designed so that characters like <code class="language-plaintext highlighter-rouge">1</code>, <code class="language-plaintext highlighter-rouge">l</code>, <code class="language-plaintext highlighter-rouge">I</code> and <code class="language-plaintext highlighter-rouge">0</code>, <code class="language-plaintext highlighter-rouge">O</code> are unambiguous.</p>
+
+  <p><small>This is small text, useful for fine print, captions, and supplementary information.</small></p>
+
+  <p><span class="text-muted">This is muted text, rendered in the theme’s secondary colour.</span></p>
+
+  <h3 id="inline-elements">Inline elements</h3>
+
+  <p>This text contains <strong>strong emphasis</strong> and <em>regular emphasis</em> and a <a href="#">hyperlink to an example page</a> and <code class="language-plaintext highlighter-rouge">inline code</code> and <mark>highlighted text</mark> and <abbr title="abbreviation">abbr</abbr> and <del>deleted text</del> and <ins>inserted text</ins> and H<sub>2</sub>O and x<sup>2</sup>.</p>
+
+  <hr />
+
+  <h2 id="links">Links</h2>
+
+  <ul>
+    <li><a href="/cv/">Internal link to the CV page</a></li>
+    <li><a href="https://github.com">External link to GitHub</a> — note the external link indicator arrow</li>
+    <li><a href="#" title="This is the title text">Link with title attribute</a></li>
+    <li><a href="mailto:example@example.com">Email link</a></li>
+  </ul>
+
+  <hr />
+
+  <h2 id="lists">Lists</h2>
+
+  <h3 id="unordered-list">Unordered list</h3>
+
+  <ul>
+    <li>First item in the list</li>
+    <li>Second item with a bit more text to show how wrapping looks when the content extends beyond a single line on smaller viewports</li>
+    <li>Third item
+      <ul>
+        <li>Nested item one</li>
+        <li>Nested item two
+          <ul>
+            <li>Deeply nested item</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Fourth item</li>
+  </ul>
+
+  <h3 id="ordered-list">Ordered list</h3>
+
+  <ol>
+    <li>First step in the process</li>
+    <li>Second step with additional context to demonstrate line wrapping behaviour across different screen widths</li>
+    <li>Third step
+      <ol>
+        <li>Sub-step one</li>
+        <li>Sub-step two</li>
+      </ol>
+    </li>
+    <li>Fourth step</li>
+  </ol>
+
+  <h3 id="definition-list">Definition list</h3>
+
+  <dl>
+  <dt>Term one</dt>
+  <dd>Definition for term one, providing context and explanation.</dd>
+  <dt>Term two</dt>
+  <dd>Definition for term two. Definitions can be longer and may contain <a href="#">links</a> or <strong>emphasis</strong>.</dd>
+  <dt>Term three</dt>
+  <dd>A shorter definition.</dd>
+</dl>
+
+  <hr />
+
+  <h2 id="blockquotes">Blockquotes</h2>
+
+  <p>Blockquotes are for citing content from other sources.</p>
+
+  <blockquote>
+    <p>This is a blockquote. It is styled with a left border accent, subtle background, and italicized text. Blockquotes are commonly used in Markdown with the <code class="language-plaintext highlighter-rouge">&gt;</code> prefix.</p>
+  </blockquote>
+
+  <blockquote>
+    <p>Multi-paragraph blockquotes work too.</p>
+
+    <p>This is the second paragraph within the same blockquote, separated by a blank <code class="language-plaintext highlighter-rouge">&gt;</code> line.</p>
+
+    <p>— Attribution line</p>
+  </blockquote>
+
+  <hr />
+
+  <h2 id="callouts">Callouts</h2>
+
+  <p>Callouts highlight important information or key insights. They use larger text and optional icons to draw attention.</p>
+
+  <h3 id="basic-callout">Basic Callout</h3>
+
+  <p>Use the Kramdown attribute syntax:</p>
+
+  <p class="callout"><strong>Key insight:</strong> Solution-focused approaches outperform problem-focused ones across five dimensions.</p>
+
+  <p>Or use HTML:</p>
+
+  <aside class="callout">
+<strong>Important:</strong> This is a basic callout without an icon. It's perfect for highlighting key takeaways or important notes.
+</aside>
+
+  <h3 id="callout-with-icons">Callout with Icons</h3>
+
+  <p>Add modifier classes for different callout types with icons:</p>
+
+  <aside class="callout callout--info">
+<strong>Info:</strong> This is an informational callout. Use it for helpful context or additional details.
+</aside>
+
+  <aside class="callout callout--success">
+<strong>Success:</strong> This indicates a positive outcome, best practice, or recommended approach.
+</aside>
+
+  <aside class="callout callout--warning">
+<strong>Warning:</strong> This alerts readers to potential pitfalls or things to watch out for.
+</aside>
+
+  <aside class="callout callout--danger">
+<strong>Danger:</strong> This warns about critical issues or things that could go seriously wrong.
+</aside>
+
+  <h3 id="usage">Usage</h3>
+
+  <p><strong>HTML approach (works everywhere):</strong></p>
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"callout"</span><span class="nt">&gt;</span>
+Your callout text here
+<span class="nt">&lt;/aside&gt;</span>
+
+<span class="nt">&lt;aside</span> <span class="na">class=</span><span class="s">"callout callout--info"</span><span class="nt">&gt;</span>
+Informational callout with icon
+<span class="nt">&lt;/aside&gt;</span>
+</code></pre></div>  </div>
+
+  <p><strong>Kramdown approach (Jekyll only):</strong></p>
+  <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Your callout text here
+{: .callout}
+</code></pre></div>  </div>
+
+  <p><strong>Available modifiers:</strong> <code class="language-plaintext highlighter-rouge">callout--info</code>, <code class="language-plaintext highlighter-rouge">callout--note</code>, <code class="language-plaintext highlighter-rouge">callout--success</code>, <code class="language-plaintext highlighter-rouge">callout--warning</code>, <code class="language-plaintext highlighter-rouge">callout--danger</code></p>
+
+  <hr />
+
+  <h2 id="icons">Icons</h2>
+
+  <p>This site uses <a href="https://lucide.dev/">Lucide Icons</a> - a beautiful, open-source icon library. Icons are loaded individually as SVG files for optimal performance and sustainability.</p>
+
+  <h3 id="icon-system-overview">Icon System Overview</h3>
+
+  <p><strong>Sustainability:</strong> Each icon is ~300-450 bytes and loaded only when used. Pages only load the icons they need, keeping the site fast and efficient.</p>
+
+  <p><strong>Design:</strong> Clean line icons that inherit text color and scale perfectly at any size.</p>
+
+  <h3 id="using-icons">Using Icons</h3>
+
+  <p>Icons are used automatically throughout the site in various contexts:</p>
+
+  <h4 id="action-links-presentations-publications-projects">Action Links (Presentations, Publications, Projects)</h4>
+
+  <div class="cv-actions">
+  <a href="#" class="cv-action-link">
+    <span class="icon icon--presentation " aria-hidden="true" style="width: 16px; height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 3h20" />
+  <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+  <path d="m7 21 5-5 5 5" />
+</svg></span>
+
+    <span>Slides</span>
+  </a>
+  <a href="#" class="cv-action-link">
+    <span class="icon icon--video " aria-hidden="true" style="width: 16px; height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+  <rect x="2" y="6" width="14" height="12" rx="2" />
+</svg></span>
+
+    <span>Recording</span>
+  </a>
+  <a href="#" class="cv-action-link">
+    <span class="icon icon--file-text " aria-hidden="true" style="width: 16px; height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M10 9H8" />
+  <path d="M16 13H8" />
+  <path d="M16 17H8" />
+</svg></span>
+
+    <span>Handout</span>
+  </a>
+  <a href="#" class="cv-action-link">
+    <span class="icon icon--external-link " aria-hidden="true" style="width: 16px; height: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M15 3h6v6" />
+  <path d="M10 14 21 3" />
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+</svg></span>
+
+    <span>Event Page</span>
+  </a>
+</div>
+
+  <h4 id="metadata-icons-tags--categories">Metadata Icons (Tags &amp; Categories)</h4>
+
+  <p>Icons appear inline with metadata:</p>
+
+  <div class="cv-entry__meta">
+  <span>
+    <span class="icon icon--folder " aria-hidden="true" style="width: 14px; height: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+</svg></span>
+
+    thoughts, design
+  </span>
+  <span>
+    <span class="icon icon--tag " aria-hidden="true" style="width: 14px; height: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+</svg></span>
+
+    learning, research
+  </span>
+  <span>
+    <span class="icon icon--calendar " aria-hidden="true" style="width: 14px; height: 14px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M8 2v4" />
+  <path d="M16 2v4" />
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+  <path d="M3 10h18" />
+</svg></span>
+
+    February 2024
+  </span>
+</div>
+
+  <h4 id="note-title-icons">Note Title Icons</h4>
+
+  <p>Notes can have optional icons in their front matter:</p>
+
+  <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">My</span><span class="nv"> </span><span class="s">Brilliant</span><span class="nv"> </span><span class="s">Idea"</span>
+<span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">lightbulb"</span>
+<span class="nn">---</span>
+</code></pre></div>  </div>
+
+  <p>Common note icons: &lt;span class=”icon icon–lightbulb “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 20px; height: 20px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+
+  <path d="M9 18h6" />
+
+  <path d="M10 22h4" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ <code class="language-plaintext highlighter-rouge">lightbulb</code>, &lt;span class=”icon icon–book-open “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 20px; height: 20px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M12 7v14" />
+
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ <code class="language-plaintext highlighter-rouge">book-open</code>, &lt;span class=”icon icon–calendar “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 20px; height: 20px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M8 2v4" />
+
+  <path d="M16 2v4" />
+
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+
+  <path d="M3 10h18" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ <code class="language-plaintext highlighter-rouge">calendar</code></p>
+
+  <h4 id="callout-icons">Callout Icons</h4>
+
+  <p>Callouts automatically include icons based on their type:</p>
+
+  <ul>
+    <li>
+      <p><strong>Info/Note:</strong> &lt;span class=”icon icon–info “
+    aria-hidden=”true”</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style="width: 20px; height: 20px;"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" &gt;
+</code></pre></div>      </div>
+      <circle cx="12" cy="12" r="10" />
+
+      <path d="M12 16v-4" />
+
+      <path d="M12 8h.01" />
+    </li>
+  </ul>
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ Information icon</p>
+  <ul>
+    <li>
+      <p><strong>Success:</strong> &lt;span class=”icon icon–circle-check “
+    aria-hidden=”true”</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style="width: 20px; height: 20px;"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" &gt;
+</code></pre></div>      </div>
+      <circle cx="12" cy="12" r="10" />
+
+      <path d="m9 12 2 2 4-4" />
+    </li>
+  </ul>
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ Check circle</p>
+  <ul>
+    <li>
+      <p><strong>Warning:</strong> &lt;span class=”icon icon–triangle-alert “
+    aria-hidden=”true”</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style="width: 20px; height: 20px;"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" &gt;
+</code></pre></div>      </div>
+      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+
+      <path d="M12 9v4" />
+
+      <path d="M12 17h.01" />
+    </li>
+  </ul>
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ Triangle alert</p>
+  <ul>
+    <li>
+      <p><strong>Danger:</strong> &lt;span class=”icon icon–circle-alert “
+    aria-hidden=”true”</p>
+
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>style="width: 20px; height: 20px;"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" &gt;
+</code></pre></div>      </div>
+      <circle cx="12" cy="12" r="10" />
+
+      <line x1="12" x2="12" y1="8" y2="12" />
+
+      <line x1="12" x2="12.01" y1="16" y2="16" />
+    </li>
+  </ul>
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ Circle alert</p>
+
+  <h3 id="available-icons">Available Icons</h3>
+
+  <p><strong>Action &amp; Navigation:</strong>
+&lt;span class=”icon icon–external-link “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M15 3h6v6" />
+
+  <path d="M10 14 21 3" />
+
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ external-link,
+&lt;span class=”icon icon–link “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ link,
+&lt;span class=”icon icon–file-down “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+
+  <path d="M12 18v-6" />
+
+  <path d="m9 15 3 3 3-3" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ file-down</p>
+
+  <p><strong>Content Types:</strong>
+&lt;span class=”icon icon–file-text “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+
+  <path d="M10 9H8" />
+
+  <path d="M16 13H8" />
+
+  <path d="M16 17H8" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ file-text,
+&lt;span class=”icon icon–video “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+
+  <rect x="2" y="6" width="14" height="12" rx="2" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ video,
+&lt;span class=”icon icon–presentation “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M2 3h20" />
+
+  <path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3" />
+
+  <path d="m7 21 5-5 5 5" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ presentation,
+&lt;span class=”icon icon–book-open “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M12 7v14" />
+
+  <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ book-open,
+&lt;span class=”icon icon–clipboard-list “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+
+  <path d="M12 11h4" />
+
+  <path d="M12 16h4" />
+
+  <path d="M8 11h.01" />
+
+  <path d="M8 16h.01" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ clipboard-list</p>
+
+  <p><strong>Organization:</strong>
+&lt;span class=”icon icon–folder “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ folder,
+&lt;span class=”icon icon–tag “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+
+  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ tag,
+&lt;span class=”icon icon–calendar “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M8 2v4" />
+
+  <path d="M16 2v4" />
+
+  <rect width="18" height="18" x="3" y="4" rx="2" />
+
+  <path d="M3 10h18" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ calendar</p>
+
+  <p><strong>Callouts:</strong>
+&lt;span class=”icon icon–info “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <circle cx="12" cy="12" r="10" />
+
+  <path d="M12 16v-4" />
+
+  <path d="M12 8h.01" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ info,
+&lt;span class=”icon icon–circle-check “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <circle cx="12" cy="12" r="10" />
+
+  <path d="m9 12 2 2 4-4" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ circle-check,
+&lt;span class=”icon icon–triangle-alert “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" />
+
+  <path d="M12 9v4" />
+
+  <path d="M12 17h.01" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ triangle-alert,
+&lt;span class=”icon icon–circle-alert “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <circle cx="12" cy="12" r="10" />
+
+  <line x1="12" x2="12" y1="8" y2="12" />
+
+  <line x1="12" x2="12.01" y1="16" y2="16" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ circle-alert</p>
+
+  <p><strong>Note Icons:</strong>
+&lt;span class=”icon icon–lightbulb “
+      aria-hidden=”true”</p>
+
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  style="width: 18px; height: 18px;"&gt;&lt;svg   xmlns="http://www.w3.org/2000/svg"   width="24"   height="24"   viewBox="0 0 24 24"   fill="none"   stroke="currentColor"   stroke-width="2"   stroke-linecap="round"   stroke-linejoin="round" &gt;
+</code></pre></div>  </div>
+  <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+
+  <path d="M9 18h6" />
+
+  <path d="M10 22h4" />
+
+  <p>&lt;/svg&gt;&lt;/span&gt;
+ lightbulb</p>
+
+  <h3 id="size-guidelines">Size Guidelines</h3>
+
+  <ul>
+    <li><strong>14px</strong> - Small metadata (tags, categories, dates)</li>
+    <li><strong>16px</strong> - Inline with text, action buttons</li>
+    <li><strong>18px</strong> - Larger action buttons, summary labels</li>
+    <li><strong>20px</strong> - List page titles, standalone usage</li>
+    <li><strong>24px+</strong> - Detail page headings</li>
+  </ul>
+
+  <h3 id="adding-new-icons">Adding New Icons</h3>
+
+  <ol>
+    <li>Visit <a href="https://lucide.dev/icons/">lucide.dev/icons</a></li>
+    <li>Find the icon you want</li>
+    <li>Download the SVG file</li>
+    <li>Save to <code class="language-plaintext highlighter-rouge">assets/icons/</code></li>
+    <li>Use with <code class="language-plaintext highlighter-rouge">{% include icon.html name="icon-name" %}</code></li>
+  </ol>
+
+  <h3 id="manual-usage">Manual Usage</h3>
+
+  <p>To use icons in your content:</p>
+
+  <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>icon.html<span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s2">"lightbulb"</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>icon.html<span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s2">"video"</span><span class="w"> </span><span class="na">size</span><span class="o">=</span><span class="s2">"24"</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>icon.html<span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s2">"external-link"</span><span class="w"> </span><span class="na">class</span><span class="o">=</span><span class="s2">"custom-class"</span><span class="w"> </span><span class="cp">%}</span>
+<span class="cp">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>icon.html<span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s2">"info"</span><span class="w"> </span><span class="na">aria-label</span><span class="o">=</span><span class="s2">"Important information"</span><span class="w"> </span><span class="cp">%}</span>
+</code></pre></div>  </div>
+
+  <hr />
+
+  <h2 id="code">Code</h2>
+
+  <h3 id="inline-code">Inline code</h3>
+
+  <p>Use <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> to start the development server. The <code class="language-plaintext highlighter-rouge">--port</code> flag lets you specify a custom port like <code class="language-plaintext highlighter-rouge">4001</code>.</p>
+
+  <h3 id="code-block">Code block</h3>
+
+  <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Example front matter for a presentation</span>
+<span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Scaling</span><span class="nv"> </span><span class="s">Student</span><span class="nv"> </span><span class="s">Success</span><span class="nv"> </span><span class="s">Through</span><span class="nv"> </span><span class="s">Learner-Led</span><span class="nv"> </span><span class="s">Design"</span>
+<span class="na">presenters</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Worsham,</span><span class="nv"> </span><span class="s">D."</span>
+<span class="na">meeting_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">LOEX</span><span class="nv"> </span><span class="s">Conference"</span>
+<span class="na">meeting_short_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">LOEX"</span>
+<span class="na">location</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Houston,</span><span class="nv"> </span><span class="s">TX"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2019-05-10</span>
+<span class="na">sort_date</span><span class="pi">:</span> <span class="s">2019-05-10</span>
+<span class="na">abstract</span><span class="pi">:</span> <span class="pi">|</span>
+  <span class="s">This presentation explores the WI+RE model</span>
+  <span class="s">for learner-led design.</span>
+<span class="na">slide_url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://example.com/slides"</span>
+<span class="nn">---</span>
+</code></pre></div>  </div>
+
+  <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Example CSS showing theme custom properties */</span>
+<span class="nd">:root</span> <span class="p">{</span>
+  <span class="py">--color-bg</span><span class="p">:</span> <span class="nx">#fdfaf8</span><span class="p">;</span>
+  <span class="py">--color-text</span><span class="p">:</span> <span class="nx">#2c1810</span><span class="p">;</span>
+  <span class="py">--color-accent</span><span class="p">:</span> <span class="nx">#a47864</span><span class="p">;</span>
+  <span class="py">--color-link</span><span class="p">:</span> <span class="nx">#8b5e3c</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>  </div>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Example HTML structure --&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"cv-entry"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"cv-entry__title"</span><span class="nt">&gt;</span>Position Title<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cv-entry__meta"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Organization<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"cv-entry__date"</span><span class="nt">&gt;</span>2021 – Present<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>  </div>
+
+  <hr />
+
+  <h2 id="tables">Tables</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Award</th>
+        <th>Organization</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018</td>
+        <td>Librarian of the Year</td>
+        <td>LAUC-Los Angeles</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td>Top Twenty Article</td>
+        <td>ALA-LIRT</td>
+      </tr>
+      <tr>
+        <td>2011</td>
+        <td>Staff Excellence Award</td>
+        <td>UW-Madison L&amp;S</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="wide-table">Wide table</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Collection</th>
+        <th>Output</th>
+        <th>Sort Field</th>
+        <th>Grouped By</th>
+        <th>Component Include</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_experience</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>Organization</td>
+        <td><code class="language-plaintext highlighter-rouge">experience-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_education</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>Category</td>
+        <td><code class="language-plaintext highlighter-rouge">education-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_publications</code></td>
+        <td>Yes</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>—</td>
+        <td><code class="language-plaintext highlighter-rouge">publication-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_presentations</code></td>
+        <td>Yes</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>—</td>
+        <td><code class="language-plaintext highlighter-rouge">presentation-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_awards</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>—</td>
+        <td><code class="language-plaintext highlighter-rouge">award-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_grants</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>—</td>
+        <td><code class="language-plaintext highlighter-rouge">grant-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_teaching</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>Category</td>
+        <td><code class="language-plaintext highlighter-rouge">teaching-entry.html</code></td>
+      </tr>
+      <tr>
+        <td><code class="language-plaintext highlighter-rouge">_service</code></td>
+        <td>No</td>
+        <td><code class="language-plaintext highlighter-rouge">sort_date</code></td>
+        <td>Organization</td>
+        <td><code class="language-plaintext highlighter-rouge">service-entry.html</code></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+  <h2 id="horizontal-rules">Horizontal Rules</h2>
+
+  <p>Content above the rule.</p>
+
+  <hr />
+
+  <p>Content below the rule.</p>
+
+  <hr />
+
+  <h2 id="images">Images</h2>
+
+  <p>Standard images in markdown or HTML are rendered responsively with <code class="language-plaintext highlighter-rouge">max-width: 100%</code> and a subtle border-radius.</p>
+
+  <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt text describing the image</span><span class="p">](</span><span class="sx">/assets/images/photo.jpg</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo.jpg"</span> <span class="na">alt=</span><span class="s">"Alt text describing the image"</span> <span class="nt">/&gt;</span>
+</code></pre></div>  </div>
+
+  <hr />
+
+  <h2 id="image-grid">Image Grid</h2>
+
+  <p>Use <code class="language-plaintext highlighter-rouge">.image-grid</code> utility classes for responsive multi-column photo layouts in note and presentation body content. Images fill their cell with <code class="language-plaintext highlighter-rouge">object-fit: cover</code>.</p>
+
+  <h3 id="two-column-grid">Two-column grid</h3>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-grid image-grid--2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo-a.jpg"</span> <span class="na">alt=</span><span class="s">"Description of photo A"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo-b.jpg"</span> <span class="na">alt=</span><span class="s">"Description of photo B"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>  </div>
+
+</div>
+
+<div class="image-grid image-grid--2" style="margin: 1.5rem 0;">
+  <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 2px; height: 120px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">Image A</div>
+  <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 2px; height: 120px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">Image B</div>
+</div>
+
+<div class="prose">
+
+  <h3 id="three-column-grid">Three-column grid</h3>
+
+  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"image-grid image-grid--3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo-a.jpg"</span> <span class="na">alt=</span><span class="s">"Description"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo-b.jpg"</span> <span class="na">alt=</span><span class="s">"Description"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/assets/images/photo-c.jpg"</span> <span class="na">alt=</span><span class="s">"Description"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>  </div>
+
+</div>
+
+<div class="image-grid image-grid--3" style="margin: 1.5rem 0;">
+  <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 2px; height: 100px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">Image A</div>
+  <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 2px; height: 100px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">Image B</div>
+  <div style="background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 2px; height: 100px; display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: 0.85rem;">Image C</div>
+</div>
+
+<div class="prose">
+
+  <p>The three-column grid collapses to two columns below 480px. All images should have meaningful <code class="language-plaintext highlighter-rouge">alt</code> text.</p>
+
+  <hr />
+
+  <h2 id="featured-images">Featured Images</h2>
+
+  <p>Featured images appear on individual content detail pages as a full-width hero — they do not appear on collection listing pages.</p>
+
+  <h3 id="detail-page-hero-collection-detailfeature-image">Detail page hero (<code class="language-plaintext highlighter-rouge">collection-detail__feature-image</code>)</h3>
+
+  <p>Used on note, presentation, and project detail pages when the relevant image field is set in front matter. The image renders between the page header and the abstract/body content, full-width within the prose container, capped at 480px height with <code class="language-plaintext highlighter-rouge">object-fit: cover</code>.</p>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; overflow: hidden; margin: 1.5rem 0;">
+  <div class="collection-detail__feature-image" style="margin: 0;">
+    <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%); display: flex; align-items: center; justify-content: center; color: var(--color-bg); font-size: 0.9rem; letter-spacing: 0.05em;">Feature image — max-height 480px, object-fit: cover</div>
+  </div>
+</div>
+
+<div class="prose">
+
+  <p><strong>Front matter fields by collection:</strong></p>
+  <ul>
+    <li>Notes &amp; Projects: <code class="language-plaintext highlighter-rouge">featured_image: "/assets/images/..."</code> + <code class="language-plaintext highlighter-rouge">featured_image_alt: "..."</code></li>
+    <li>Presentations: <code class="language-plaintext highlighter-rouge">banner: "/assets/images/..."</code> + <code class="language-plaintext highlighter-rouge">banner_alt: "..."</code></li>
+  </ul>
+
+  <p>The alt field falls back to the page title if absent. Images are always optional — entries without the field (or with an empty value) render without any image.</p>
+
+  <hr />
+
+  <h2 id="project-tiles">Project Tiles</h2>
+
+  <p>Project tile cards display projects on the homepage (featured projects section) and on the <code class="language-plaintext highlighter-rouge">/projects/</code> listing page. They are text-forward — no image zone. The whole card is clickable via the stretched-link technique applied to the title <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element.</p>
+
+  <p><strong>Card structure:</strong> category label (homepage only, omitted on listing page) → title (linked, stretched to full card) → subtitle → institution</p>
+
+</div>
+
+<div class="project-tiles" style="margin: 1.5rem 0; max-width: none;">
+  <article class="project-tile">
+    <div class="project-tile__body">
+      <p class="project-tile__category">Learning Design</p>
+      <h3 class="project-tile__title">
+        <a href="#">Example Project Title</a>
+      </h3>
+      <p class="project-tile__subtitle">A concise tagline or subtitle describing what this project is about and what makes it distinct.</p>
+      <p class="project-tile__institution">Example University Library</p>
+    </div>
+  </article>
+  <article class="project-tile">
+    <div class="project-tile__body">
+      <p class="project-tile__category">Service Design</p>
+      <h3 class="project-tile__title">
+        <a href="#">Another Project Example</a>
+      </h3>
+      <p class="project-tile__subtitle">Subtitle text showing how longer content wraps within the card body at various viewport widths.</p>
+      <p class="project-tile__institution">Another Institution</p>
+    </div>
+  </article>
+  <article class="project-tile">
+    <div class="project-tile__body">
+      <p class="project-tile__category">Organizational Design</p>
+      <h3 class="project-tile__title">
+        <a href="#">Third Project Card</a>
+      </h3>
+      <p class="project-tile__institution">Third Institution</p>
+    </div>
+  </article>
+</div>
+
+<div class="prose">
+
+  <p><strong>Classes:</strong></p>
+  <ul>
+    <li><code class="language-plaintext highlighter-rouge">.project-tiles</code> — CSS grid container: 1 column → 2 columns at 480px → 3 columns at 1024px, <code class="language-plaintext highlighter-rouge">gap: $space-6</code></li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile</code> — bordered card with border-radius and hover shadow; <code class="language-plaintext highlighter-rouge">position: relative</code> required for the stretched link</li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile__body</code> — padded flex column with <code class="language-plaintext highlighter-rouge">gap: $space-3</code></li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile__category</code> — uppercase accent-colored label; used on homepage tiles (ungrouped context), omitted on <code class="language-plaintext highlighter-rouge">/projects/</code> listing page tiles (the <code class="language-plaintext highlighter-rouge">cv-section__heading</code> already provides the category)</li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile__title</code> — bold title; the <code class="language-plaintext highlighter-rouge">a::after { inset: 0; position: absolute }</code> stretched link makes the entire card surface clickable while keeping the accessible label to the title text only</li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile__subtitle</code> — muted smaller text; <code class="language-plaintext highlighter-rouge">flex: 1</code> pushes the institution line to the bottom of the card</li>
+    <li><code class="language-plaintext highlighter-rouge">.project-tile__institution</code> — smallest muted text, pinned to card bottom with <code class="language-plaintext highlighter-rouge">margin-top: auto</code> and a top border</li>
+  </ul>
+
+  <p><strong>Front matter fields rendered in tiles:</strong> <code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">subtitle</code>, <code class="language-plaintext highlighter-rouge">institution</code>, <code class="language-plaintext highlighter-rouge">category</code> (homepage only). Fields like <code class="language-plaintext highlighter-rouge">impact</code>, <code class="language-plaintext highlighter-rouge">role</code>, <code class="language-plaintext highlighter-rouge">abstract</code>, and <code class="language-plaintext highlighter-rouge">skill_themes</code> appear on detail pages only.</p>
+
+  <hr />
+
+  <h2 id="buttons">Buttons</h2>
+
+  <div class="cluster" style="--cluster-gap: 0.75rem; margin-bottom: 1.5rem;">
+  <a href="#" class="btn btn--primary">Primary Button</a>
+  <a href="#" class="btn">Default Button</a>
+</div>
+
+  <hr />
+
+  <h2 id="badges-tags">Badges &amp; Tags</h2>
+
+  <div class="cluster" style="--cluster-gap: 0.5rem; margin-bottom: 1.5rem;">
+  <span class="tag">Article</span>
+  <span class="tag">Book Chapter</span>
+  <span class="tag">Interview</span>
+</div>
+
+  <div class="cluster" style="--cluster-gap: 0.5rem;">
+  <span class="cv-badge">Submitted</span>
+  <span class="cv-badge cv-badge--funded">Funded</span>
+</div>
+
+  <hr />
+
+  <h2 id="cv-components">CV Components</h2>
+
+  <p>These are the custom components used throughout the CV page and collection listings. They demonstrate how structured content renders.</p>
+
+  <h3 id="experience-entry">Experience Entry</h3>
+
+</div>
+
+<div class="cv-section" style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <div class="cv-org-group">
+    <h4 class="cv-org-group__heading">
+      <a href="#" class="cv-entry__org-link">Example University Library</a>
+    </h4>
+    <div class="cv-org-group__entries">
+      <article class="cv-entry">
+        <div class="cv-entry__header">
+          <h5 class="cv-entry__title">Senior Designer</h5>
+          <div class="cv-entry__meta">
+            <span class="cv-entry__location">San Diego, CA</span>
+            <span class="cv-entry__date">2021 &ndash; Present</span>
+          </div>
+        </div>
+        <ul class="cv-entry__highlights">
+          <li>Lead a team of designers creating inclusive digital experiences for a diverse academic community.</li>
+          <li>Develop and maintain the institution's design system and web component library.</li>
+          <li>Facilitate participatory design workshops with students, staff, and faculty stakeholders.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div class="prose">
+
+  <h3 id="education-entry">Education Entry</h3>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <article class="cv-entry">
+    <div class="cv-entry__header">
+      <h5 class="cv-entry__title">M.A. English - Teaching English to Speakers of Other Languages</h5>
+      <div class="cv-entry__meta">
+        <span>San Francisco State University</span>
+        <span class="cv-entry__date">2002</span>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="prose">
+
+  <h3 id="publication-entry">Publication Entry</h3>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <article class="cv-entry">
+    <div class="cv-entry__header">
+      <h5 class="cv-entry__title">The WI+RE Way: A manifesto and a process for learner-led design</h5>
+      <div class="cv-entry__meta">
+        <span>Harper, T., Mody, N., Ravaei, K., Romero, R., &amp; Worsham, D.</span>
+        <span>Journal of New Librarianship, 5(1)</span>
+        <span class="cv-entry__date">2020</span>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="prose">
+
+  <h3 id="presentation-entry">Presentation Entry</h3>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <article class="cv-entry">
+    <div class="cv-entry__header">
+      <h5 class="cv-entry__title">
+        <a href="#">Scaling Student Success Through Learner-Led Design</a>
+      </h5>
+      <div class="cv-entry__meta">
+        <span>Worsham, D.</span>
+        <span>LOEX</span>
+        <span class="cv-entry__location">Houston, TX</span>
+        <span class="cv-entry__date">May 2019</span>
+      </div>
+    </div>
+    <div class="cv-actions">
+      <a href="#" class="cv-action-link">Slides</a>
+      <a href="#" class="cv-action-link">Handout</a>
+      <a href="#" class="cv-action-link">Recording</a>
+    </div>
+  </article>
+</div>
+
+<div class="prose">
+
+  <h3 id="grant-entry-with-status-badge">Grant Entry with Status Badge</h3>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <article class="cv-entry">
+    <div class="cv-entry__header">
+      <h5 class="cv-entry__title">Learning Assistants and Learner-Led Design</h5>
+      <div class="cv-entry__meta">
+        <span>UCLA Center for the Advancement of Teaching</span>
+        <span class="cv-entry__date">2019</span>
+        <span class="cv-badge cv-badge--funded">funded</span>
+      </div>
+    </div>
+    <p class="cv-entry__body text-muted text-small">Co-authored with Shanna Shaked, Renee Romero</p>
+  </article>
+</div>
+
+<div class="prose">
+
+  <h3 id="service-entry">Service Entry</h3>
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <article class="cv-entry">
+    <div class="cv-entry__header">
+      <h5 class="cv-entry__title">WI+RE - Writing Instruction + Research Education</h5>
+      <div class="cv-entry__meta">
+        <span>Co-founder and Co-Lead</span>
+        <span class="cv-entry__date">2015 &ndash; 2021</span>
+      </div>
+    </div>
+  </article>
+</div>
+
+<div class="prose">
+
+  <h3 id="cv-table-of-contents">CV Table of Contents</h3>
+
+</div>
+
+<nav class="cv-toc" aria-label="Example CV navigation" style="margin: 1.5rem 0;">
+  <p class="cv-toc__title">Sections</p>
+  <ul class="cv-toc__list">
+    <li><a href="#" class="cv-toc__link">Experience</a></li>
+    <li><a href="#" class="cv-toc__link">Education</a></li>
+    <li><a href="#" class="cv-toc__link">Awards</a></li>
+    <li><a href="#" class="cv-toc__link">Publications</a></li>
+    <li><a href="#" class="cv-toc__link">Presentations</a></li>
+    <li><a href="#" class="cv-toc__link">Teaching</a></li>
+    <li><a href="#" class="cv-toc__link">Grants</a></li>
+    <li><a href="#" class="cv-toc__link">Service &amp; Leadership</a></li>
+  </ul>
+</nav>
+
+<div class="prose">
+
+  <h3 id="action-links">Action Links</h3>
+
+</div>
+
+<div class="cv-actions" style="margin: 1.5rem 0;">
+  <a href="#" class="cv-action-link">Slides</a>
+  <a href="#" class="cv-action-link">Handout</a>
+  <a href="#" class="cv-action-link">Recording</a>
+  <a href="#" class="cv-action-link">Event Page</a>
+</div>
+
+<div class="prose">
+
+  <h3 id="previous--next-navigation">Previous / Next Navigation</h3>
+
+</div>
+
+<nav class="pager" aria-label="Example pagination" style="margin: 1.5rem 0;">
+  <a href="#" class="pager__link">
+    <span class="pager__label">&larr; Newer</span>
+    Example Previous Item Title
+  </a>
+  <a href="#" class="pager__link pager__link--next">
+    <span class="pager__label">Older &rarr;</span>
+    Example Next Item Title
+  </a>
+</nav>
+
+<div class="prose">
+
+  <hr />
+
+  <h2 id="colour-tokens">Colour Tokens</h2>
+
+  <p>Use the theme switcher in the header to preview how these tokens change across all five colour schemes.</p>
+
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; margin: 1.5rem 0;">
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 4px;"></div>
+    <small class="text-muted">--color-bg</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 4px;"></div>
+    <small class="text-muted">--color-bg-alt</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-text); border-radius: 4px;"></div>
+    <small class="text-muted">--color-text</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-text-muted); border-radius: 4px;"></div>
+    <small class="text-muted">--color-text-muted</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-accent); border-radius: 4px;"></div>
+    <small class="text-muted">--color-accent</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-accent-dark); border-radius: 4px;"></div>
+    <small class="text-muted">--color-accent-dark</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-border); border-radius: 4px;"></div>
+    <small class="text-muted">--color-border</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-link); border-radius: 4px;"></div>
+    <small class="text-muted">--color-link</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-link-hover); border-radius: 4px;"></div>
+    <small class="text-muted">--color-link-hover</small>
+  </div>
+  <div style="text-align: center;">
+    <div style="width: 100%; height: 4rem; background: var(--color-focus-ring); border-radius: 4px;"></div>
+    <small class="text-muted">--color-focus-ring</small>
+  </div>
+</div>
+
+</div>
+
+    </main>
+    <footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p>&copy; 2026 Doug Worsham</p>
+    <ul class="social-links">
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/in/doug-worsham" class="social-links__link" rel="me">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://github.com/dmcwo" class="social-links__link" rel="me">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span>GitHub</span>
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="https://orcid.org/0000-0002-4945-5773" class="social-links__link" rel="me">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-1.847-1.303-3.722-3.853-3.722h-2.466z"/></svg>
+          <span>ORCID</span>
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>
