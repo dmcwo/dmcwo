@@ -1,6 +1,7 @@
 ---
 featured: true
 title: "Accessibility and Quality Assurance at UC San Diego Library"
+icon: accessibility
 subtitle: "Building a sustainable, service-based approach to web accessibility for the Library's core public website"
 category: "organizational-design"
 institution: "UC San Diego Library"

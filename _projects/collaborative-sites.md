@@ -1,7 +1,8 @@
 ---
 featured: true
 title: "Collaborative Sites"
-subtitle: "A home-grown, DIY digital learning environment that scaled up to become an interactive, student-centered platform serving 40 classes and 1,300+ students."
+subtitle: "A DIY digital learning environment that scaled up to become an interactive, student-centered platform serving 40 classes and 1,300+ students."
+icon: message-circle-heart
 category: "learning-design"
 institution: "UW-Madison"
 start_date: 2004-01-01
