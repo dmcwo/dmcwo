@@ -18,8 +18,8 @@ skill_themes:
   - "Student employment and mentorship"
   - "Organizational culture change"
   - "Quality assurance systems"
-featured_image: "/assets/images/projects/wcag-accessibility.svg"
-featured_image_alt: "Siteimprove dashboard showing sustained quality assurance and accessibility score improvements from 2021 to present"
+featured_image: 
+featured_image_alt: 
 abstract: |
   A systematic, library-wide initiative to bring the UC San Diego Library's core public website into full WCAG 2.0 compliance. The work combined a comprehensive backlog remediation strategy, a student-led design team, and the establishment of monthly service practices for ongoing quality assurance. Quality Assurance score improved from 55 to 98 out of 100. Full WCAG 2.0 Level AA compliance was achieved in July 2024 and has been maintained since.
 tags: ["accessibility", "WCAG", "inclusive design", "Siteimprove", "UC San Diego", "service design", "student employment"]

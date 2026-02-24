@@ -16,8 +16,8 @@ skill_themes:
   - "Program architecture"
   - "Learner-led mentorship model"
   - "Instructional design talent development"
-featured_image: "/assets/images/projects/wire-student-design-team.svg"
-featured_image_alt: "Student designers collaborating on instructional materials at UCLA Library"
+featured_image: 
+featured_image_alt: 
 abstract: |
   The WI+RE student design team was the organizational engine behind WI+RE's output. Students were recruited into paid positions as instructional designers, trained using a learner-led model, and mentored to produce independently with minimal expert oversight. The team structure was what made 75+ OER possible from a resource-constrained library department.
 tags: ["student employment", "OER", "instructional design", "UCLA", "program design"]

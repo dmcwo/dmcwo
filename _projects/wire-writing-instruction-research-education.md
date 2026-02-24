@@ -17,8 +17,8 @@ skill_themes:
   - "Values-driven instructional design"
   - "Community partnership development"
   - "Jekyll and open source web development"
-featured_image: "/assets/images/projects/wire.svg"
-featured_image_alt: "Screenshot of WI+RE website showing modular workshop navigation"
+featured_image: 
+featured_image_alt: 
 abstract: WI+RE is a learner-led community at UCLA Library where student designers drive the creation of open, course-integrated instructional materials. From 2016-2021, the program grew to produce 376K+ YouTube views, 9K+ workshop completions, and a collection of award-winning, peer-reviewed Open Educational Resources across research, writing, and information literacy. Students graduated with publications and conference presentations. The WI+RE Way, a co-authored design manifesto, was published in the Journal of New Librarianship.
 tags: [WI+RE, UCLA, OER, learner-led design, instructional design, critical pedagogy, student employment, open education, information literacy]
 ---

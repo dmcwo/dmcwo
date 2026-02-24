@@ -65,6 +65,11 @@ projects:
     enabled: true
     field: "category"
     categories:
+      - name: "organizational-design"
+        icon: "folder"
+        display: "Organizational Design and Team-Building"
+        description: "Organizational capacity building, founding teams, and launching governance systems"
+
       - name: "learning-design"
         icon: "book-open"
         display: "Learning Design"
@@ -74,13 +79,3 @@ projects:
         icon: "clipboard-list"
         display: "Service and Space Design"
         description: "Participatory, user-centered design for services and spaces"
-
-      - name: "organizational-design"
-        icon: "folder"
-        display: "Organizational Design & Governance"
-        description: "Accessibility, governance systems, and organizational capacity building"
-
-      - name: "team-building"
-        icon: "brain"
-        display: "Team Building & Organizational Capacity Development"
-        description: "Founding teams, building programs, and developing institutional infrastructure"

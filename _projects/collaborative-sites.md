@@ -14,8 +14,8 @@ skill_themes:
   - "Hybrid and blended learning environment design" 
   - "Critical pedagogy and student-centered instructional design" 
   - "Open source web application development and platform scaling" 
-featured_image: "/assets/images/projects/collaborative-sites.svg"
-featured_image_alt: "Interface showing configurable course website with student collaboration tools"
+featured_image: 
+featured_image_alt: 
 abstract: |
   In the mid-2000s, most course management systems were places to post a syllabus. Collaborative Sites was something different: a DIY platform built by the L&S Learning Support Services team at UW-Madison to put student voices, student writing, and student-generated knowledge at the center of the learning environment. Drawing on critical pedagogy and early Web 2.0 tools, the project grew from a handful of pilot courses into a platform serving over 40 classes and 1,300 students, with each site tailored to the specific pedagogical goals of its course.
 tags: ["educational technology", "hybrid learning", "student-centered", "UW-Madison", "language instruction", "Drupal", "critical pedagogy", "Web 2.0"]
@@ -44,6 +44,27 @@ Alfonso Morales's students in Chicano Studies built the "Mexican Migration Portf
 It was a very exciting time to be in learning technology and at LSS. We were running our own server infrastructure in a former supply closet. Graduate students and instructors passionate about their teaching brought energy, ideas, and new opportunities each semester. The team's technical support made the infrastructure possible while I was still developing those skills myself. Our leadership encouraged and made room for experimentation. Each semester we expanded to new instructors and new departments: doing outreach, presenting impact, understanding new pedagogical needs, and figuring out how to balance scalability with the customization that made each site feel like it belonged to its course.
 
 For me, the technical learning was substantial: Drupal, content management, user experience design, and coding for an open-source web application were all areas I was figuring out as we went. Even deeper was my education in building and scaling a service through genuine partnership, one course and one conversation at a time. A scrappy, DIY pilot project eventually reached 40 courses and 1,300 students across a dozen departments. Collaborative Sites taught me that the adjacent possible expands when you keep showing up, keep asking what's working for learners, and keep making room for the next course, the next instructor, the next idea.
+
+## Presentations on Collaborative Sites
+
+Worsham, D. (2005, June). Making Wikis Work. Foreign Language Education and Technology. http://fleat5.byu.edu/_files/17Worsham.pdf
+
+Worsham, D. (2007a, May 30). Social Networking and Remix Culture. UW Madison Teaching & Learning Symposium.
+
+Worsham, D. (2007b, June 21). Wikis in Language Learning: Audience, Authorship, and Assessment. International Association of Language Learning Technology.
+
+Worsham, D. (2011, June 23). Collaborative Sites for Language, Literature, and Culture. International Association for Language Learning Technology. https://www.iallt.org/thursday_june_23
+
+Worsham, D., & Chinn, G. (2009, November 5). Creating Custom Online Learning Environments with Drupal [Poster Presentation]. EDUCAUSE 2009. http://www.educause.edu/annual-conference/2009/creating-custom-online-learning-environments-drupal
+
+Worsham, D., Cramer, R., & Bundy, B. (2007, October 23). Blogs, Wikis, and Podcasts: Personal Authoring Technologies Enrich Communication and Expression for You and Your Students [Full-day seminar]. EDUCAUSE 2007 Annual Conference. http://www.educause.edu/annual-conference/2007/seminar-03f-blogs-wikis-and-podcasts-personal-authoring-technologies-enrich-communication-and-expressi
+
+Worsham, D., Dugdale, T., & Schmidt, L. (2010, January 20). Collaborative Conundrum: What We Know About Group Work and Technology, but Often Forget. EDUCAUSE Learning Initiative. http://net.educause.edu/ELI10/Program/1022371?PRODUCT_CODE=ELI10/SESS12
+
+Worsham, D., & Shawl, L. (2009, February 26). Moving Toward Student-Centered Learning with Collaborative Technologies. Symposium for Teaching and Learning Excellence. http://www.minds.wisconsin.edu/handle/1793/35054?show=full
+
+Worsham, D., Shorter, C., & Goddard, T. (2011, June 16). Knowledge Building for the Digital Humanities. New Media Consortium Summer Conference. http://www.nmc.org/pdf/2011/2011_NMC_Summer_Conference_Program.pdf
+
 
 
 <!--

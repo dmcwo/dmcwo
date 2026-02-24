@@ -71,6 +71,11 @@
   margin-bottom: $space-7;
 }
 
+// Tighter gap when title is followed directly by the hero block
+.collection-detail__header--no-image {
+  margin-bottom: $space-4;
+}
+
 .collection-detail__title {
   margin-bottom: $space-3;
   display: flex;
@@ -81,6 +86,21 @@
   .icon {
     flex-shrink: 0;
   }
+}
+
+.collection-detail__subtitle {
+  font-size: clamp(1.05rem, 1rem + 0.3vw, 1.2rem);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-top: $space-2;
+  font-weight: 400;
+}
+
+.collection-detail__byline {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: $space-3;
+  margin-bottom: 0;
 }
 
 .collection-detail__meta {
@@ -103,54 +123,55 @@
   }
 }
 
-.collection-detail__abstract {
+// Project metadata block — unified summary, role, capabilities, tags
+// ---------------------------------------------------------------------------
+.project-meta {
   margin-top: $space-5;
+  margin-bottom: $space-5;
   padding: $space-5;
   background-color: var(--color-bg-alt);
   border-radius: 4px;
-  // Match prose body text size for equal importance
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.75;
 
-  // Mobile: Icon on left, text indented (Option 3)
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: $space-3;
-  align-items: start;
+  // Mobile: stacked label-above-value
+  display: block;
 
-  // Desktop: Icon + label on top, text below (Option 1)
-  @media (min-width: $bp-md) {
-    display: block;
+  // Small+: side-by-side label | value grid
+  @media (min-width: $bp-sm) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: $space-2 $space-5;
+    align-items: baseline;
+  }
+
+  // Spacing between groups when stacked (mobile only)
+  dd + dt {
+    margin-top: $space-4;
+
+    @media (min-width: $bp-sm) {
+      margin-top: 0; // grid row gap handles spacing
+    }
   }
 }
 
-.collection-detail__abstract-header {
-  display: flex;
-  align-items: center;
-  gap: $space-2;
+.project-meta__label {
+  font-size: 0.8rem;
   font-weight: 700;
-  color: var(--color-accent-dark);
-
-  // Mobile: header spans both columns to create left-aligned layout
-  grid-column: 1 / -1;
-
-  // Desktop: normal flow
-  @media (min-width: $bp-md) {
-    margin-bottom: $space-3;
-  }
-
-  .icon {
-    flex-shrink: 0;
-  }
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  white-space: nowrap;
 }
 
-.collection-detail__abstract-body {
-  // Mobile: text in second column, creating indent effect
-  grid-column: 2;
+.project-meta__value {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+  margin-left: 0; // reset <dd> default browser indent
+  margin-top: $space-1; // breathing room between label and value when stacked
 
-  // Desktop: normal flow below header
-  @media (min-width: $bp-md) {
-    grid-column: auto;
+  @media (min-width: $bp-sm) {
+    margin-top: 0; // grid baseline alignment handles this
   }
 }
 
@@ -163,13 +184,6 @@
 .project-impact {
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
   line-height: 1.6;
-  margin-bottom: $space-3;
-}
-
-.project-role {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--color-text-muted);
   margin-bottom: $space-3;
 }
 
@@ -306,5 +320,75 @@
     max-height: 480px;
     object-fit: cover;
   }
+}
+
+// No-image hero — typographic context block replacing the placeholder
+// ---------------------------------------------------------------------------
+.collection-detail__hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bg-alt);
+  border-radius: 4px 4px 0 0; // flat bottom merges with .project-meta below
+  padding: $space-7 $space-6 $space-6;
+  margin-top: $space-5;
+  margin-bottom: 0;
+}
+
+// Large ghosted icon — bottom-right corner, rotated, purely decorative
+.collection-detail__hero-icon {
+  position: absolute;
+  right: -#{$space-4};
+  bottom: -#{$space-3};
+  pointer-events: none;
+
+  .icon {
+    width: clamp(100px, 18vw, 180px);
+    height: clamp(100px, 18vw, 180px);
+    color: var(--color-accent);
+    opacity: 0.07;
+    transform: rotate(12deg);
+    display: block;
+  }
+}
+
+// Subtitle — primary text in the hero
+.collection-detail__hero-subtitle {
+  font-size: clamp(1.05rem, 0.9rem + 0.75vw, 1.4rem);
+  line-height: 1.65;
+  color: var(--color-text);
+  font-weight: 400;
+  max-width: 32rem; // keeps text clear of the icon
+  margin: 0 0 $space-5;
+  position: relative;
+  z-index: 1;
+}
+
+// Provenance row — institution left, dates right
+.collection-detail__hero-provenance {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: $space-2 $space-5;
+  padding-top: $space-4;
+  border-top: 1px solid var(--color-border);
+  position: relative;
+  z-index: 1;
+}
+
+.collection-detail__hero-org,
+.collection-detail__hero-dates {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+// Connect hero directly to metadata block — seamless card join
+.collection-detail__hero + .project-meta {
+  margin-top: 0;
+  border-top: 1px solid var(--color-border);
+  border-radius: 0 0 4px 4px;
 }
 

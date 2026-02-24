@@ -222,7 +222,21 @@ Extended project description in Markdown. Include background, approach, outcomes
 
 The `category` field controls which group the project appears under on the listing page. The four categories are defined in `_data/collection-config.yml`.
 
-The `impact` and `role` sentences appear on the project detail page. `skill_themes` renders as a compact pill cluster on the detail page. On listing pages (homepage tiles and `/projects/` tiles), projects display only title, subtitle, and institution — no impact, role, or skill themes.
+**Project detail page structure:**
+
+| Area | What renders |
+|---|---|
+| Header | `title` as H1; `subtitle` as a styled lead paragraph; `institution · date range` as a compact byline |
+| Hero | `featured_image` full-width between header and meta box |
+| Meta box | `abstract` → "Summary"; `collaborators` → "With"; `role` → "My role"; `skill_themes` → "Core capabilities" (joined with " · "); `tags` → "Tags" (joined with " · ") |
+| Action link | `project_url` → "View Project" button, if set |
+| Body | Markdown content |
+
+The meta box uses a two-column label/value grid on screens ≥ 480px and stacks to a single column on smaller screens. Any meta box row whose field is empty or absent is silently omitted.
+
+The `impact` field is defined in front matter but is not currently rendered on the detail page or on listing tiles.
+
+On listing pages (homepage tiles and `/projects/` tiles), projects display only `title`, `subtitle`, and `institution`. The meta box fields do not appear in tiles.
 
 For ongoing projects, leave `end_date` blank; the date range will display as "2020–present".
 
@@ -581,6 +595,8 @@ This section summarizes key conventions to help AI tools work accurately with th
 - **Publications:** `cover_image` + `cover_image_alt` — stored in front matter but not currently rendered (publications have no detail pages by default)
 - Images are always optional; entries without an image field (or with an empty value) render without any image element
 - Detail page hero images use the `_alt` field as the `alt` attribute, falling back to the page title if absent
+
+**Project detail page layout (`_layouts/project.html`):** The page renders in this order: (1) `<header>` with `title` as H1, `subtitle` as a `.collection-detail__subtitle` paragraph, and a `.collection-detail__byline` paragraph of `institution · date range` (built from available date fields); (2) `featured_image` hero; (3) `.project-meta` definition list with labeled rows — Summary (`abstract`), With (`collaborators`), My role (`role`), Core capabilities (`skill_themes` joined by " · "), Tags (`tags` joined by " · ") — any row whose field is absent is silently omitted; (4) "View Project" `.cv-action-link` button if `project_url` is set; (5) `.collection-detail__body.prose` for markdown content; (6) pager. The `.project-meta` block uses `display: block` (stacked, label above value) below `$bp-sm` (480px) and `display: grid; grid-template-columns: auto 1fr` above. The `impact` field is present in some project front matter but is not rendered anywhere in the current templates.
 
 **Listing philosophy:** All four public-facing collections (presentations, publications, projects, notes) use the same `collection-list.html` layout. For presentations, publications, and notes, each item renders as a `collection-item` div with the relevant component include. For projects, items render as `project-tile` cards — a deliberate exception: a responsive text-forward grid (title, subtitle, institution only) instead of the cv-entry list row used by the other three collections. This projects-specific branch is established in `collection-list.html`. Per-item detail pages use collection-specific layouts (`presentation.html`, `publication.html`, `project.html`, `note.html`).
 

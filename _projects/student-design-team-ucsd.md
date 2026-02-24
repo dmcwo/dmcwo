@@ -16,8 +16,8 @@ skill_themes:
   - "Talent pipeline design"
   - "Student employment program development"
   - "UX capacity building"
-featured_image: "/assets/images/projects/student-design-team-ucsd.svg"
-featured_image_alt: "Student designers working at computers in the UC San Diego Library"
+featured_image: 
+featured_image_alt: 
 abstract: |
   The UC San Diego Library Student Design Team is a paid student employment program that places students in active UX and design roles on the Library's digital experience team. Founded to expand design capacity and embed student co-creation directly within the design process, it gives students substantive professional experience while contributing directly to the Library's digital products.
 tags: ["student employment", "UX", "design", "capacity building", "UC San Diego"]

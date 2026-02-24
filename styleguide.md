@@ -21,6 +21,7 @@ permalink: /styleguide/
     <li><a href="#image-grid" class="cv-toc__link">Image Grid</a></li>
     <li><a href="#featured-images" class="cv-toc__link">Featured Images</a></li>
     <li><a href="#project-tiles" class="cv-toc__link">Project Tiles</a></li>
+    <li><a href="#project-detail" class="cv-toc__link">Project Detail Page</a></li>
     <li><a href="#buttons" class="cv-toc__link">Buttons</a></li>
     <li><a href="#badges-tags" class="cv-toc__link">Badges & Tags</a></li>
     <li><a href="#cv-components" class="cv-toc__link">CV Components</a></li>
@@ -527,7 +528,70 @@ Project tile cards display projects on the homepage (featured projects section) 
 - `.project-tile__subtitle` — muted smaller text; `flex: 1` pushes the institution line to the bottom of the card
 - `.project-tile__institution` — smallest muted text, pinned to card bottom with `margin-top: auto` and a top border
 
-**Front matter fields rendered in tiles:** `title`, `subtitle`, `institution`, `category` (homepage only). Fields like `impact`, `role`, `abstract`, and `skill_themes` appear on detail pages only.
+**Front matter fields rendered in tiles:** `title`, `subtitle`, `institution`, `category` (homepage only). Fields like `abstract`, `role`, `skill_themes`, `tags`, and `collaborators` render on the project detail page inside the `.project-meta` box. The `impact` field is defined in front matter but is not currently rendered in tiles or on detail pages.
+
+---
+
+## Project Detail Page {#project-detail}
+
+The project detail page (`_layouts/project.html`) uses three components not used elsewhere: `.collection-detail__subtitle`, `.collection-detail__byline`, and `.project-meta`.
+
+### Subtitle and Byline
+
+The page `title` renders as H1 (`.collection-detail__title`). The `subtitle` field renders as a separate paragraph below it. The `institution` and date range render as a compact `.collection-detail__byline` beneath the subtitle.
+
+</div>
+
+<div style="border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; margin: 1.5rem 0;">
+  <h1 class="collection-detail__title" style="font-size: 1.75rem;">Example Project Title</h1>
+  <p class="collection-detail__subtitle">A concise tagline that provides context for the project without repeating the title.</p>
+  <p class="collection-detail__byline">Example University Library · 2020–2024</p>
+</div>
+
+<div class="prose" markdown="1">
+
+**Classes:**
+- `.collection-detail__title` — project H1; same class used on all detail pages (notes, presentations, projects)
+- `.collection-detail__subtitle` — lead paragraph below H1: `clamp(1.05rem, 1rem + 0.3vw, 1.2rem)`, `font-weight: 400`, `color: var(--color-text-muted)`
+- `.collection-detail__byline` — institution and date range joined by " · ": `0.85rem`, `color: var(--color-text-muted)`; built from `institution`, `start_date`/`end_date` (or `date` as fallback)
+
+### Project Meta Box
+
+The `.project-meta` definition list renders summary, collaborators, role, capabilities, and tags as labeled rows. It is responsive: two-column grid (label | value) on screens ≥ 480px, single-column stacked (label above value) below.
+
+</div>
+
+<dl class="project-meta" style="margin: 1.5rem 0;">
+  <dt class="project-meta__label">Summary</dt>
+  <dd class="project-meta__value">A 2–3 sentence description of the project, its goals, and its outcomes. This is the most prominent field and should stand alone as an elevator pitch for the work.</dd>
+  <dt class="project-meta__label">With</dt>
+  <dd class="project-meta__value">Co-designer Jane Smith and the Example Team</dd>
+  <dt class="project-meta__label">My role</dt>
+  <dd class="project-meta__value">Lead designer and program architect: established the service model, built the team, and embedded the work into ongoing organizational practice.</dd>
+  <dt class="project-meta__label">Core capabilities</dt>
+  <dd class="project-meta__value">Participatory design · Service design · Community partnership development · Organizational culture change</dd>
+  <dt class="project-meta__label">Tags</dt>
+  <dd class="project-meta__value">accessibility · inclusive design · service design · student employment</dd>
+</dl>
+
+<div class="prose" markdown="1">
+
+**Classes:**
+- `.project-meta` — `display: block` (stacked) below `$bp-sm` (480px); `display: grid; grid-template-columns: auto 1fr; gap: $space-2 $space-5; align-items: baseline` above; `background-color: var(--color-bg-alt)`, `padding: $space-5`, `border-radius: 4px`
+- `.project-meta__label` — `0.8rem`, uppercase, `font-weight: 700`, `letter-spacing: 0.05em`, `color: var(--color-text-muted)`; `white-space: nowrap`
+- `.project-meta__value` — `0.95rem`, `line-height: 1.6`; `margin-top: $space-1` on mobile (stacked gap), `margin-top: 0` on grid; `margin-left: 0` resets `<dd>` browser default indent
+
+**Front matter → label mapping:**
+
+| Front matter field | Label in meta box |
+|---|---|
+| `abstract` | Summary |
+| `collaborators` | With |
+| `role` | My role |
+| `skill_themes` (array) | Core capabilities (joined with " · ") |
+| `tags` (array) | Tags (joined with " · ") |
+
+Any row whose field is absent or empty is silently omitted.
 
 ---
 

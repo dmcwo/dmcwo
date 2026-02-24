@@ -16,8 +16,8 @@ skill_themes:
   - "Curriculum framework development"
   - "Cross-departmental facilitation"
   - "Assessment-aligned instruction design"
-featured_image: "/assets/images/projects/core-competencies.svg"
-featured_image_alt: "Cover page of the UCLA Library Core Competencies document"
+featured_image: 
+featured_image_alt: 
 abstract: |
   The UCLA Library Core Competencies for Research and Information Literacy is a collaboratively developed framework defining what research and information literacy skills UCLA students should develop. Co-authored through a facilitated process across library departments, it provides a shared foundation for instruction, assessment, and curriculum alignment.
 tags: ["information literacy", "curriculum", "assessment", "UCLA", "strategic planning"]

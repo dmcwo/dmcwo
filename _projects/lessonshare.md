@@ -16,8 +16,8 @@ skill_themes:
   - "education platform design"
   - "Instructional resource community building"
   - "Remix-friendly content architecture"
-featured_image: "/assets/images/projects/lessonshare.svg"
-featured_image_alt: "Screenshot of Lessonshare platform showing searchable lesson repository"
+featured_image: 
+featured_image_alt: 
 abstract: |
   Lessonshare was a collaborative platform built at UW-Madison for language instructors to share and remix lesson plans. Developed in close collaboration with language instructors, it helped instuctors share and organize their teaching materials while also fostering community and open practice.
 tags: ["instructional materials", "language instruction", "UW-Madison", "community of practice"]

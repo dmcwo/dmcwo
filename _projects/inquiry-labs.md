@@ -16,8 +16,8 @@ skill_themes:
   - "Participatory design facilitation"
   - "Physical and digital service integration"
   - "Community-centered space design"
-featured_image: "/assets/images/projects/inquiry-labs.svg"
-featured_image_alt: "Photo of Inquiry Labs at Powell Library showing flexible student workspace with collaborative seating"
+featured_image: 
+featured_image_alt: 
 abstract: |
   The Inquiry Labs were developed through a participatory redesign initiative that transformed two UCLA Library computer classrooms and two open learning spaces. Students and staff were central to the design process, shaping both the physical layout and the service models.
 tags: ["participatory design", "space design", "UCLA", "service design", "learning spaces"]

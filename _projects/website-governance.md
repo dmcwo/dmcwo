@@ -16,8 +16,8 @@ skill_themes:
   - "Governance model design"
   - "Standards development and stakeholder alignment"
   - "Cross-functional change leadership"
-featured_image: "/assets/images/projects/website-governance.svg"
-featured_image_alt: "Diagram showing library website governance structure with committee relationships"
+featured_image: 
+featured_image_alt: 
 abstract: |
   Before this initiative, UC San Diego Library had no formal structure for making website decisions. This project established the Library's first website committee, developed foundational governance standards, and built the cross-functional alignment needed for those standards to hold. The governance model was formally endorsed by the UX Steering Committee.
 tags: ["governance", "UX strategy", "change management", "UC San Diego", "standards"]

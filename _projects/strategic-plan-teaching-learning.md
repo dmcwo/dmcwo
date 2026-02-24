@@ -16,8 +16,8 @@ skill_themes:
   - "Strategic vision facilitation"
   - "Cross-institutional alignment"
   - "Teaching and learning framework design"
-featured_image: "/assets/images/projects/strategic-plan.svg"
-featured_image_alt: "Cover of UCLA Library Strategic Plan for Teaching and Learning document"
+featured_image: 
+featured_image_alt: 
 abstract: |
   The UCLA Library Strategic Plan for Teaching and Learning established a shared direction for library instruction programs across departments. Co-authored through a facilitated collaborative process, it aligned stakeholders around common goals and provided a framework for investment decisions and program development.
 tags: ["strategic planning", "UCLA", "teaching and learning", "facilitation", "library leadership"]
