@@ -1,17 +1,18 @@
 ---
 published: false
 title: "UCLA Library Core Competencies for Research and Information Literacy"
-subtitle: "A shared framework for library instruction and assessment"
+subtitle: "A shared, evidence-based foundation for information literacy instruction and assessment."
 category: "organizational-design"
+icon: clipboard-pen-line
 institution: "UCLA Library"
-start_date: 2016-01-01
-end_date: 2018-01-01
+start_date: 2019-11-08
+end_date: 2019-11-08
 sort_date: 2018-01-01
 date: 2018-01-01
-impact: |
-  A shared framework that gave UCLA Library a coherent, evidence-based foundation for information literacy instruction.
+impact: 
 role: |
-  Co-author; led the collaborative development process across librarians and instructional staff, facilitating consensus-building and shared ownership.
+  Teaching and Learning Team Lead and Lead co-author; led the collaborative development process across librarians and instructional staff, facilitating consensus-building and shared ownership.
+project_url: https://escholarship.org/uc/item/2t03q5bw#main
 skill_themes:
   - "Curriculum framework development"
   - "Cross-departmental facilitation"
